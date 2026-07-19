@@ -1,0 +1,71 @@
+# Chapter 13 — The Protocol
+
+Leo officially started the next day.
+
+He arrived at 6:32 a.m. with a thermos, a notebook, and the particular look of a man who'd been unemployed for three days and was determined not to return to that state without a fight.
+
+Maya handed him an apron.
+
+The apron had a picture of a coffee cup on it and the words "WORLD'S OKAYEST BARISTA" in font that Maya had designed herself and that Sam had described as "aggressively unprofessional." Leo pulled it on. He looked at the words. He smiled.
+
+"World's okayest," he said.
+
+"Best I could do."
+
+The morning rush was the usual: the laptop man with the attitude, the regulars who knew their orders by heart, the tourists who asked if the coffee was "like, really good," to which Maya always said, "It's better than good. It's real."
+
+By 9:00 a.m., the rush had thinned. Maya and Leo stood at the counter, side by side, and Maya explained the inventory system.
+
+"This," she said, pointing at a whiteboard that was currently covered in caffeine-fueled scribbles, "is everything we know about our beans. Origins, roasts, quantities, what's selling, what's not."
+
+Leo studied the whiteboard. "You're tracking this manually."
+
+"I'm tracking this manually."
+
+"We need a spreadsheet."
+
+"I have a spreadsheet. It's right there." She pointed at a laptop that was open to a spreadsheet that was definitely the one Leo had made. "That's yours."
+
+Leo looked at his own spreadsheet. He looked honored.
+
+By 10:00 a.m., he'd already found three inefficiencies. He'd already restructured the inventory. He'd already color-coded the beans. Maya watched him rearrange the sacks in the back room and felt a particular kind of admiration that was uncomfortable because it was directed at someone she wasn't supposed to admire.
+
+"You're good at this," she said.
+
+"So are you."
+
+"I'm not. I'm chaotic. I run on vibes and caffeine."
+
+"Vibes and caffeine are a business model," Leo said, and he said it like he meant it.
+
+The day unfolded. Maya made coffee. Leo organized. They fell into a rhythm that was new and strange and not unwelcome. By afternoon, the shop felt different. Not quieter, not busier, but more alive in a specific way. The energy had shifted from Maya-alone-against-the-world to two-people-against-the-world, which was a better energy because it meant Maya didn't have to carry everything.
+
+At 5:00 p.m., Mrs. Hsu came in. She took her coffee. She looked at Leo. She said nothing.
+
+When she left, Leo said, "She scares me."
+
+"Me too."
+
+"Good. She should."
+
+The next morning, they launched the Loyalty Card 2.0. Sam had built it overnight — a digital card that customers scanned with their phones, earning a free drink after every ten purchases. It was simple. It was free. It was exactly the kind of thing that Bean & Leaf couldn't compete with because Bean & Leaf's loyalty program required an app and Bean & Leaf's app asked for more permissions than a government form.
+
+Customers loved it. They scanned the card with the enthusiasm of people who'd been waiting for someone to treat them like more than a transaction.
+
+By Friday, they'd had two hundred sign-ups.
+
+By Saturday, three hundred and fifty.
+
+By Monday, five hundred.
+
+The numbers were climbing. The bean inventory was dropping. The chalkboard was getting fuller. The shop was getting louder, busier, more alive.
+
+And underneath everything, between Maya and Leo, there was something growing. Not a relationship — not yet — but a thread. A connection. The kind of thing that looked like a glance across the counter, a shared joke, a moment when they both reached for the same espresso portafilter and their hands brushed and they both pretended it didn't make Maya's skin hum.
+
+She felt it. She knew Leo felt it too. She didn't name it. She didn't want to.
+
+Names were dangerous.
+
+---
+
+*End of Chapter 13*

@@ -1,0 +1,89 @@
+# Chapter 10 — The Fight
+
+The fight happened on day nineteen.
+
+It was not a romantic fight. It was not the kind of fight where they said things they didn't mean and then made up with a kiss in the rain. It was the kind of fight where the words were sharp and accurate and both people were right in different, incompatible ways.
+
+They were in the back room. The bean inventory had dropped to two hundred and twelve pounds. They had three days to sell the rest. Two hundred and twelve pounds in seventy-two hours. The math was impossible. The math was a nightmare. The math was Maya standing at the counter on a Wednesday morning, staring at a spreadsheet, and feeling the weight of every decision she'd made since buying this shop.
+
+Leo walked in. He had a phone call on his face — the particular look of someone who'd just heard something they didn't want to deliver.
+
+"Tom can't help," he said.
+
+Maya looked up. "What."
+
+"Tom's distributor just got acquired. The whole network's shifting. He can't get us the buyers we need in time."
+
+Maya's hands went cold. "What do you mean, in time."
+
+"I mean, the connections are there, but the inventory is locked up. Bean & Leaf moved first. They cornered the small-batch market in the Pacific Northwest. There's no one left to sell to."
+
+Maya stood. She felt the blood in her ears. "You're joking."
+
+"I'm not. I've been on the phone for two hours. I called everyone I know. There's nothing."
+
+"Nothing."
+
+"Nothing."
+
+Maya's voice rose. "Then what are we doing here? What are we doing sorting beans and making coffee and pretending we have a chance? We don't have a chance. We never had a chance. Bean & Leaf won. They always win. They just choose when to tell you."
+
+"Maya —"
+
+"No. Don't Maya me. You knew this. You knew from the beginning. You were never here to help me sell beans. You were here because you needed a job and I was the only stupid person in this city who'd hire you."
+
+That was not true. Maya knew it wasn't true. Leo had beenhere, had shown up every morning, had sorted beans and fixed the espresso machine and made spreadsheets that were better than anything Maya had ever made. But the words were out. The words were sharp. The words were the panic talking.
+
+"Maya," Leo said, his voice tight, "I didn't know."
+
+"You didn't know. You didn't know a lot of things. You didn't know you were going to get fired. You didn't know Bean & Leaf would corner the market. You didn't know that buying five hundred pounds of coffee was a bad idea until after you did it."
+
+Leo flinched. He turned away. He ran a hand through his hair. "You're right."
+
+Maya blinked. She expected an argument. She expected the corporate charm, the negotiation, the smoothing-over. She did not expect him to say it simply, plainly, without defending himself.
+
+"I'm right," she said, quieter now.
+
+"I didn't know," Leo said. "But I'm here. I'm still here. We still have two hundred pounds. We still have three days. We still have a shop full of customers who — who actually like us. I don't have a plan right now. I'm trying to find one. But I'm not leaving."
+
+Maya was quiet. The fight was draining out of her, replaced by something heavier and more honest.
+
+"Why didn't you tell me earlier?" she asked.
+
+"Because I thought I could fix it. And then I thought I could fix it again. And then —"
+
+"Then you couldn't."
+
+Leo nodded. "I'm sorry."
+
+Maya said nothing.
+
+"I'm sorry," Leo said again. "Do you want me to go?"
+
+Maya looked at him. He was standing in the doorway of the back room, shoulders loose, no defense, no armor. He looked like someone who'd been carrying a weight for a long time and had just put it down.
+
+The shop was quiet. The espresso machine was off. The refrigerator hummed its B-flat. Somewhere down the street, a bus was pulling away from a stop. The bell above the door had been silent for an hour.
+
+Maya thought about the buyout. She thought about the buyout and the offer and the life that was easy and safe and available if she just said yes. She thought about Leo, who'd been fired and showed up anyway, who'd sorted three hundred pounds of green coffee, who'd made her laugh in a bar, who'd looked at her with eyes that were careful and hopeful and terrified.
+
+"I don't want you to go," she said.
+
+The words surprised her. They surprised Leo too, because he went very still.
+
+"I just — I need a minute," Maya said. "I need to think. We have three days. I need to think."
+
+Leo nodded. "I'll be downstairs. I'll sort beans."
+
+"Leo," Maya said, and he stopped. "I'm sorry. For what I said. You didn't deserve that."
+
+Leo looked at her. His eyes were wet. Not crying-wet. Just watching-wet. The kind of wet that said "this matters." "I know," he said. "But you were scared. It's okay to be scared."
+
+He left.
+
+Maya sat down at the table. She looked at the spreadsheet. She looked at the bean inventory. She looked at the wall where Mrs. Hsu had stood and told her that Bean & Leaf was expanding and that she needed a business plan.
+
+She opened her laptop. She started writing.
+
+---
+
+*End of Chapter 10*
