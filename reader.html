@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Rings and Bad Decisions — Online Reader | Alex Rogers</title>
+<meta name="description" content="Read Coffee Rings and Bad Decisions by Alex Rogers online. Full romantic comedy novel — 22 chapters plus epilogue.">
+<link rel="canonical" href="https://coffee-rings-and-bad-decisions.vercel.app/reader.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:'Inter',-apple-system,sans-serif; background:#0D1B2A; color:#d0dbe4; line-height:1.8; }
+
+.reader-layout { display:grid; grid-template-columns:280px 1fr; min-height:100vh; }
+
+.sidebar {
+  position:fixed; top:0; left:0; width:280px; height:100vh; overflow-y:auto;
+  background:rgba(10,22,40,0.95); border-right:1px solid rgba(255,255,255,0.05);
+  padding:24px 0; z-index:50;
+}
+.sidebar-header {
+  padding:0 24px 24px; border-bottom:1px solid rgba(255,255,255,0.05); margin-bottom:24px;
+}
+.sidebar-header a { font-family:Georgia,serif; font-size:1rem; color:#fff; text-decoration:none; font-weight:600; }
+.sidebar-header a:hover { color:#C9862A; }
+.sidebar-header p { font-size:0.75rem; color:#5a6a78; margin-top:4px; }
+.chapter-list { list-style:none; }
+.chapter-list li { margin:0; }
+.chapter-list a {
+  display:block; padding:12px 24px; color:#8a9aa8; font-size:0.88rem;
+  text-decoration:none; transition:all .25s ease; border-left:3px solid transparent;
+}
+.chapter-list a:hover { color:#fff; background:rgba(255,255,255,0.03); border-left-color:#C9862A; }
+.chapter-list a.active { color:#C9862A; border-left-color:#C9862A; background:rgba(201,134,42,0.05); font-weight:600; }
+.chapter-list .epilogue-link { border-top:1px solid rgba(255,255,255,0.05); margin-top:8px; padding-top:8px; }
+
+.reader {
+  margin-left:280px; padding:48px 32px;
+  max-width:760px; min-height:100vh;
+}
+.reader article { padding-bottom:64px; border-bottom:1px solid rgba(255,255,255,0.05); margin-bottom:64px; }
+.reader h1 {
+  font-family:Georgia,serif; font-size:1.8rem; color:#fff;
+  margin-bottom:24px; padding-bottom:24px;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.reader p { margin-bottom:1.4em; font-size:1.02rem; }
+.reader .chapter-end { text-align:center; margin:64px 0 0; color:#5a6a78; font-size:0.9rem; }
+.reader .chapter-nav {
+  display:flex; justify-content:space-between; gap:16px;
+  padding:32px 0; margin-top:64px;
+  border-top:1px solid rgba(255,255,255,0.05);
+}
+.reader .chapter-nav a {
+  padding:10px 20px; background:rgba(201,134,42,0.1);
+  border:1px solid rgba(201,134,42,0.2); border-radius:6px;
+  color:#C9862A; font-size:0.85rem; font-weight:500;
+}
+.reader .chapter-nav a:hover { background:rgba(201,134,42,0.2); }
+.reader .chapter-nav .nav-next { margin-left:auto; }
+
+.back-link { display:inline-flex; align-items:center; gap:8px; color:#C9862A; font-size:0.85rem; margin-bottom:32px; }
+.back-link:hover { color:#e0a84c; }
+
+.progress-bar {
+  position:fixed; top:0; left:280px; right:0; height:3px;
+  background:rgba(255,255,255,0.03); z-index:60;
+}
+.progress-fill { height:100%; background:#C9862A; width:0%; transition:width .3s ease; }
+
+.mobile-toggle {
+  display:none; position:fixed; top:16px; left:16px; z-index:200;
+  background:rgba(13,27,42,0.9); border:1px solid rgba(255,255,255,0.1);
+  color:#fff; padding:10px 14px; border-radius:6px; cursor:pointer;
+}
+.overlay {
+  display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6);
+  z-index:40;
+}
+
+@media (max-width:768px) {
+  .reader-layout { grid-template-columns:1fr; }
+  .sidebar { transform:translateX(-100%); transition:transform .3s ease; width:280px; }
+  .sidebar.open { transform:translateX(0); }
+  .reader { margin-left:0; padding:80px 20px 40px; }
+  .progress-bar { left:0; }
+  .mobile-toggle { display:block; }
+  .overlay.open { display:block; }
+}
+</style>
+</head>
+<body>
+
+<div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+<button class="mobile-toggle" id="mobileToggle" aria-label="Open table of contents">☰</button>
+<div class="overlay" id="overlay"></div>
+
+<div class="reader-layout">
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a href="/">← Coffee Rings</a>
+    <p>by Alex Rogers</p>
+  </div>
+  <ul class="chapter-list" id="chapterList">
+    <li><a href="#chapter1">Chapter 1</a></li>
+    <li><a href="#chapter2">Chapter 2</a></li>
+    <li><a href="#chapter3">Chapter 3</a></li>
+    <li><a href="#chapter4">Chapter 4</a></li>
+    <li><a href="#chapter5">Chapter 5</a></li>
+    <li><a href="#chapter6">Chapter 6</a></li>
+    <li><a href="#chapter7">Chapter 7</a></li>
+    <li><a href="#chapter8">Chapter 8</a></li>
+    <li><a href="#chapter9">Chapter 9</a></li>
+    <li><a href="#chapter10">Chapter 10</a></li>
+    <li><a href="#chapter11">Chapter 11</a></li>
+    <li><a href="#chapter12">Chapter 12</a></li>
+    <li><a href="#chapter13">Chapter 13</a></li>
+    <li><a href="#chapter14">Chapter 14</a></li>
+    <li><a href="#chapter15">Chapter 15</a></li>
+    <li><a href="#chapter16">Chapter 16</a></li>
+    <li><a href="#chapter17">Chapter 17</a></li>
+    <li><a href="#chapter18">Chapter 18</a></li>
+    <li><a href="#chapter19">Chapter 19</a></li>
+    <li><a href="#chapter20">Chapter 20</a></li>
+    <li><a href="#chapter21">Chapter 21</a></li>
+    <li><a href="#chapter22">Chapter 22</a></li>
+    <li><a href="#epilogue" class="epilogue-link">Epilogue</a></li>
+  </ul>
+</aside>
+
+<main class="reader" id="mainReader"></main>
+
+</div>
+
+<script src="/reader-chunks.js"></script>
+<script>
+(function() {
+  const main = document.getElementById('mainReader');
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+  const mobileToggle = document.getElementById('mobileToggle');
+  const progressFill = document.getElementById('progressFill');
+  const chapterList = document.getElementById('chapterList');
+
+  const links = chapterList.querySelectorAll('a');
+  const chapterIds = Array.from(links).map(a => a.getAttribute('href').replace('#',''));
+
+  const titles = {
+    chapter1:'Chapter 1 — The Accidental 500-Pound Mistake',
+    chapter2:'Chapter 2 — The Coffee Ghost of Alberta Street',
+    chapter3:'Chapter 3 — The Man in the Navy Suit',
+    chapter4:'Chapter 4 — Mrs. Hsu\'s Coaster',
+    chapter5:'Chapter 5 — The Almost-Kiss and the Espresso Explosion',
+    chapter6:'Chapter 6 — Lotteries and Lies',
+    chapter7:'Chapter 7 — The Festival',
+    chapter8:'Chapter 8 — TikTok, Torrents, and Leo\'s Bad Hand',
+    chapter9:'Chapter 9 — The Buyout',
+    chapter10:'Chapter 10 — The Fight',
+    chapter11:'Chapter 11 — Business Plans and Bedlam',
+    chapter12:'Chapter 12 — The Last Day',
+    chapter13:'Chapter 13 — The Protocol',
+    chapter14:'Chapter 14 — Static',
+    chapter15:'Chapter 15 — The Offer',
+    chapter16:'Chapter 16 — The Seattle Phone Call',
+    chapter17:'Chapter 17 — The Fight, Part Two',
+    chapter18:'Chapter 18 — The Empty Shop',
+    chapter19:'Chapter 19 — The Crisis',
+    chapter20:'Chapter 20 — Maya\'s Drive',
+    chapter21:'Chapter 21 — The Return',
+    chapter22:'Chapter 22 — The Proposal That Wasn\'t a Proposal',
+    epilogue:'Epilogue — Coffee Rings'
+  };
+
+  function renderChapter(id) {
+    const raw = window.__chapters && window.__chapters[id];
+    const title = titles[id] || id;
+
+    let html = '<a href=\"/\" class=\"back-link\">← Back to Book Page</a>';
+    html += '<article id=\"' + id + '\">';
+    html += '<h1>' + title + '</h1>';
+    html += raw || '<p>Content not available.</p>';
+    html += '</article>';
+
+    // Chapter nav
+    const idx = chapterIds.indexOf(id);
+    let nav = '<div class=\"chapter-nav\">';
+    if (idx > 0) {
+      nav += '<a href=\"#' + chapterIds[idx-1] + '\">← Previous</a>';
+    }
+    if (idx < chapterIds.length - 1) {
+      nav += '<a href=\"#' + chapterIds[idx+1] + '\" class=\"nav-next\">Next →</a>';
+    }
+    nav += '</div>';
+    html += nav;
+
+    main.innerHTML = html;
+
+    // Update active
+    chapterList.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+    const activeLink = chapterList.querySelector('a[href=\"#'+id+'\"]');
+    if (activeLink) activeLink.classList.add('active');
+
+    // Scroll to top of reader
+    window.scrollTo(0, 0);
+  }
+
+  // Handle nav clicks
+  chapterList.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      e.preventDefault();
+      const id = e.target.getAttribute('href').replace('#','');
+      renderChapter(id);
+      if (window.innerWidth <= 768) {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('open');
+      }
+    }
+  });
+
+  // Mobile
+  mobileToggle.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+    overlay.classList.toggle('open');
+  });
+  overlay.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('open');
+  });
+
+  // Progress bar
+  window.addEventListener('scroll', () => {
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docH > 0 ? (window.scrollY / docH) * 100 : 0;
+    progressFill.style.width = Math.min(pct,100) + '%';
+  });
+
+  // Initial load
+  renderChapter('chapter1');
+})();
+</script>
+</body>
+</html>
