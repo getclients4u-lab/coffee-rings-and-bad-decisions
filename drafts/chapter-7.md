@@ -1,119 +1,157 @@
 # Chapter 7 — The Festival
 
-The Portland Coffee Festival occupied the brick courtyard behind a brewery on East Burnside. It was the kind of event where people wore bean-shaped earrings and discussed acidity like it was a personality trait and where someone, every year, attempted to pour latte art that was also a portrait of their dog.
+The Portland Coffee Festival occupied the brick courtyard behind a brewery on East Burnside. It was the kind of event where people wore bean-shaped earrings and discussed acidity like it was a personality trait, where every third booth had a pour-over demonstration, and where the line for Donuts & Coffee was longer than the line for anything else. Maya had been once before, years ago, when the shop had still been new and she'd gone mainly to see what the competition looked like. She'd left feeling both inspired and slightly nauseated by the spectacle of it all.
 
-Maya had been once. She'd gone as a customer, not a vendor. She'd stood in the crowd with a paper cup of Ethiopian and watched the roasters and the baristas and the people with the branded tents and thought, one day, that would be her.
+This year, she was in it.
 
-Now she was standing behind a table with a banner that said "COFFEE RINGS AND BAD DECISIONS" in Sam's handwriting, and Leo was beside her in a clean sweater, and she was serving coffee to strangers and hoping none of them were from Bean & Leaf.
+Tom had gotten them a booth through a contact who owed him a favor. The favor, it turned out, had been for a wedding where Tom had provided free coffee for three hundred people and had not complained once about the enormous quantity of Ethiopian he'd had to bring in. The contact, a woman named Renata who ran a roastery in Southeast, had said yes immediately.
 
-"Relax," Leo said. "Bean & Leaf isn't here. I told the organizer we'd take their slot. They didn't want it anyway."
+"Tom's a legend," Renata said when she showed up at the booth at 7:30 a.m. to help set up. "He once roasted a batch for my sister's wedding that was so good six people proposed at the table."
 
-"Are you sure?"
+"Six proposals is a lot of proposals," Maya said.
 
-"I'm sure. I'm also banned from the Bean & Leaf booth area. Security escorted me. It was dramatic."
+"It was a very romantic roast."
 
-Maya imagined it. She tried not to smile. "Was it dignified?"
+The booth was small — a folding table with a banner, a sample grinder, a brewer, and a stack of Mystery Bean Lottery tickets. Maya had brought the leftover roasted bags from Tom's first batch. She'd labeled them herself, using a label maker she'd bought at the drugstore the night before. The labels said: MYSTERY BEAN — OPEN FOR REVEAL. She'd also made a small sign that said ASK ABOUT THE 500-POUND RESCUE.
 
-"I've had worse Tuesdays."
+Sam arrived at 8:15 with a pastry box from the bakery down the street. "Brought backup," she said. "These are the chocolate croissants that make people cry."
 
-The crowd arrived at eleven. It was the kind of crowd that made Maya's heart both full and nervous — people who cared about coffee, who knew the difference between a natural and a washed process, who could identify a grapefruit note from across a room. These were not the casual drinkers who came for the free Wi-Fi. These were the initiates.
+Leo showed up at 8:45. He was wearing a gray sweater and jeans that Maya had never seen him wear before. He looked, she noted with a species of scientific curiosity, less like a suit and more like a man who might also drink beer at a brewery and own a dog. She pushed the observation away.
 
-And they liked her coffee.
+"Ready?" he said.
 
-"Where's this from?" a woman asked, holding a cup of the Yirgacheffe.
+"Relatively," Maya said. "Do you have the spreadsheet?"
 
-"Ethiopia," Maya said. "Single-origin. Small lot. I source it directly."
+"I have the spreadsheet. And a new tab I added last night called 'TWO WEEKS.' It has daily targets."
 
-"Direct trade?"
+"Let me guess. You're controlling."
 
-"Direct trade."
+"I'm organized."
 
-The woman nodded. She bought two bags. She gave Maya her business card. She said she was a buyer at a café in Sellwood and she wanted to carry Maya's beans.
+"Same thing."
 
-Maya looked at the card. She looked at Leo. Leo was grinning.
+The festival opened at 9. The first wave of people moved through the courtyard like water through a narrow gate — coffee enthusiasts with tote bags, tourists with cameras, people who just wanted to stand near an espresso machine and feel like they understood something. Maya stood behind the table and handed out samples and tickets and explanations. She told the story of the 500 pounds the way she'd practiced it — with humor, with humility, with the particular tone of a person who had made a mistake and was trying to make it better.
 
-"Direct trade," Leo said quietly. "You're killing it."
+It worked. More than worked. By 11 a.m., they'd sold all of the pre-printed tickets and had to start writing them on napkins. By noon, a line had formed. By 1 p.m., a woman from the food blog Eater Portland had appeared and taken photos. By 2 p.m., Maya had been interviewed by three different podcasters who wanted to know about the Mystery Bean concept.
 
-"I'm not killing it. I'm surviving it."
+Leo worked the crowd with a skill that Maya found both impressive and slightly infuriating. He knew how to talk to people. He knew how to make the lottery sound not like a desperate measure but like a brilliant marketing idea — which, Maya had to admit, it kind of was. He told the story of the 500 pounds with the attention to detail of a storyteller. He made people laugh. He made them feel like they were part of something.
 
-"Surviving is killing it when you have five hundred pounds of Ethiopian beans and a booth fee that I paid for."
+At 3:30, Maya took a break. She bought a coffee from a competing booth — a pour-over from a roastery in Hood River — and drank it on a bench while watching Leo talk to a group of customers. He was laughing at something. His hands were in his pockets. He looked comfortable. He looked, Maya thought with a sharp little twist in her gut, like he belonged there.
 
-Maya served the next customer. Then the next. By 2:00 p.m., they'd sold twenty-two pounds. By 4:00 p.m., thirty-one pounds. The booth had turned into a small ecosystem — a regular stream of people, most of whom came back for seconds, some of whom asked questions, a few of whom took cards and said they'd be in touch.
+"Hey," said a voice beside her. A man. Tall, scruffy, smiling. Holding two tacos. His name, Maya realized a moment later, was Derek, and he was the ex-boyfriend who had texted her last week with an apology that was so long it had required three messages. She hadn't replied. She'd been busy.
 
-At 5:00 p.m., a man in a blazer stopped at the booth. He was carrying a Bean & Leaf tote bag. Maya's stomach dropped.
+"Hey," she said, and it came out short.
 
-"Leo Bianchi," the man said. "I wondered if I'd find you here."
+"Derek. From third grade. We dated for a year."
 
-Maya tensed. This was it. Bean & Leaf had sent an emissary. This was how they destroyed her — quietly, publicly, with a smile and a handshake.
+"I know who you are."
 
-"Rachel," Leo said. The name was not a greeting. It was a warning.
+"Right. Look. I saw the post about the lottery. I wanted to come support. And I wanted to apologize properly. I was an asshole. I left without talking. I know that."
 
-Rachel Maitland had been Leo's boss. She was wearing a blazer that cost more than Maya's car. She had a smile that had been calibrated in a boardroom and a stare that could peel bark off a tree.
+Maya looked at the taco in his hand. "How's the taco?"
 
-"Leo," she said. "I see you found a new home."
+"Good. Al pastor. The pork is excellent."
 
-"She found me," Leo said. "I'm helping her sell her beans."
+"That's not what I asked."
 
-Rachel turned to Maya. Her smile softened, which was somehow worse. "Maya Chen. Coffee Rings and Bad Decisions. I've heard good things. Your Ethiopian is excellent. We tried to buy your lot last quarter."
+Derek's smile faltered. "I know. Look. Can we get coffee? Or something? I want to explain. I want you to hear me."
 
-Maya straightened. "You what."
+Maya looked at Leo across the courtyard. He was still talking to customers. He looked up and caught her eye. He waved, a small, quick wave, the kind of wave that said I see you and I'm on your side.
 
-"We tried to acquire your supply chain. You turned us down."
+She turned back to Derek. "I'm working," she said. "The shop is busy. I don't have time for apologies today."
 
-"Because you offered to pay me twelve cents a pound while you charge customers twelve dollars a bag."
+"I'll wait," Derek said.
 
-Rachel's smile didn't waver. "Supply chains are complicated. We offered what the market would bear."
+"Don't. It's a four-hour festival."
 
-"The market would bear more if you weren't cornering it."
+"Then I'll wait after."
 
-Rachel paused. She looked at the crowd — the people buying Maya's coffee, the ones holding their phones, the ones whispering to each other about the booth that wasn't Bean & Leaf. She looked at the banner. She looked at Maya.
+Maya stood up. She picked up the empty coffee cup. She looked at Derek, and she tried to see the person she'd dated, the person she'd loved, the person who'd left without a word. She saw a man in a flannel shirt holding two tacos and looking hopeful and slightly desperate.
 
-"You're good at this," Rachel said. It was not a compliment. It was an assessment.
+"I can't," she said. "Not today."
 
-"Thank you."
+She walked away. She went back to the booth. Leo was there, with a fresh batch of samples and a grin. "You missed a good one," he said. "A woman from Bend bought fifteen tickets."
 
-Rachel turned back to Leo. "We'll talk," she said, and she walked away.
+"Good," Maya said.
 
-Maya felt her hands shaking. She put them on the counter. She looked at Leo. "What did she mean, we'll talk?"
+"You okay?"
 
-Leo stared after Rachel. His jaw was tight. "She means she wants something."
+"Fine. Ex-boyfriend tried to talk to me."
 
-"What kind of something?"
+Leo's expression changed. It was subtle, but Maya noticed. "Which ex-boyfriend."
 
-"Not a good something," Leo said.
+"The one who left without a word. The one who's been texting me for a month with apologies I don't want to hear."
 
-The hours stretched. They sold more beans. The festival closed. They packed up, loaded the car, drove back to the shop, and counted the cash in the back room.
+Leo said nothing for a moment. Then he said, "Want me to make him leave?"
 
-Forty-three pounds sold.
+Maya laughed. It was a short, sharp sound. "You can't make him leave. It's a public festival. He has rights."
 
-Four thousand dollars in one day.
+"I have rights too. The right to stand between you and someone who was an asshole to you."
 
-Maya sat on the floor of the back room, surrounded by empty burlap sacks and coffee cups, and laughed. It was a real laugh this time. Not the sharp bark from before, not the snort from the refrigerator incident, but a full, exhausted, disbelieving laugh that came from somewhere deep in her chest.
+"That's a very Bean & Leaf thing to say."
 
-"We're not dead," she said.
+"I have rights," Leo repeated. "The right to stand here and protect my favorite coffee shop from ex-boyfriends."
 
-"Not yet," Leo agreed.
+Maya's chest did something. She told herself it was the altitude. It was the sun. It was the 485 pounds of green coffee she'd stored in the back room that were now watching her through the wall.
 
-He sat beside her on the floor. They were shoulder to shoulder, surrounded by the ruins of a very successful day. The air smelled like coffee and triumph and, faintly, the oat milk that had never fully cleaned from the refrigerator.
+"Don't," she said.
 
-"We should get a drink," Leo said.
+"Don't what."
 
-Maya blinked. "What."
+"Don't be charming right now. I'm busy."
 
-"A drink. To celebrate. Not coffee. Something else. Something with less coffee in it."
+"Busy being charmed."
 
-Maya considered. She thought about the spreadsheet. She thought about the fourteen thousand dollars, which now felt slightly less impossible. She thought about the almost-kiss that had been interrupted by a refrigerator, and the way she'd laughed at it, and the way she'd wanted to lean in again.
+"Busy selling lottery tickets."
 
-"A drink," she said. "Fine. But I'm picking the place."
+"Lottery tickets are sold. You're standing here looking like you just ran a marathon and won. What's up?"
 
-"Where are we going?"
+Maya looked at him. "Nothing."
 
-Maya stood. She offered Leo a hand. He took it. The contact lasted longer this time — just long enough for Maya to feel the warmth of his hand, the slight roughness of his palm from handling burlap sacks, the particular electricity that had nothing to do with caffeine and everything to do with the fact that they were two people who'd accidentally become partners in a business that shouldn't have worked but somehow did.
+"Liar."
 
-"Somewhere," Maya said, pulling him up, "that doesn't serve coffee."
+She wanted to argue. She wanted to deny. But Leo had a look that suggested he'd already figured it out and was merely waiting for her admission. It was the look of a man who'd spent three years in corporate negotiations and had developed a sixth sense for when people were lying about feelings.
 
-Leo smiled. "Lead the way."
+She sighed. "An ex tried to talk to me at the table. I told him I was busy. He said he'd wait."
 
----
+"What did you say."
 
-*End of Chapter 7*
+"I said I couldn't today. He's still here, somewhere."
+
+Leo scanned the crowd. He had a way of scanning crowds that was efficient, military even — not aggressive, just aware. "Want me to handle it?"
+
+"No. I don't want you to handle my ex-boyfriend. That's not how this works."
+
+"How does this work?"
+
+Maya looked at him. She tried to find words. The words were somewhere behind the noise of the festival, behind the smell of coffee and pastries and the distant music from the brewery stage. She found one. "I don't know."
+
+Leo nodded. He didn't push. He just reached over and squeezed her hand, briefly, and then went back to the table, where a woman was waiting with a question about the Mystery Bean Lottery.
+
+Maya watched him. She thought about Derek, who was probably still somewhere in the crowd, eating a taco and feeling rejected. She thought about Leo, who was here voluntarily, on a Saturday, helping her sell mystery coffee. She thought about the shop, which was technically a business but which felt like a child she'd adopted and was trying to keep alive with coffee and stubbornness and lottery tickets.
+
+She went back to the table. She sold tickets for two more hours. At 5 p.m., the festival ended. They packed up. Tom arrived with the second truck, this one full of roasted bags, and Maya signed for it with a hand that was shaking.
+
+By 7, the booth was down. The boxes were stacked. The shop was quiet.
+
+Leo walked her to her car. The evening was cool and smelled like rain and brewing beer from the brewery behind them. They stood by her Honda Civic, which had a bumper sticker that said I ❤️ COFFEE and a dent on the passenger side that Maya had gotten when she'd parallel-parked badly in front of the shop and had decided to leave it as a badge of honor.
+
+"Saturday," Maya said.
+
+"Yeah," Leo said. "Saturday happened."
+
+"You were... helpful."
+
+"I like being helpful. It's not something Bean & Leaf lets me do very often."
+
+Maya unlocked her car. She put the tickets in the passenger seat. She looked at Leo. He was standing there, gray sweater, tired eyes, the light from the streetlamp catching the rain on his jacket. She thought about kissing him again. She thought about the espresso machine and the almost-kiss and the way their hands had touched when they'd stacked the Mystery Bean bags.
+
+"Goodnight, Leo," she said.
+
+"Night, Maya."
+
+She drove home. She didn't look in the rearview mirror because she knew, if she did, she would see him standing there, watching her go, and she would want to turn around.
+
+She didn't turn around.
+
+But she drove slowly.

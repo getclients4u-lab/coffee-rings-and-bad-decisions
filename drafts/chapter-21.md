@@ -94,6 +94,84 @@ When they pulled away, Maya was smiling. She was the kind of smiling that made h
 
 They kissed again.
 
+They heard footsteps on the stairs. Sam was coming up, holding a tote bag.
+
+"Never mind," Sam shouted, and they heard her footsteps retreating.
+
+They laughed.
+
+They spent the rest of the morning in the kitchen, talking. Leo told her about Seattle. He told her about Reputable Coffee Co. He told her about the office with the window and the team of six and the salary and the way the barista had spelled his name wrong on his first morning and how he'd realized he didn't care.
+
+"You left because of me," Maya said.
+
+"I left because I didn't know how to stay," Leo said. "I thought I was doing the smart thing. Then I got there and I realized I'd made the wrong decision. I called you that first night because I wanted to hear your voice. I didn't accept the job until after I called you. I waited."
+
+Maya's eyes stung. She reached across the table and took his hand. "I'm glad you made the wrong decision."
+
+"I'm glad too."
+
+They went downstairs together. Sam was at the counter, pretending to ignore them. Mrs. Hsu was still at her table, reading her newspaper. The shop was warm and bright and full of customers.
+
+Maya looked around. She looked at Leo. She looked at the espresso machine and the chalkboard and the bean shelves and the loyalty card scanner and the register that still beeped too loud.
+
+She took a breath.
+
+"Welcome back," she said.
+
+"Thanks," Leo said.
+
+He came around the counter. He stood beside her. He took over the cappuccino machine like he'd never left.
+
+Maya watched him tamp. She watched him steam milk. She watched him hand a latte to a woman who complimented the foam.
+
+"Still got it," Leo said, turning to her.
+
+"Don't get cocky," Maya said.
+
+"I'm not being cocky. I'm being accurate."
+
+They smiled at each other. The electricity was back, but it was different now. It wasn't the nervous static of before. It was warm. It was steady. It was something they could stand inside without worrying that it would blow up the shop.
+
+The bell jingled. A customer walked in.
+
+"Welcome to Coffee Rings," Maya said.
+
+She held Leo's hand under the counter, just for a moment, as the customer ordered a black coffee.
+
+Leo winked at her.
+
+It was the best day she'd had in a month.
+
+That night, after closing, after the last customer had left, after they'd wiped down the counter and counted the money and eaten tamales from the truck on 34th, Leo said, "I have something to tell you."
+
+"What," Maya said. They were sitting on the floor in the back room, surrounded by bean sacks and takeout containers.
+
+"I called Tom," Leo said. "He wants to partner with you. Distribution. Bean partnership. No buyout. No acquisition. Just him, you, and the beans."
+
+Maya stared at him. "Tom."
+
+"Tom from Bend. The guy who started Bean & Leaf. The guy who still has connections. He wants to work with us. With you." Leo was quiet. "I told him about the shop. I told him about you. He said yes."
+
+Maya didn't know what to say. She thought about the Seattle job offer and the way Leo had flown out at 6:00 a.m. and the way he'd come back at 10:00 a.m. with a bag and a jacket she didn't recognize and a voice that sounded like home.
+
+She looked at Leo. She looked at the man who'd been sent to destroy her. She looked at the man who'd stayed. She looked at the man who'd kissed her in the kitchen and meant it.
+
+She leaned across the bean sacks and kissed him.
+
+It was a coffee-stained, tired, wonderful kiss. It tasted like tamales and Yirgacheffe and the particular sweetness of things that take time to get right.
+
+When they pulled away, Maya was smiling. She was the kind of smiling that made her cheeks hurt.
+
+"Okay," she said.
+
+"Okay," Leo said.
+
+He kissed her again.
+
+Outside, the refrigerator hummed.
+
+Inside, they were finally home.
+
 ---
 
 *End of Chapter 21*

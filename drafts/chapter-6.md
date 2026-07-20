@@ -2,84 +2,219 @@
 
 The Mystery Bean Lottery launched on a Friday.
 
-Maya had designed the tickets herself. She'd printed them on the shop's creaky inkjet printer, which had survived three years of menu printing and was now being asked to produce two hundred tiny lottery tickets with enough resilience to survive pockets and purses. The tickets said "COFFEE RINGS AND BAD DECISIONS — MYSTERY BEAN LOTTERY" in her handwriting, which Sam called "charming" and which a customer had once asked if it was a "cry for help."
+Maya had designed the tickets herself. She'd printed them on the shop's creaky inkjet printer, which had survived three years of ink cartridges and occasional threats of being replaced with something modern. The tickets were quarter-sheet paper, perforated with a serrated edge that Maya had achieved by folding the paper and running it through the printer twice. They said:
 
-It was, Maya admitted to herself, kind of both.
+MYSTERY BEAN LOTTERY
+Coffee Rings and Bad Decisions
+$10 / ticket = 1/2 lb mystery roast.
+Roast: Single Origin or Blend.
+Origin: Ethiopia, Colombia, Guatemala, Kenya, or Surprise.
+100% proceeds → Local Coffee Rescue.
+Winner gets bragging rights and first dibs on beans.
+#SaveTheBeans
 
-The tickets went on sale at 8:00 a.m. The first one was bought by a regular named Dave, who paid with exact change and then spent ten minutes debating whether he should buy a second one because "the odds seem good" and Maya had to explain that the odds were actually terrible because there were only twenty winning tickets out of two hundred, which was not good odds at all, but Dave bought another ticket anyway because he was a man who believed in fortune more than mathematics.
+She'd used a bright orange marker to color the edges, because orange was the color of urgency and also because it was the only highlighter she had left. Sam had said the tickets looked like something a child would make for a bake sale. Maya had said that was the point. Real coffee shops didn't have lottery tickets. Bean & Leaf didn't have lottery tickets. Coffee Rings and Bad Decisions was not a real coffee shop in the way that mattered to bean-counting executives. It was a speakeasy with better espresso.
 
-By 10:00 a.m., they'd sold sixty tickets.
+Tom arrived at 9:30 a.m. with a truck. Not a small truck. A medium-sized truck that said RIVIERA & SONS on the side and that contained, Maya discovered upon opening the rear door, exactly 500 pounds of green coffee in jute bags, each bag stamped with a origin and a weight and a small sticker that said FARMER COOP #47.
 
-By noon, one hundred and twenty.
+"Half of these are already roasted," Tom said, leaning against the truck door. "I finished the batch yesterday. The other half I'm leaving green. You can roast what you need as you go."
 
-By 2:00 p.m., all two hundred tickets were gone.
+"I have a roaster," Maya said, "but it's the size of a toaster oven."
 
-Maya stood behind the counter, holding a wad of cash that was thicker than she'd expected, and stared at it like it might bite. "Fourteen hundred dollars," she said.
+"Then we'll roast in batches. Small batches. Like you're running a real operation instead of a shop with a payroll that consists of you and your one employee."
 
-"Not fourteen thousand," Sam said, standing beside her with a handful of leftover tickets that she was using as a fan. "But it's a start. We need seven more of these days. We need a viral moment."
+Maya looked at the truck. She looked at the jute bags. Each bag was roughly the size of a small person. There were fifty of them. Fifty bags of coffee that she had accidentally purchased and that Tom was now either returning or staying in her parking lot with, she couldn't tell which.
 
-"We need a miracle," Maya said.
+"What's the plan?" she said.
 
-"We need a TikTok," Sam said.
+"The plan is we sell these through the lottery over the next four weeks. We also set up a table outside the shop on weekends. We make the experience part of the draw. People come for the story. They stay for the coffee. They tell their friends. Their friends buy tickets. It snowballs."
 
-Maya had never made a TikTok. She didn't own TikTok. She owned Instagram, which she updates irregularly and which she'd once described as "a digital garden where I plant photos of coffee and wait for strangers to appreciate it." Sam had said that wasn't how Instagram worked. Maya had said she didn't care how Instagram worked. She cared about coffee.
+"That sounds like a plan that requires me to be social."
 
-Now, apparently, she needed a TikTok.
+"You're already social. You run a coffee shop."
 
-"Who's making the TikTok?" Maya asked.
+"I run a coffee shop in which the primary form of social interaction is 'latte down, table four.'"
 
-"I am," Sam said. "It's going to be called 'Coffee Shop vs. Bean & Leaf: The Battle for Alberta Street.' It's going to have dramatic music and text overlays and a part where I throw beans at the camera."
+"Latte down is social," Tom said. He was smiling. It was a smile that suggested he'd had this conversation before, with other small shop owners, and that he knew how it ended. "Trust me. The lottery works. I've seen it. I helped another shop in Bend move three hundred pounds of accidental Yirgacheffe last year. They're still selling the mystery blend."
 
-"That sounds —"
+"Bend has a smaller population than Portland."
 
-"Viral?"
+"Portland has more people who will buy mystery coffee out of solidarity."
 
-"It sounds like Sam making a TikTok."
+That was, Maya had to admit, a fair point.
 
-"Same thing."
+They unloaded the truck. Sam appeared at 10:15, having just finished the morning prep, and stared at the jute bags stacked along the wall. "Is that all coffee?"
 
-The lottery money was in the register, but Maya knew it wasn't enough. The bean order was four weeks. They had three weeks to sell it. Fourteen thousand dollars in twenty-one days. The math was bad. The math was terrible. The math was the kind of math that made her want to close the shop, move to the woods, and live on mushrooms and silence.
+"All the coffee," Maya said.
 
-Instead, she opened the laptop and started planning.
+Sam picked up a bag. It was heavy. "We should start a GoFundMe."
 
-Leo arrived at 6:30 a.m. the next day. He was wearing a sweater now. The navy suit was gone. He looked like a normal person, which was somehow more alarming because normal people had normal problems, and Leo had just exited a corporate job under dramatic circumstances, which meant he was about as normal as a raccoon in a tuxedo.
+"We already have a lottery."
 
-"I have a contact at the coffee festival," he said.
+"GoFundMe would have been faster."
 
-Maya looked up. They were in the back room, surrounded by sacks. The smell of green coffee was so strong it was becoming a personality. "You have a contact."
+"This is more dignified."
 
-"Bean & Leaf was going to have a booth at the Portland Coffee Festival this weekend. We got canceled. The organizer still has the slot. I asked if we could take it."
+"Dignity doesn't buy espresso machines."
 
-Maya stared at him. "You asked?"
+Tom laughed. He was a man who laughed easily, which Maya liked. People who laughed easily were usually not the kind of people who called you at 8 a.m. to discuss terms. "I'll be back on Saturday with the roasted bags. You'll have the lottery ready?"
 
-"I asked. She said yes. We can have a booth for two hundred dollars. We can sell beans, do tastings, hand out flyers. It's exactly the kind of exposure we need."
+"Lottery will be ready," Maya said. "Tickets are printed. Stamps are... handmade. It'll be rustic."
 
-"Two hundred dollars," Maya said.
+"Rustic is good. Rustic is authentic."
 
-"The festival draws five thousand people. Coffee professionals. Journalists. People who actually care about where their beans come from. It's the perfect venue."
+Tom drove away. Maya stood in the doorway and watched the truck turn onto Alberta and disappear. The jute bags were stacked behind her. The shop smelled like coffee and possibility and also like burnt milk because Sam had forgotten to watch the steam wand again.
 
-Maya thought about the fourteen thousand dollars. She thought about the two weeks they had. She thought about the lottery money, which had been a great start but wasn't going to finish the race.
+Saturday arrived with rain. Perfect, Maya thought. Rain always made the festival better — the kind of rain that was light enough to keep people outside but soft enough to make them seek coffee. It was Portland rain, the rain that had made the city what it was and that most residents wore like a second skin.
 
-"We don't have two hundred dollars for a booth," she said.
+The Coffee Rescue was set up by 8 a.m. Tables. Chairs. A banner Sam had made with construction paper and a marker that said COFFEE RINGS AND BAD DECISIONS — WE'RE DOING FINE, THANK YOU. The espresso machine hummed. The Mystery Bean Lottery tickets were arranged in a wooden box that Maya had found in the back room and that had probably held old receipts at some point.
 
-Leo produced a check from his pocket. It was personal. Leo Bianchi. No company letterhead. The amount was two hundred and twelve dollars. "I've got booth fees covered. Consider it an investment in my own survival."
+The first person to buy a ticket was Mrs. Hsu.
 
-Maya looked at the check. She looked at Leo. She felt the familiar resistance — the desire to say no, to reject his help, to prove she could do this alone. But the words wouldn't come. Because she couldn't do this alone. She'd been doing it alone for three years, and alone had gotten her a loan and a declining business and a caffeine-fueled email that had nearly sunk her.
+Maya stared at her. Mrs. Hsu was standing at the table with an umbrella and a raincoat that looked like it had been purchased before Maya was born. She held a ten-dollar bill.
 
-"Fine," she said. "But you're doing the booth setup. I'm not waking up early for a trade show."
+"Mrs. Hsu," Maya said. "You don't have to —"
 
-"I wouldn't dream of it," Leo said.
+"I know I don't have to. I want to. And I want three tickets. And I want the espresso."
 
-He smiled. Maya didn't smile back. She thought about the refrigerator. She thought about the almost-kiss that hadn't happened because the fridge had intervened like a deus ex machina made of dairy. She thought about the way her chest felt when he looked at her with that particular combination of earnestness and wit.
+Maya wrote three tickets. She made the espresso. Mrs. Hsu drank it standing up, looking out at the rain. "Your floorboards are still storytelling," she said.
 
-"You're paying for the booth," she said. "But I'm choosing the coffee we serve at the festival. And we're not doing the Mystery Bean lottery there. That's a disaster waiting to happen."
+"Mrs. Hsu, I need to tell you about the beans."
 
-"Agreed," Leo said. "We're serving the Yirgacheffe. Black on black. No gimmicks."
+"Later. Coffee first."
 
-Maya nodded. It was the right call. The Yirgacheffe was the good stuff. The festival was the right crowd. They could sell forty pounds in two days if they worked it right.
+By 9 a.m., the line was ten people deep. By 10 a.m., a local TV station had arrived — not to do a story, but because a producer had seen Claire's Instagram post and had decided this was the kind of soft human-interest story that filled a weekend slot. They interviewed Maya for seven minutes. She talked about the lottery and the 500 pounds and the rescue and the community. The producer said, "So it's like Oceans Eleven, but with coffee?"
 
-She just hoped they wouldn't accidentally fall in love while doing it.
+"Something like that," Maya said.
 
----
+The piece aired at noon. By 1 p.m., the shop had sold out of pastries. By 2 p.m., the lottery tickets were gone. By 3 p.m., Maya had raised $4,120 — not enough to cover the full $14,200, but enough to make the spreadsheet look less like a suicide note and more like a plan.
 
-*End of Chapter 6*
+Leo showed up at 3:30, carrying a portable speaker and a playlist Sam had texted him. He set up the speaker on the folding table and played music that was exactly the kind of music that made customers buy more coffee — gentle, familiar, not intrusive. He stood at the counter for two hours and sold Mystery Bean tickets with the focus of a man who had been trained in sales technique and who was now applying it to something that was definitely not a sales technique but rather a community rescue.
+
+By 5 p.m., when the rain had stopped and the festival was winding down, Maya sat on a folding chair and counted the total cash. $4,872. Seventy percent of the way there. Tom had texted an hour ago to say that the roasted beans would be ready next week. Claire from the Observer had called to say the story would run on Monday. Sam was asleep on a couch in the back room.
+
+Leo sat beside her. They didn't talk. They watched the street. The rain had left everything shiny and wet and reflective, and the light was the kind of gold that only exists in Portland for about twenty minutes a day, and Maya felt, with a sudden and almost unbearable precision, that she was exactly where she was supposed to be.
+
+She looked at Leo. He was watching the street too, his expression unreadable. "This worked," she said.
+
+"Partly," Leo said. "The rest is logistics."
+
+"The rest is also feelings."
+
+Leo turned to her. "Which feelings."
+
+Maya's mouth opened. Then it closed. She had been about to say something true, something she'd been wanting to say since Day Three when she'd realized he was not what she'd expected. Instead, she said, "The feeling that we should get coffee tomorrow."
+
+Leo smiled. "Tomorrow is Sunday. The shop will be closed."
+
+"Then Monday."
+
+"Monday I have a meeting about the pharmacy location. I'm going to tell them my honest opinion. Which is that it's a terrible idea and they should find another building."
+
+Maya looked at him. She had a sudden vivid image of Leo standing in a boardroom, telling executives that their plan was bad, and then getting fired, and then showing up at her shop with his severance package and his navy suit and his espresso-making skills. It was an image that made her chest tight.
+
+"You're really going to tell them," she said.
+
+"I'm really going to tell them. I'm not going to watch that venue get turned into a pharmacy while the neighborhood loses the only music space it has left. Not for a paycheck. Not for anything."
+
+Maya felt something break in her chest — not a bad breaking, not the kind that came from poor financial decisions, but the kind that came from realizing that someone you'd written off as an enemy was actually the person who might save the things that mattered.
+
+She reached across the gap between them. She touched his hand. Just for a moment. A quick, electric touch that said something she wasn't ready to say out loud.
+
+Leo's hand closed around hers. Not tightly. Just enough. Enough to say he understood.
+
+The moment lasted three seconds. Then Sam appeared from the back room, yawning, and said, "Coffee break? I call dibs on the last croissant."
+
+The moment broke. Maya pulled her hand back. Leo stood up. They both went to the counter. The espresso machine hissed. The music played. The rain had stopped, and the evening was beginning, and Maya had never felt more cautiously hopeful.
+
+She had work to do. But for the first time in months, the work felt like something she chose rather than something she was running from.
+
+Maya opened the shop the next morning with a new philosophy: the lottery was not a desperate measure. It was a new way of doing business. It was a model. It was, she told herself, the future of local retail.
+
+She was, of course, lying. But it was a useful lie.
+
+The lie helped her post on social media with confidence. It helped her smile at customers who bought tickets with the particular enthusiasm of people who felt like they were part of a movement. It helped her stand at the counter and look Bean & Leaf flyers in the eye — metaphorically — and say: "We are not afraid of you."
+
+Sam, who had successfully operated a rebellion inside a corporate office before becoming a barista, understood the value of useful lies. "My last job," she said, "consisted of ninety percent useful lies. The other ten percent was meetings about the lies."
+
+The day was long. Maya worked the front. Leo worked the back, on a spreadsheet that was now two pages long and included a section called "Community Engagement Strategy." Tom arrived at noon with the first roasted batch. He'd developed three Mystery Bean blends:
+
+1. "The Wildcard" — single-origin Ethiopian, unpredictable, bright.
+2. "The Smooth Operator" — Colombian, chocolatey, reliable.
+3. "The Triple Threat" — a blend of all three origins, designed for people who couldn't choose.
+
+"Blend number three is my favorite," Tom said. "But don't tell the other blends. They have feelings."
+
+"You're a romantic," Maya said.
+
+"I'm a roaster. Romantics make better coffee."
+
+By 3 p.m., the pop-up setup outside the shop was complete — folding tables, banners, the roaster humming its particular song of ambition and heat. Maya stood at the window and watched the street. People were stopping. They were taking photos. They were asking questions. A group of teenagers stopped and bought seven tickets and then posted about it on TikTok, which was exactly the kind of organic marketing Maya had been hoping for and which she now realized she had no control over, which was both terrifying and exhilarating.
+
+Leo appeared beside her. "They're here," he said. "The food blogger. Eater Portland."
+
+"Are they going to write about us?"
+
+"They already messaged. They want fifteen minutes with you and the roaster."
+
+"Fifteen minutes of fame," Maya said. "I can do fifteen minutes."
+
+She did fifteen minutes. She told the story again. She told it better this time. She let herself be seen — the tired parts, the honest parts, the parts where she talked about the loan and the stress and the particular way running a small shop felt like holding water in your hands. The blogger wrote. The camera rolled. The afternoon sun came through the window and made the coffee steam glow.
+
+At 5:30, customers still streamed in. The Mystery Bean Lottery was reaching its end — they'd printed 400 tickets and were down to the last hundred. Maya had decided, without consulting anyone, that they'd do a second run. The beans were there. The demand was there. The community was there. Why stop?
+
+She told Leo. He said, "We need to check the inventory."
+
+"I already checked. We have enough for another two hundred tickets. Maybe more."
+
+"Then we run more tickets."
+
+They ran more tickets. They ran them until 7 p.m., when the light went and the street got cold and the last customer bought the last ticket and Maya signed their name in a notebook that had become, without anyone really planning it, a registry of the people who'd saved the shop.
+
+She stood in the doorway after closing and watched the street. She saw the Bean & Leaf pharmacy sign, half-installed, its blue-and-white letters spelling out something that was supposed to represent progress but which Maya saw as a warning. She saw the music venue, dark and boarded up. She saw the Thai restaurant, lit and warm. She saw a woman walking a dog that was too big for the neighborhood, which was somehow exactly right.
+
+Leo came out. He stood beside her. He didn't say anything for a long time. Then he said, "We should talk about the Bean & Leaf offer."
+
+Maya stiffened. "I don't want to talk about that."
+
+"We have to talk about it. It's not going away."
+
+"I know it's not going away. That's why I don't want to talk about it. Talking makes it real. Not talking makes it... less real."
+
+"That's not a strategy."
+
+"It's my strategy."
+
+Leo sighed. He was quiet for a moment. Then he said, "I have something else to tell you. Something about the pharmacy location."
+
+Maya turned to him. "What about it."
+
+Leo looked at the street. He looked at the Bean & Leaf sign. He looked, Maya thought, like a man who was about to say something that would change things. "David Park — my old boss — he didn't just come to your pop-up to offer you a buyout. He came because he was worried. About the project. About the neighborhood. About the fact that some of us on the acquisitions team thought the pharmacy was a bad idea from the start."
+
+"Then why is it happening."
+
+"Because the CEO wants it. Because the numbers look good on paper. Because nobody asked the neighborhood what it wanted."
+
+Maya stared at him. "You knew."
+
+"I knew. I've known for months. I couldn't say anything. Not as Leo Bianchi, acquisitions director. Not without getting fired. But now I'm not anymore. So I can say it."
+
+"You're fired."
+
+"I resigned. Effectively. I'm in the two-week notice period. After that, I'm unemployed and enthusiastic about coffee."
+
+Maya laughed. It was a short, sharp sound. "You resigned because of the pharmacy."
+
+"I resigned because I couldn't keep working for a company that was willing to erase this neighborhood for a pharmacy. Because I met you. Because you made me remember why I got into this business in the first place."
+
+Maya looked at him. She thought about the kiss. She thought about the partnership. She thought about the fact that she was standing in the doorway of a coffee shop that was about to be erased, with a man who'd just sacrificed his job for a neighborhood he'd lived in for three years.
+
+"You didn't have to do that," she said.
+
+"I know."
+
+She kissed him then, right there in the doorway, under the streetlamp, while the Bean & Leaf sign glowed across the street and the music venue waited, dark and patient, for whatever came next. The kiss was different this time — not urgent, not exploratory, but certain. It said: I'm here. It said: I'm not running. It said: whatever comes, we face it together.
+
+When she pulled away, she said, "We're not selling the shop. We're not taking their offer. We're going to win this on our own terms."
+
+"That's what I was hoping you'd say," Leo said.

@@ -1,99 +1,125 @@
 # Chapter 2 — The Coffee Ghost of Alberta Street
 
-The shop had once been a dry cleaner. Before that, a bakery. Before that, according to Mrs. Hsu, who'd owned the building since 1987, it had been a speakeasy. Maya liked the speakeasy theory best because it gave her a justification for the uneven floors and the door that stuck when it rained. Historical preservation, she called it. Her landlord called it "the door needs oil." Her customers called it "character."
+The shop had once been a dry cleaner. Before that, a bakery. Before that, according to Mrs. Hsu, who'd owned the building since 1987, it had been a speakeasy during Prohibition — a detail she offered with the particular pride of a woman who'd discovered good real estate before anyone else in the neighborhood. Maya liked imagining it that way sometimes: bodies pressed close in a dim back room, whispers about shipments and secrets and the kind of courage you needed to keep something illegal running while the cops watched from down the street. The present was quieter. The present was oat milk and Bluetooth speakers and a cash register that beeped louder than a smoke detector.
 
-Maya called it a symptom.
+"It was where the bootleggers met," Mrs. Hsu said, standing in the doorway with her arms crossed and her expression suggesting that she had personally raided the speakeasy, and that it had been adequate. "The floorboards still creak. I've had three contractors tell me they're normal floorboards. I tell them they're not normal floorboards. They're storytelling floorboards."
 
-She unlocked the front door at 6:45 a.m., as she did every morning, and the bell jingled with the particular exhausted screech that said it had been awake longer than she had. The espresso machine hissed when she turned it on. The refrigerator hummed a note that was technically not a B-flat but close enough that Sam had once composed a three-minute jazz piece using only the fridge as accompaniment.
+She said it with her chin up, as if the floorboards themselves were a lawsuit waiting to happen. Maya had learned to interpret Mrs. Hsu's landlord dialect after three years of listening carefully and never asking twice. When Mrs. Hsu said "the floorboards are storytelling floorboards," she meant "the foundation is fine but I want you to be a little afraid of it." When she said "I've raised the rent by four percent," she meant "I've raised the rent by four percent and also I'm going to talk about my nephew for fifteen minutes." When she said "have you considered offering pastries again?" she meant "you are failing at the one thing that made me overlook the time the plumbing exploded."
 
-"Character," Maya muttered, tying her apron. "We have character."
+Maya was still working on the nephew system. So far she had identified three nephews, two careers in technology, one that involved something with wind turbines, and a general sense that Mrs. Hsu wanted to be helpful while simultaneously making sure Maya understood who held the lease.
 
-The shop had four tables, a window that looked out at Alberta Street's ever-shifting ecosystem of vintage stores and people with very specific eyebrows, and a chalkboard menu that Maya still wrote by hand because the last time she'd tried to print new ones, the printer had died mid-vow. It had been a Tuesday. She still remembered the exact moment: 10:17 a.m., glob of ink on the letter E in "Ethiopian."
+"Storytelling floorboards," Maya said, trying the phrase on for size. "I'll keep that in mind."
 
-She replaced the printer the next day. She kept the stained menu because it felt like part of the shop's constitution.
+"You should. They tell stories about people who didn't pay their rent on time."
 
-By 8:30, the morning rush was a controlled disaster. Three regulars, two tourists who had wandered in because the smell of coffee pulled them in like a siren song written in roast rather than words, and one person on a laptop who'd been there since opening and whose only interaction with another human being had been to ask if the shop had Wi-Fi. Maya had told him yes, and then she'd told him the Wi-Fi password, and then she'd told him the Wi-Fi password again, and then she'd told him the Wi-Fi password a third time while making a face that said "if you ask me for food I'm charging you rent."
+Maya smiled the tight smile she used when Mrs. Hsu said things that were technically jokes but also technically warnings. It was the kind of smile that said I hear you and also I am choosing not to flinch. "Rent's always on time, Mrs. Hsu."
 
-"Rough morning?" Sam asked, appearing from the back room with a tray of scones that were somehow both underbaked and miraculous.
+"We'll see."
 
-"Table Four is a Wi-Fi smuggler."
+Mrs. Hsu left. The door closed. The bell above the door jingled once and then went quiet, as if it had also learned to fear the landlord's visit. In her wake she left the faint smell of lily perfume and something else — faint, sharp, expensive. Maya had never seen Mrs. Hsu wear perfume that smelled like anything other than discipline, but this was different. It was a scent that said I am not worried about you merely because I can afford not to be.
 
-"Table Four is a spirit. Table Four has been here longer than some of our customers. Table Four is why we have a 'no laptops on weekends' rule that only exists in our heads."
+Maya turned back to the counter. Sam was doing something involving a thermometer and a very serious face, which meant she was calibrating the espresso machine again. The machine had been calibrated so many times that Maya sometimes suspected Sam was performing a ritual rather than maintaining equipment. Sam had been with her since month two, when she'd showed up with a barista résumé written entirely in Sharpie and an attitude that suggested she'd been denied entry to somewhere important. Maya had hired her without reading the résumé. It had been one of the best decisions she'd made since she'd bought the place — second only, perhaps, to not throwing the espresso grinder through the front window the week before.
 
-"Table Four is a metaphor," Maya said.
+"Did you survive the Hsu interrogation?" Sam asked without looking up. The thermometer beeped twice. Sam wrote something in a notebook that Maya was fairly certain was a grinder grimoire.
 
-"Table Four is why we need the Bean & Leaf money," Sam said.
+"I survived. She mentioned the speakeasy floorboards again."
 
-Maya's jaw tightened. She didn't want to talk about Bean & Leaf on a morning like this. She didn't want to think about the three-year loan that had been the best decision she'd ever made and the worst financial risk she'd ever taken. She'd bought the shop from a retiring couple who'd run it for twenty years and left with a clean conscience and a boat in Florida. Maya had bought it with a dream and a credit card. The loan was the bit in between.
+"Let me guess. They creak in Morse code."
 
-"What's the bean situation?" Sam asked, reading her face with that particular friend-sight that was somehow more accurate than a credit score.
+"Something like that."
 
-"The bean situation," Maya said slowly, "is a situation."
+Sam finally looked up. She was wearing an apron that said I SURVIVED ANOTHER MEETING THAT SHOULD HAVE BEEN AN EMAIL, which she had received as a gift from her sister and which she wore with the particular pride of someone who'd survived many meetings. Her hair was half up, held by a clip Maya had found on the sidewalk three years earlier and accidentally kept. "You want me to run a grinder diagnostic or do you want to tell me what's actually on your mind?"
 
-"Uh-oh."
+Maya hadn't known she had a "what's actually on your mind" face, but apparently she did. Sam had always been better at reading people than Maya was, which was exactly why Maya kept her around. Maya told her about the invoice. She told her about Tom. She told her about Leo and the referral and the fact that she'd thrown his business card in the trash but had still memorized his face, which was a detail she found herself unable to explain even to herself.
 
-"Last night. Caffeine. Email. A number that started with five."
+Sam listened without interrupting, which was rare. Sam usually listened while multitasking, polishing steam wands or rearranging pastry cases or staring at the wall as if it had personally disappointed her. But now she was still, her thermometer forgotten on the counter, her eyebrows doing a slow climb toward her hairline.
 
-Sam's eyes went wide. "Five hundred."
+"So," Sam said when Maya finished, "let me get this straight. You have a suit from Bean & Leaf who's bold enough to refer you to an importer, you have five hundred pounds of Ethiopian you can't afford, and we have Saturday's fundraiser."
 
-"Five hundred."
+"Yes."
 
-"Pounds."
+"And Mrs. Hsu's floorboards are judging us."
 
-"Pounds."
+"I believe so."
 
-Sam laughed. It was a laugh that was supposed to be reassuring but sounded more like the laugh of someone who'd just watched their best friend handcuff themselves to a descending airplane. "Okay. A five-hundred-pound coffee order. What's the damage?"
+Sam nodded. She had a way of nodding that suggested she was filing information into a mental category called Things That Are Not My Problem But I Will Help With Anyway. It was a large category. Maya had seen her use it for median-sized disagreements with delivery drivers, existential crises about latte art, and at least one emergency involving coins and a vending machine. "Here's what we do. First, we call Tom. Second, we figure out if five hundred pounds of Ethiopian is actually a disaster or a opportunity. Third, we prep for Saturday and we make it count. Fourth, we make Leo regret ever wearing a suit that cost more than our espresso machine."
 
-"Fourteen thousand dollars."
+"What's the part where we panic?"
 
-Sam stopped laughing. "Fourteen thousand dollars."
+"This is the panic part."
 
-"Fourteen thousand dollars."
+It was the least panic Maya had felt all morning. She laughed. It came out rusty, like a hinge that hadn't been oiled in a while. She'd forgotten what it felt like to not handle everything alone. "Okay. What's the plan?"
 
-"We sell coffee for three dollars a cup."
+"The plan is I take the morning prep shift tomorrow and you spend three hours with Tom on the phone. I'll text you at seven. You answer. You negotiate. Then we drink the good wine."
 
-"Do you want to do the math?"
+"The wine's for after we hit sixty percent of yesterday's revenue."
 
-Sam did the math. "Four thousand six hundred sixty-six cups of coffee. Which at our current rate is approximately six months of cups."
+"The plan has been updated," Sam said. "The wine is now for after you call Tom."
 
-"Fourteen thousand dollars," Maya said, "is exactly how much we don't have."
+Maya looked at her phone, at the blank screen, at the email she'd drafted but not sent. She felt a flicker of something she hadn't felt in months — not hope, exactly, but the thing that came before hope, the muscle memory of trying. It was the feeling of stepping onto a diving board when you hadn't done it in years. Your legs remembered the flex even if your brain wasn't sure about the water.
 
-She checked her phone. The order confirmation email was still there, glowing with the particular malice of a decision made at 1:47 a.m. that seemed reasonable at the time because Maya had been running on four hours of sleep and an excessive amount of cold brew. The email had a cheerful subject line: "Your order is on its way!" It was, she realized now, the most hostile email she'd ever received.
+"Okay."
 
-Sam was already on her phone. "I have an idea."
+"Okay," Sam said. She went back to the espresso machine. The thermometer beeped. "See? We're doing things."
 
-"I don't want to hear it."
+Being told you were doing things was strange. It should have felt patronizing. Instead it felt like being handed a map in a country where you'd previously been wandering. Maya spent the rest of the afternoon feeling almost steady, if you ignored the invoice glowing on her laptop screen.
 
-"It's a good idea. It's called the Mystery Bean Lottery."
+Maya did the afternoon accounts. The revenue was still down twelve percent from the previous Tuesday. The milk supplier had raised prices by two cents a gallon, which felt personal, as if someone had watched her pour latte after latte and decided she could afford to pay more for the privilege of steaming things. Sam had created a new chalkboard drawing that depicted Bean & Leaf as a dragon breathing $2.50 lattes onto a village of indie coffee shops. Maya loved it. She photographed it and sent it to her sister, who replied immediately with a series of emoji that Maya was fairly certain constituted a coded language involving triumph, sadness, and what looked like a burning tree.
 
-Maya stared at her. "The what."
+At four, a group of regulars came in and asked if they would still have a shop to support on Saturday. Maya made them all pour-overs and listened to them complain about Bean & Leaf for twenty minutes. It was both annoying and strange, and strange in a nice way. They weren't customers in the traditional sense. They were neighbors. They were people who'd watched her struggle and chosen to stay anyway. That kind of loyalty did not come from pour-overs. It came from something harder to explain. Something that had less to do with coffee and more to do with refusing to let the bad parts of the world win, one Tuesday at a time.
 
-"People buy tickets. They get a random bag of beans. They don't know what they're getting. It's gamification. The kids love gamification."
+"Are you gonna be okay?" one of them — Rachel, a graphic designer who came in every morning before work — asked as she left.
 
-"The kids are twenty-eight and you're twenty-eight."
+"Yeah," Maya said. "We're doing fine."
 
-"Gen Z loves gamification. So do millennials. So do everyone who's ever opened a loot box in an online game. We sell Mystery Bean tickets for twenty dollars. Two hundred and fifty winners. Fourteen thousand dollars recovered in twenty-four hours."
+"Good," Rachel said. "Because if you close, Sam is gonna burn down the neighborhood."
 
-Maya considered this. She pictured her customers — the regulars who came for the Ethiopian single-origin and the ones who came for the free Wi-Fi and the ones who came because Mrs. Hsu had told them to — and she imagined them buying Mystery Bean tickets. She imagined the complaints when someone got a dark roast and wanted a light roast. She imagined the complaints when someone got a light roast and wanted a dark roast. She imagined the complaints when someone got a perfectly good medium roast and called it "boring."
+"Sam has plans for Bean & Leaf that are way worse."
 
-"That's the worst idea you've ever had," Maya said.
+"Love her for it."
 
-"Top three," Sam agreed. "But it's an idea."
+At six, Maya locked the front door. The bell jingled one last time, as if bidding farewell. Maya flipped the sign to CLOSED and stood in the doorway for a moment, watching the street. A group of people walked by carrying shopping bags from the vintage stores down the way. A bike messenger rattled past, nearly colliding with a tourist who was looking at his phone and walking with the particular confidence of someone who'd never been to Portland before. The Portland evening settled around the shop with its particular hush — the hush of a city that had given up on the workday but hadn't quite started on the evening yet.
 
-Maya's phone buzzed. It was an email notification.
+Maya went upstairs to her apartment above the shop. She had lived there for three years, and in that time she'd developed a theory: apartments above coffee shops were either magical or cursed, and hers was both. The magic came from being close to the source — she could wake up, walk downstairs, and be at work in thirty seconds. The curse came from never truly leaving work, from the smell of burnt milk following her into her dreams, from the knowledge that if the shop failed, she'd be unemployed and homeless at the same time. Sometimes, at 11 p.m., she could hear the refrigerator humming and it sounded the same as it had at 6 a.m. The days never really ended. They just changed font.
 
-She looked at it. It was from Bean & Leaf.
+She made tea. She sat at her kitchen table and opened her laptop. She opened the draft of the email to Tom and stared at it. Then she deleted it and wrote a new one.
 
-The subject line read: "Partnership Opportunity — Let's Talk."
+Subject: Re: Order Confirmation #48721 — Coffee Rescue on Alberta
+Hi Tom,
+I'm Maya from Coffee Rings on Alberta. I may have accidentally ordered 500 lbs instead of 50. I'm a small shop. This is more than my annual budget. I have three weeks. I have a community that cares about me. Can we talk about options?
+Thank you,
+Maya
 
-She read it once. Then she read it again. Then she read it backward, as if the words might make more sense in reverse.
+She read it three times. It was honest. It was vulnerable. It was the kind of email that either opened doors or confirmed that the person on the other end was a bean-counting monster who took pleasure in small business suffering. She pressed Send before she could reconsider.
 
-"Don't answer it," Sam said, reading over her shoulder.
+Then she did what she'd been avoiding all day: she opened her bank account. The balance was what she expected. It was lower than she expected. It was the kind of balance that made her wonder if she'd been doing math wrong for three years, or if math had simply stopped caring about her. She transferred money to savings without looking at the number, out of habit, and closed the app before she could feel anything about it.
 
-"I'm not answering it," Maya said.
+She went to the window and looked down at Alberta Street. The lights were on in the shops across the way. The Thai restaurant next door was still serving; through its yellow window she could see the owners prepping lemongrass and the ghost of a television playing loudly. The bookstore two doors down had its reading light on, which meant the owner was either working late or had decided not to go home yet. Maya liked to imagine he was writing the great American novel and simply hadn't realized it yet.
 
-She answered it.
+Maya's phone buzzed. Sam, with a text message that contained only an emoji: a wine glass, followed by a clock, followed by a shrug.
 
----
+Maya smiled. She replied with the same emoji, then added one more: a coffee cup with steam.
 
-*End of Chapter 2*
+She went to bed early, which was her version of a crisis. Most people dealt with crises by staying up too late and drinking too much or sending texts they would regret. Maya handled crises by going to sleep before nine, as if the night would fix what the daylight had broken. It never did. But it helped.
+
+Tomorrow she would call Tom. Tomorrow she would figure out whether five hundred pounds of Ethiopian was a disaster or an opportunity. Tomorrow she would prep for Saturday's fundraiser and try not to think about the fact that Bean & Leaf was expanding into her neighborhood with a pharmacy location that would open in two weeks at the old gas station, just three blocks away.
+
+But tonight, she slept. For six hours, she was not a coffee shop owner with a crisis. She was just Maya, dreaming of nothing in particular — of a clean espresso machine and a bank account that did not yell at her — and when she woke up at 5:58 a.m., the first thought in her head was not fourteen thousand dollars or Bean & Leaf or even the espresso machine that needed calibrating. It was: I need a shower.
+
+And then, three minutes later: You have 500 pounds of coffee coming.
+
+But she got the shower anyway.
+
+Lying in bed afterward, she stared at the ceiling and thought about dumber things she had done before 7 a.m. She had once tried to make her own vanilla extract using a bottle of imitation vanilla and a bottle of vodka she found in the back of a cabinet, because she was certain the instructions said patience and she was going to be patient. She had once agreed to help Sam move a couch because Sam said it was only two blocks, and it was only two blocks, but the couch was made of something called bonded leather and industrial regret. She had once told a customer she could complete a complicated pour-over in under three minutes, and then she had done it, and the customer had tipped her twenty dollars, which was the most money she'd ever made for showing off.
+
+Five hundred pounds of coffee was in a category of its own. It sat at the intersection of terrible idea and legitimate opportunity, and Maya was beginning to suspect that intersection was where most of her life decisions were parked. She thought about the fundraiser on Saturday, about the people who had offered to help, about how a neighborhood could decide, all at once, that you mattered. It made her chest feel tight in a pleasant way, the way a too-warm blanket does. She also thought about Leo Bianchi, about how he'd laughed at the right moments and known the right things and somehow, impossibly, not been terrible while wearing a suit that cost more than her car. She didn't trust it. She was fairly certain trust was overrated. But gratitude wasn't. Gratitude was just acknowledgment, and acknowledgment took no vows.
+
+Her phone buzzed again at 9:14 p.m. Sam, with a photo of the wine they'd bought for no reason, sitting on the counter next to a cutting board and a half-eaten block of cheese. Maya stared at the photo for a long time. She had been alone with this problem for hours now, and it was still a problem, but somehow it felt different — like a problem that had been weighed and found not to crush her. She texted back: Tomorrow.
+
+Then she put the phone down and opened a notebook on her laptop. She had a menu to plan. She had a fundraiser to prepare for. She had, impossibly, five hundred pounds of Ethiopian green coffee coming, and whether that was a curse or a gift would depend entirely on what she did next. She wrote lists. She wrote names. She wrote things she would say to Tom. She wrote things she would not say to Tom, mostly because they involved words like please and accidentally and I-am-so-sorry-I-ordered-300-percent-more-than-I-meant-to.
+
+At 11:17, her laptop died. She plugged it in and went to bed. The sheets were cold and the pillow smelled like the shop, which was both comforting and depressing, depending on the hour. She closed her eyes. The silence of the apartment was a particular kind of silence, full of creaking floorboards and the distant sound of a television through the wall and the rhythm of her own breathing, which had been faster than normal for most of the day but was finally slowing down.
+
+She was not fine. She was going to be fine. There was a difference, she was learning, and she had started to suspect the difference was the whole point of having a business and a best friend and a landlord who spoke in riddles and a random Bean & Leaf suit who might or might not be an actual human being.
+
+Outside, a car alarm went off and was ignored by everyone in the city except her. Somewhere down the hall, someone closed a door and then opened it again, as if changing their mind. The refrigerator downstairs cycled on with its familiar sigh. Maya pulled the blanket over her shoulder and let the sounds carry her toward sleep. It came slowly. It came imperfectly. It came, which was enough.

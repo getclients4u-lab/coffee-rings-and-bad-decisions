@@ -2,73 +2,94 @@
 
 The phone rang at 8:47 p.m.
 
-Maya was in the shop alone. Leo had gone home to sleep. Sam was at a concert. Mrs. Hsu was wherever Mrs. Hsu went at night — probably reading a newspaper in an armchair that had been in her family since 1972.
+Maya was in the shop alone. Leo had gone home to sleep. Sam was at a concert. Mrs. Hsu was wherever Mrs. Hsu went at night — probably her apartment upstairs from the bakery, probably watching old movies on a TV that she'd had since before Maya was born. The shop was quiet. The espresso machine had been turned off. The Mystery Bean tickets were in the wooden box on the counter. The subscription page was live and real and, as of 30 minutes ago, had seventy-two new subscribers.
 
-The caller ID said SEATTLE.
+Maya picked up the phone on the second ring. "Portland Coffee Rescue," she said. It was a joke. It had stopped being a joke a week ago.
 
-Maya picked up.
+"Maya," a voice said. A woman's voice. Older. Tense. "This is Elena. Leo's sister."
 
-"Maya," Leo said. His voice was tight. "I got a job offer."
+Maya's stomach dropped. "Is Leo okay."
 
-The room tilted. Maya held the counter. "What job offer."
+"He's fine. He's at my apartment in Seattle. He's been here for three days."
 
-"Reputable Coffee Co. Seattle. Head of acquisitions. One hundred and forty thousand dollars."
+Maya closed her eyes. "He didn't tell me he went to Seattle."
 
-"And," Maya said, "you called me from Seattle."
+"He didn't tell anyone. He quit his job on Monday — formally, officially, with the two-week notice he's required to give — and then he drove here. He's been here for three days. He hasn't called you."
 
-"I flew out this morning. I interviewed this afternoon. They offered it tonight."
+Maya felt the room tilt. "Why."
 
-Maya closed her eyes. She'd known this was coming. She'd known Leo had applied for something. She'd known Seattle was waiting. But hearing it — hearing the city in his voice, hearing the opportunity in his words, hearing the part of him that wanted safety — it was worse than she'd imagined.
+"He's been thinking. About a lot of things. About the shop. About us. About whether he did the right thing."
 
-"Is it what you want," she asked.
+"Did he?"
 
-"It pays better."
-"Leo."
+"He doesn't know. That's why I'm calling. I need you to tell him he can come home. I need you to tell him he's not making a mistake."
 
-"No," he said. "It's not what I want. They offered because I have a reputation for turning struggling suppliers into vendors. I told them about your shop. They said they'd listened. They said they wanted to meet you."
+Maya looked around the shop. She looked at the chalkboard dragon Sam had drawn. She looked at the Mystery Bean tickets. She looked at the window, where her reflection stared back, tired and determined and, for the first time in months, not entirely alone.
 
-"For what."
+"Tell him to call me," she said.
 
-"To acquire your beans. To bring you into their supply chain. You'd keep your brand. You'd keep your shop. You'd have the financial security you need."
+"I did. He said he would if you asked him to."
 
-Maya sat down. The stool creaked. "That's not what they're offering me."
+"Then I'm asking."
 
-"No," Leo said. "That's what I'm offering you. After I take the job. I'll have access to their distribution. I can sell your beans nationally. You can keep the shop. You can grow."
+"Good," Elena said. "I'll tell him."
 
-Maya was quiet. She thought about the buyout from Rachel. She thought about Bean & Leaf, which was three blocks away and growing. She thought about the loan, which was still pending. She thought about Leo, who was three hours away and sounding like he wanted to come home but couldn't.
+The line went dead. Maya stood there for a long time with the phone in her hand. She thought about Leo leaving. She thought about him driving to Seattle, to his sister, to the place he'd grown up, the place he'd left because he'd wanted to be in a city that had coffee shops like this one. She thought about the kiss in the kitchen, the almost-kisses, the fight on Day Nineteen.
 
-"You want to take the job," she said. "Don't you."
+She thought: I have to fix this.
 
-Leo was silent for a long time. "I want to be useful," he said. "I want to help you. This is how."
+She thought: Maybe it's not broken.
 
-"No," Maya said. "This is how you leave."
+She sat at the kitchen table upstairs. She opened her laptop. She started typing. She didn't know what she was writing — not a plan, not an email, just words, the kind of words that came out when you were thinking about someone you cared about and the future you might have together. She wrote about the shop. She wrote about the fight. She wrote about the kiss. She wrote about the 500-pound emergency and the lottery and the TikTok and the way the shop had become, against all odds, something more than she'd ever imagined.
 
-There was a silence. Then, through the silence, she heard a voice she knew — a customer walking past, singing something tuneless under their breath. The street was ordinary. The bell above the door was silent. The refrigerator hummed.
+She wrote: "I need you here. Not because we have a plan. Because we have something. Something that's worth fighting for. Something that's worth staying for."
 
-"Leo," Maya said, her voice shaky, "if you take that job, you're not helping me. You're job-coaching me from three hours away, and that's not partnership, and that's not what I need."
+She read it. It was true. It was honest. It was the kind of thing she'd never written before, not to anyone, not even to Sam.
 
-"What do you need," Leo said.
+She didn't send it. She saved it. She closed the laptop. She went to the window. She looked down at Alberta Street. The Thai restaurant was lit. The bookstore was dark. The Bean & Leaf pharmacy location was a hole in the ground, surrounded by construction fencing, covered in a banner that said COMING SPRING 2027. The banner made her angry. It also made her more determined.
 
-Maya didn't answer. She couldn't. Because she didn't know. She needed him. She wanted him. She also wanted him to be happy, and Seattle might be happiness for him, and Portland was chaos and coffee and a shop that was one bad month from disaster.
+At 9:12, her phone buzzed. Leo.
 
-She needed him to choose her without needing a reason. Or she needed to not need him to choose her at all.
+She picked up. "Hello."
 
-Neither option was currently available.
+"Maya. Elena told you I was here."
 
-"Call me tomorrow," she said.
+"I did. You didn't have to drive to Seattle to avoid me."
 
-"After I accept."
+"I didn't drive to Seattle to avoid you. I drove to Seattle to think."
 
-"Leo."
+"About what."
 
-"Call me tomorrow."
+"About whether I made a mistake by quitting. About whether I made a mistake by believing in you. About whether this — this shop, these beans, you — is real enough to build a life on."
 
-The call ended.
+Maya closed her eyes. "Yes. It's real."
 
-Maya sat in the empty shop, holding a phone that felt heavier than a coffee sack, and waited for the night to pass.
+"How do you know."
 
-She didn't sleep.
+"Because I'm here. I'm still here. I didn't take Bean & Leaf's offer. I didn't chicken out. I stayed. And if you think I did that because I'm stubborn and not because I believe in something, then you don't know me very well."
 
----
+Leo was quiet. "I'm coming back."
 
-*End of Chapter 16*
+"Good."
+
+"I have a condition."
+
+"Conditions are for rent agreements."
+
+"This isn't a rent agreement. It's a partnership."
+
+Maya smiled. "A partnership."
+
+"We split the earnings. We split the work. We split the decisions. No more me making the spreadsheets. No more you making the coffee without asking for help. Equal. Partnership."
+
+"Equal partnership," Maya said. "In a coffee shop."
+
+"In a coffee shop that's about to sell a hundred subscriptions and move 300 pounds of beans and maybe, just maybe, change a neighborhood."
+
+Maya's voice softened. "I'd like that."
+
+"I'd like that too."
+
+He hung up. Maya put the phone down. She stood up. She walked to the window. She stood there and watched the street and thought about Leo driving back to Portland, somewhere on I-5, under the moon and the stars and the particular dark of a highway at night.
+
+She went to bed at 10:30. She slept. She dreamed of Leo's hands on hers, of the roaster at the pop-up, of a chalkboard dragon on a t-shirt, of a future that was no longer a maybe.

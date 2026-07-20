@@ -2,112 +2,80 @@
 
 The buyout returned on a Tuesday.
 
-Rachel called Maya directly. Not an email. A phone call. The kind of call that came from someone who believed their offer was too generous to communicate by text.
+Rachel called Maya directly. Not an email. A phone call. The kind of call that came from someone who believed their offer was too generous to be delivered in text, who wanted the sound of your voice on the other end so they could hear you hesitate. Maya had developed a sixth sense for these calls. She answered.
 
-"Maya," Rachel said, "I'm going to make this simple. One hundred seventy-five thousand dollars. The shop, the lease, the equipment, the name. You walk away with a check and no further obligation."
+"Maya," Rachel said. Rachel was Bean & Leaf's acquisitions director, Leo's former boss, and the human face of a corporation that had decided neighborhood coffee shops were real estate opportunities. "I hope I'm not calling at a bad time."
 
-Maya sat at the kitchen table. Her coffee went cold. "And if I say no."
+"You're calling while I'm making coffee," Maya said. "Which means I'm either multitasking or I'm not entirely here."
 
-"Then the market shifts. Bean & Leaf opens the pharmacy location. We expand your competition threefold. Your revenue drops by forty percent within six months. Your loan defaults. You lose the shop anyway, but without money to show for it."
+"Fair. I'll be brief. The offer I extended to you six weeks ago — through David, who has since moved on to other markets — is still on the table. I want to renew it. With a small change."
 
-Maya's hands were shaking. She'd known this was coming, but hearing it said plainly — in Rachel's voice, smooth as a press release — made it real in a way that made her throat tight.
+"What's the change?"
 
-"I have to think about it."
+"The change is that we'll keep your name. Coffee Rings and Bad Decisions. We'll let you run it as a concept store, with your recipes, your staff, your artisanal whatever. We'll handle the backend. You handle the magic."
 
-"You have forty-eight hours."
+Maya wiped the steam wand. She looked at the espresso machine. She thought about the Mystery Bean tickets and the subscription page and the 187 pre-orders that were sitting in her inbox like small miracles. She thought about Leo, who'd quit his job to help her, who'd kissed her in the kitchen with the coffee ring on the table between them, who'd told her that the future was something they could build together.
 
-The call ended. Maya sat in silence.
+"Thank you for the offer," she said. "I'm declining."
 
-Jake showed up twenty minutes later. He was holding a notebook. He'd been writing, he said. He'd been thinking. He wanted to talk.
+There was a pause. A long pause. The kind of pause that meant Rachel was not used to hearing no. "Maya," Rachel said, and her voice changed, got softer, more reasonable, "let me explain what we're offering. Not just money — although the money is substantial. We're offering stability. You've had a difficult few months. I know about the coffee emergency. I know about the loan. We're offering you a way out. Why wouldn't you take it?"
 
-He sat across from her at the table. He looked nervous. He was always nervous when he wanted something from her, and Maya had learned to recognize the tells.
+"Because it's not my way out," Maya said. "It's yours."
 
-"I heard about the buyout," Jake said.
+"Maya —"
 
-"Heard what."
+"I built this shop. I've been running it for three years. I've paid my rent on time, even when it's been impossible. I've served six thousand lattes. I know the regulars by name. I know which customer wants extra foam and which one wants decaf and which one comes in at 8:17 on the dot for a cold brew. Bean & Leaf has an app for that. I have memory. I have this place. And I'm not trading it for a sleek backend and a brand manager who doesn't know what a Mystery Bean lottery is."
 
-"People are talking. The neighborhood. The industry. You're a story now, Maya. The indie coffee shop fighting the corporation. The question is what the ending is going to be."
+"You're making an emotional decision about a business transaction."
 
-Maya went very still.
+"I'm making a decision about something that matters to me. There's a difference."
 
-"I'm not going to pretend I was a good boyfriend," Jake said. "I wasn't. I wanted you to be something you weren't. I'm sorry for that. But I'm not going to pretend I don't care what happens to you. I'm not going to pretend I haven't been watching."
+Rachel was silent for another moment. Then she said, "You'll regret this. Bean & Leaf is coming to Alberta. With or without you. You can either be part of it or you can be crushed by it."
 
-"What do you want, Jake."
+Maya thought about David Park. She thought about the pharmacy. She thought about the music venue, which was now being gutted, which would soon be a place where people bought prescriptions instead of tickets to shows. She thought about the speakeasy floorboards and the storytelling and the fact that this neighborhood was changing and she was, in her small way, fighting to keep something of it alive.
 
-"I want to help. I have a platform. Not the influencer platform — a real one. A Substack. Three thousand subscribers. People read what I write about cities and coffee and the people who make them. If I write about your shop, about what Bean & Leaf is doing, about the buyout — people will care."
+"Then I'll be crushed," she said. "But I'll be crushed on my own terms."
 
-Maya studied him. The old Jake would have made this about himself. The new Jake — the one who'd gone to Berlin and come back and was writing essays instead of filming himself — seemed to actually mean it.
+Rachel hung up. Maya put down the phone. She stood at the counter for a long time. Her hands were shaking. She made herself a coffee. She drank it while standing at the window, watching the street, watching the world go by.
 
-"Write it," she said. "But don't use my fight as your content. Write about the coffee."
+Sam appeared at her elbow. "That was Bean & Leaf."
 
-"I will," Jake said. He stood. He hesitated. "And Maya — I know you're with someone now. Or working with someone. Or whatever this thing is with Leo. I'm not here to break that up. I just wanted you to know I'm sorry, and I'm on your side."
+"I know. They renewed the offer. I declined."
 
-He left.
+Sam was quiet for a moment. Then she said, "Good."
 
-Maya sat in the kitchen for a long time. She thought about Leo. She thought about the almost-kisses and the near-misses and the refrigerator. She thought about the business plan and the loyalty cards and the people who cared about her shop.
+"I don't know if it's good. I don't know if I just made a mistake."
 
-She got up. She walked downstairs.
+"You didn't. This is the right thing. We've come too far to sell out now."
 
-Leo was behind the counter, steaming milk. He looked up. He saw her face.
+Maya nodded. She didn't say what she was thinking, which was: I don't know if I'm doing the right thing. I just know it's the only thing I can do. She trusted Sam's assessment. She trusted it blindly, because Sam had been right before, about the lottery, about the TikTok, about the dragon t-shirt that was now being printed at a shop in Southeast and would be ready for Sunday.
 
-"What happened," he said.
+Leo arrived at 11 a.m. He'd heard about the call. Lila had texted him — she was connected to everyone apparently, the way TikTok creators were, invisible webs of influence — and he'd known before Maya had told him.
 
-Maya told him. The offer. The deadline. Rachel's voice.
+"How did it go," he said.
 
-Leo's jaw tightened. "You said you'd think about it."
+"I said no."
 
-"I said I'd think about it."
+Leo smiled. "Good."
 
-"Have you thought about it."
+"I might be making a huge mistake."
 
-Maya looked at him. She looked at the espresso machine. She looked at the chalkboard menu that still had ink on the E. She looked through the front window, at the street, at the neighborhood, at the people who walked past every day and who'd started coming in, who'd joined the loyalty program, who'd written their names on the chalkboard like they were signing a petition.
+"You're not. You're doing exactly what you're supposed to."
 
-"I've thought about it," she said. "The answer is no."
+They talked about Sunday. They talked about the roaster, the subscription page, the t-shirts. They talked about the door-to-door results — forty-seven tickets sold in two hours, with more commitments coming in from the businesses who'd said they'd consider it. They talked about the bank call — Jennifer had emailed back saying the extension was possible, that she needed documentation by Monday.
 
-Leo was quiet. "You sure."
+"By Monday," Maya said. "That's tight."
 
-"I'm sure."
+"We have the weekend. We'll get the documentation together."
 
-"Why."
+By afternoon, the subscription page was live. Maya had designed it herself, using a website builder that Sam had recommended. It was simple: choose a subscription tier, pay online, get mystery beans every month. The tiers were: 3 months, 6 months, 12 months. The prices were aggressive but fair. The page said: "Subscribe to Mystery. Save a Shop. Drink Good Coffee."
 
-"Because," Maya said, "this shop isn't just mine. It belongs to the people who come in here. It belongs to Mrs. Hsu. It belongs to Sam and to Leo and to the guy who does Mystery Bean lottery and to the woman from Eugene who drove five hours to buy beans. Bean & Leaf can buy a lot of things. But they can't buy this."
+By dinner, they had forty new subscriptions. At 1 a.m., Maya was still watching the numbers. She'd sit up until 2, then sleep until 6, then repeat. She was fueled by coffee and adrenaline and the particular energy of a person who was close to something and could almost touch it.
 
-Leo nodded. "Good."
+She thought about the fight with Leo. She thought about the kiss in the kitchen. She thought about the almost-kisses and the real kisses and the future that was suddenly, terrifyingly, ahead of her. She thought about the loan officer and the pharmacy and the speakeasy floorboards. She thought about coffee. Specifically, she thought about the smell of fresh-roasted beans, the way they smelled in the roaster, the way they smelled in the bag, the way they smelled in the cup.
 
-"Good."
+She thought: I am not selling this shop.
 
-"And the forty-eight hours."
+She thought: I love this shop.
 
-"I have until Thursday."
-
-Leo set down the milk pitcher. He crossed the floor. He came to the kitchen table. He laid a document on it.
-
-"What's this," Maya said.
-
-"My resignation. From Bean & Leaf. It's effective immediately."
-
-Maya stared at him. "You already quit."
-
-"I already quit. This is — this is formal. This is me making it official."
-
-"Why."
-
-"Because," Leo said, and his voice was tight, "if we're doing this, I'm all in. No more half-measures. No more part-time commitment. I'm here. For real. If you want me."
-
-Maya looked at the resignation letter. She looked at Leo. She thought about Seattle, which was still waiting, which was still a safe option, which was still out there. She thought about the shop, which was here, and messy, and hers, and not safe at all.
-
-She thought about the girl she'd been three years ago, who'd bought this shop thinking it would be easy, who'd learned that nothing worth having was easy, who'd been stupid and stubborn and exactly the person who'd needed to be here.
-
-She thought about Leo, who'd shown up at 6:30 a.m., who'd sorted beans, who'd made spreadsheets, who'd nearly kissed her four times and had been gracious about it.
-
-She thought about the refrigerator.
-
-"I want you," she said.
-
-Leo smiled. It was the real smile, the one that went all the way to his eyes.
-
-"Okay," he said. "Then I'll stay."
-
----
-
-*End of Chapter 15*
+She fell asleep at 2:30 a.m. She didn't dream. She was too tired.

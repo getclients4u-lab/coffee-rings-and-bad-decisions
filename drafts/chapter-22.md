@@ -6,7 +6,9 @@ Maya didn't like to call them happy, because happy sounded like something that c
 
 She didn't name it. She didn't want to name it. Naming things made them fragile.
 
-They kept the shop running. They hired Daisy full-time. They launched the newsletter. They opened a second register because the line was too long. They started roasting their own beans in small batches — a side business, Leo called it. Maya called it independence.
+Every morning, Maya unlocked the front door at 6:28 a.m. Leo unlocked the back door at 6:30 a.m. on the dot. They met in the middle of the back room over a sack of green beans and a thermos of coffee that Leo had learned to make the way Maya liked it: strong, black, not too hot, never burnt, never regrettable. Mrs. Hsu came at 4:00 p.m. Sam came whenever she felt like it, which turned out to be roughly eleven hours a day now that the shop had actual money to spend on scones and actual staff to delegate the scone-eating to. Daisy arrived at seven with a thermos of tea and a spiral notebook full of lyrics she was writing. The loyalty-card scanner chimed. The chalkboard menu got filled out. The espresso machine hissed and steamed and occasionally complained, but mostly it just worked, which Maya had learned to interpret as the machine's version of affection.
+
+The shop was busy. NotBean & Leaf busy, not boutique busy, but neighbor busy: regulars who knew their orders, tourists who asked questions, college students who came for the Wi-Fi and stayed for the scones. On busy afternoons, Maya wiped the counter with one hand and reached across it with the other to hand a muffin to a kid who'd come in after school. She learned the names of people who came only once. She remembered that the architect liked oat milk and that the writer needed extra space and that the musician from two blocks over always ordered a lavender latte and hummed while he waited.
 
 Sam was suspicious.
 
@@ -21,6 +23,10 @@ Sam was suspicious.
 "The old chairs were fine. You wanted him to sit in new chairs."
 
 Maya said nothing. She was sorting beans. She was trying not to think about the kiss. She was failing.
+
+She thought about the kiss all the time. She thought about it between orders, between tables, between the acts of wiping the counter and refilling the oat milk and reminding Leo that he still had a shirt that matched his eyes when he was trying too hard. The kitchen kiss had changed something. It hadn't solved anything. It had just made everything honest. They argued now, really argued, about grind size and pastry orders and whether loyalty cards should be digital or physical. They made up with drinks. They made up with folded receipts placed exactly where the other person would find them. They made up with silence, which was its own language.
+
+She wanted this. She wanted all of it. But she wanted something else too: the future. The future meant the lease. The lease was up in six months. Mrs. Hsu had held it for her, had kept the rent low, had staved off Bean & Leaf with the particular fury of a woman who'd owned a building since 1987 and who had no interest in selling to anyone whose name rhymed with "needs a logo." But Mrs. Hsu was getting older. She'd mentioned retirement. She'd mentioned selling. She'd mentioned that if Maya couldn't buy the building, someone else would.
 
 "We need to talk about the future," Sam said. "The lease is up in six months. Mrs. Hsu can raise it. She hasn't, but she could. We need a plan."
 
@@ -73,6 +79,140 @@ Maya kissed him again. It was a cafe kiss, a behind-the-counter kiss, a kiss tha
 Sam cleared her throat. "I'm still here."
 
 "Go eat a tamale," Maya said.
+
+She meant it. She meant all of it. The tamales, the partnership, the shop, the future. She meant the kiss, which had become something she no longer apologized for, not even when Sam sighed or Mrs. Hsu looked away politely or Daisy said, "You two are gross," and turned up the jazz.
+
+She meant the future, which was the only thing that felt fragile right now. The future meant the lease. The lease meant Mrs. Hsu. Mrs. Hsu meant the building. The building meant the shop. The shop meant Maya's grandmother, whose name was on the deed and whose ghost Maya sometimes blamed for the burnt milk and the chipped tile and the particular stubbornness that had gotten her here.
+
+"Do you ever think about what happens when this is over?" Maya asked Leo, one evening, after Daisy had gone home and Sam had left to see her girlfriend and Mrs. Hsu had gone home to read her newspaper.
+
+"What," Leo asked. "The lease?"
+
+"The shop. The beans. The partnership. What happens when we're not fighting anymore."
+
+Leo was quiet for a long time. "We'll still be fighting," he said. "Bean & Leaf isn't going anywhere. The loan won't disappear. The newsletter will keep requiring writing, and the beans will keep needing roasting, and Mrs. Hsu will keep calling when the door sticks."
+
+"I know," Maya said. "But what happens when it's easier."
+
+Leo looked at her. He reached across the counter and took her hand. "Then we do the easier version," he said. "We write more newsletters. We expand the menu. We take Daisy off the night shift. We go on vacation. We buy a house with a yard for a cat."
+
+"That sounds nice."
+
+"It does."
+
+Maya smiled. She squeezed his hand. They stood in the shop, alone, surrounded by bean sacks and loyalty cards and the particular warmth of a place that had stopped being a business and started being a home.
+
+But she still didn't know what tomorrow would bring.
+
+Mrs. Hsu called the next morning. Maya answered the phone at 8:00 a.m., still half-asleep, still thinking about the tamales from the night before and the kiss that had followed them.
+
+"Mrs. Hsu," Maya said. "You're up early."
+
+"Pack your bags," Mrs. Hsu said.
+
+Maya's throat closed. "What."
+
+"We're going to Bend. Tom is roasting beans. You're going to see where the partnership happens. Today."
+
+"Today."
+
+"Ten a.m. Leave the shop in Daisy's hands. I'll drive."
+
+Maya looked at Leo. He was already at the espresso machine, already smiling that smile that meant he knew what was coming. He mouthed: Pack.
+
+Maya laughed. She laughed into the phone. "Mrs. Hsu, I can't just close the shop —"
+
+"You can. Daisy can handle it. I've asked her. She said she was ready."
+
+"When did you ask Daisy."
+
+"Yesterday," Mrs. Hsu said. "When you were writing the newsletter about patience. You weren't paying attention."
+
+Maya looked at Leo. He was smiling.
+
+"Be here at ten," Mrs. Hsu said. "Bring good shoes. The roastery is in a barn."
+
+The line went dead.
+
+Maya hung up. She looked at Leo. She looked at the shop. She looked at the chalkboard menu, which still had ink on the E, which still had the notes written in Leo's handwriting.
+
+She had no idea what the day would bring.
+
+She just knew it was going to be good.
+
+That afternoon, Maya sat in Mrs. Hsu's car and watched the highway roll past. Mrs. Hsu drove with the particular calm of a woman who'd been driving since before Maya's mother was born. Leo sat in the passenger seat, scrolling through his phone, occasionally making notes.
+
+Maya looked out the window. She thought about the shop behind her. She thought about Daisy running the counter, about Sam holding down the fort, about the regulars who'd be scandalized to see her closing early. She thought about the bean inventory, which was now down to a manageable number and which Tom had promised to help her restock through the partnership. She thought about the partnership itself, which felt more real now that there was a date, a destination, and a barn.
+
+Bend was prettier than she'd expected. The town was small, the kind of small where you could walk from one end to the other and see most of what mattered. Tom's roastery was on the edge of town, in a barn that smelled like wood smoke and roasted coffee so good Maya felt like she'd been blind her whole life and was just now opening her eyes.
+
+Tom met them at the door. He was older than Maya had imagined, with a beard that had obviously seen a lot of decisions and a laugh that was loud and warm. He hugged Mrs. Hsu like she was family, because she was. He shook Leo's hand like he'd never been fired. He looked at Maya like he was seeing something he recognized.
+
+"I've heard stories," Tom said. "About the shop. About the beans. About the woman who fought Bean & Leaf in a parking lot full of Mystery Bean lottery tickets."
+
+"That wasn't me," Maya said. "That was Sam."
+
+"Close enough."
+
+He gave them a tour. The roastery was smaller than Bean & Leaf's, but it was beautiful in a way that Bean & Leaf could never be: it had hand-turned knobs, and a chalkboard menu like Maya's, and a wall of samples that Tom had collected from roasters around the world and that he let anyone hold, smell, and even taste if they asked nicely. Maya held a bag from Ethiopia. She held a bag from Guatemala. She held a bag from a farm in Colombia that Tom had visited himself and whose owner had written him a letter thanking him for being fair about prices.
+
+"Bean & Leaf tries to make this about numbers," Tom said, when they were sitting in his office after the tour, drinking coffee that was so good Maya almost cried. "It's not about numbers. It's about people. You get that, right?"
+
+"I get it," Maya said.
+
+"Good," Tom said. "Because neither of us can afford to forget it."
+
+He handed her a contract. It was a partnership. Bean & Leaf had no part in it. The terms were simple: Maya supplied green beans. Tom roasted them. They sold them together, online and in stores, with Maya's name on the bag and Leo's handwriting on the label. The shop stayed Maya's. The beans stayed Maya's. The profits stayed Maya's.
+
+When she finished reading it, she looked at Leo. He was smiling that smile again, the one that meant he'd been right all along.
+
+She signed it.
+
+On the drive home, the car was quiet. Mrs. Hsu listened to classical music. Leo dozed in the passenger seat. Maya looked out the window at the passing trees and thought about how quickly things changed if you let them.
+
+By the time they got back to Portland, it was dark. Maya unlocked the shop. The bell jingled. The lights came on. The coffee machine hissed awake. Daisy was closing up. She smiled and handed Maya the key.
+
+"Everything good," Daisy said.
+
+"Everything good," Maya said.
+
+Leo made coffee. Maya made coffee. They stood side by side at the counter, drinking it black, and didn't say anything for a long time. They didn't have to.
+
+The partnership meant she wouldn't have to choose between staying and growing. She could do both. She could keep the shop and expand the beans and trust that the people around her — Leo, Sam, Mrs. Hsu, Tom — were people who actually cared about the same things she did.
+
+She looked at Leo. He looked back. He reached across the counter. His hand found hers.
+
+"Today was nice," he said.
+
+"Today was good."
+
+They didn't kiss. Not right then. They didn't need to. They were already in the middle of something better than a kiss: a beginning.
+
+Maya went upstairs that night feeling lighter than she had in months. She opened the laptop. She wrote a newsletter. It was about Bend, about Tom, about the barn and the chalkboard and the way the coffee had tasted like honesty. She sent it to the loyalty list.
+
+By morning, she had eighty replies. One of them was from a woman named Rosa who lived in Bend and who wrote, "I can deliver your beans anywhere on the West Coast. Call me."
+
+Maya called Rosa. They talked for thirty minutes. Rosa had a van. Rosa knew routes. Rosa understood delivery.
+
+By afternoon, Maya had a distribution contact in Bend.
+
+The future was starting. It was solid. It had walls. It had floors.
+
+It had Leo.
+
+Maya stood at the counter that afternoon, watching Leo steam milk, and thought about the woman she'd been three years ago, who'd walked into this shop with a dream and a credit card and a caffeine-fueled email ordering five hundred pounds of coffee. That woman had been scared. That woman had been stubborn. That woman had been exactly who she needed to be.
+
+She still was.
+
+She went over to Leo. She handed him a message written on a napkin: You're staying.
+
+He read it. He smiled. He handed her a napkin that said: Always.
+
+The napkins went into the trash.
+
+The bell jingled. A customer walked in. Maya looked up. She smiled.
+
+"Welcome to Coffee Rings," she said. "What can I get you."
 
 ---
 

@@ -2,88 +2,162 @@
 
 The fight happened on day nineteen.
 
-It was not a romantic fight. It was not the kind of fight where they said things they didn't mean and then made up with a kiss in the rain. It was the kind of fight where the words were sharp and accurate and both people were right in different, incompatible ways.
+It was not a romantic fight. It was not the kind of fight where they said things they didn't mean and then made up with a kiss in the rain. It was the kind of fight where two people said exact, precise things they meant, and the silence afterward was louder than any argument.
 
-They were in the back room. The bean inventory had dropped to two hundred and twelve pounds. They had three days to sell the rest. Two hundred and twelve pounds in seventy-two hours. The math was impossible. The math was a nightmare. The math was Maya standing at the counter on a Wednesday morning, staring at a spreadsheet, and feeling the weight of every decision she'd made since buying this shop.
+They were in the shop after closing. Maya was at the back counter. Leo was at the table by the window, going over the lottery spreadsheet with the particular intensity of someone who was nearing a deadline and had discovered, twenty minutes earlier, that the deadline was now. The mystery bean bags were stacked on the shelf behind Maya. The invoices from Tom were on the counter. The Bean & Leaf acquisition card was in her pocket, where it had been for six days, unseen but felt, like a stone in a shoe.
 
-Leo walked in. He had a phone call on his face — the particular look of someone who'd just heard something they didn't want to deliver.
+Leo stood up. "We need to talk about the Bean & Leaf offer."
 
-"Tom can't help," he said.
+Maya looked at him. "I thought you didn't know about it."
 
-Maya looked up. "What."
+"I didn't. Not until after. But I know now. And I think you should take it."
 
-"Tom's distributor just got acquired. The whole network's shifting. He can't get us the buyers we need in time."
+The words landed like a physical blow. Maya stared at him. "Excuse me."
 
-Maya's hands went cold. "What do you mean, in time."
+"Maya, listen —"
 
-"I mean, the connections are there, but the inventory is locked up. Bean & Leaf moved first. They cornered the small-batch market in the Pacific Northwest. There's no one left to sell to."
+"I don't want to listen. I want you to leave."
 
-Maya stood. She felt the blood in her ears. "You're joking."
+"I'm not leaving. Not until —"
 
-"I'm not. I've been on the phone for two hours. I called everyone I know. There's nothing."
+"Leave, Leo."
 
-"Nothing."
+He stood there. He didn't move. He had the particular stubbornness of a man who'd spent three years in boardrooms and learned that the right argument, delivered at the right time, could move mountains. He was using that stubbornness now, in a coffee shop at 8 p.m., in a moment where stubbornness was exactly the wrong tool.
 
-"Nothing."
+"I'm not doing this," Maya said. "I'm not taking the offer. I'm not selling the shop. I'm not letting Bean & Leaf turn a music venue into a pharmacy and call it 'community development.'"
 
-Maya's voice rose. "Then what are we doing here? What are we doing sorting beans and making coffee and pretending we have a chance? We don't have a chance. We never had a chance. Bean & Leaf won. They always win. They just choose when to tell you."
+"It's a fair offer. It solves your loan problem. It gives you capital to start something else."
+
+"Something else is not this shop. Something else is not the regulars who come every morning and buy the same latte and complain about Bean & Leaf and then buy another latte. Something else is not the Mystery Bean Lottery and the chalkboard dragon and the speakeasy floorboards that creak in Morse code."
+
+"You're being romantic," Leo said. His voice was quiet, which was worse than if he'd been loud. Quiet meant he meant it.
+
+"I'm being practical. I'm being exactly as practical as you're being, but from the opposite direction. You're saying take the money and leave. I'm saying keep the shop and find another way to pay the loan."
+
+"There is no other way. The timeline was three weeks when we started. It's been six. You've raised twelve thousand. You need fourteen. You're not making it, Maya."
+
+Maya looked at him. She looked at the man who'd helped her design the lottery. The man who'd played music at the festival. The man who'd stood beside her for six days and told her he was on her side. The man who was now telling her to give up.
+
+"You didn't know about the offer," she said. "When you said all those things about not being the enemy. You didn't know they were trying to buy me out."
+
+"I'm saying it now because I care about you."
+
+"I don't want you to care about me in this particular way. I want you to care about me in the other way. The way that's not telling me to sell the shop I bought with my savings and my sanity and three years of burnt milk."
+
+Leo's jaw tightened. He picked up his laptop bag. He stood in the doorway. He looked at the floorboards. They creaked. Maya had never noticed how much they creaked until now, when the creaking felt like judgment.
+
+"I have to go," Leo said.
+
+"Go."
+
+"You'll call me tomorrow."
+
+"No."
 
 "Maya —"
 
-"No. Don't Maya me. You knew this. You knew from the beginning. You were never here to help me sell beans. You were here because you needed a job and I was the only stupid person in this city who'd hire you."
+"I said no. Don't call me. Don't come here. I'll handle the beans. I'll handle the loan. I'll handle Bean & Leaf. I don't need you to tell me what to do anymore."
 
-That was not true. Maya knew it wasn't true. Leo had beenhere, had shown up every morning, had sorted beans and fixed the espresso machine and made spreadsheets that were better than anything Maya had ever made. But the words were out. The words were sharp. The words were the panic talking.
+Leo nodded. He left. The bell jingled behind him. Maya stood in the shop and listened to the door close. She listened to the silence. She listened to the refrigerator hum and the espresso machine sigh and the floorboards creak their little stories about bootleggers and people who hadn't paid rent.
 
-"Maya," Leo said, his voice tight, "I didn't know."
+She was alone.
 
-"You didn't know. You didn't know a lot of things. You didn't know you were going to get fired. You didn't know Bean & Leaf would corner the market. You didn't know that buying five hundred pounds of coffee was a bad idea until after you did it."
+She picked up the Bean & Leaf card from the counter. She looked at it. She threw it in the trash. Then she retrieved it, because throwing it away hadn't helped and because she needed to keep the card, needed to keep the evidence, needed to remember that there were people who wanted to buy what she'd built and people who wanted to destroy it and people who were caught in between.
 
-Leo flinched. He turned away. He ran a hand through his hair. "You're right."
+Sam found her an hour later, still standing at the counter, the card in her hand.
 
-Maya blinked. She expected an argument. She expected the corporate charm, the negotiation, the smoothing-over. She did not expect him to say it simply, plainly, without defending himself.
+"You kicked him out," Sam said.
 
-"I'm right," she said, quieter now.
+"He told me to take the offer."
 
-"I didn't know," Leo said. "But I'm here. I'm still here. We still have two hundred pounds. We still have three days. We still have a shop full of customers who — who actually like us. I don't have a plan right now. I'm trying to find one. But I'm not leaving."
+Sam was quiet for a moment. She set down her bag. "He's wrong."
 
-Maya was quiet. The fight was draining out of her, replaced by something heavier and more honest.
+"I know."
 
-"Why didn't you tell me earlier?" she asked.
+"But?"
 
-"Because I thought I could fix it. And then I thought I could fix it again. And then —"
+"But I'm also mad at him. I'm also feeling things. I'm feeling things that are not business-related and that are confusing and that make me want to yell at him and also kiss him and those two feelings are currently fighting in my chest and the yelling one is winning."
 
-"Then you couldn't."
+"Yelling wins for a while," Sam said. "Until it doesn't."
 
-Leo nodded. "I'm sorry."
+Maya went to the back room. She opened the storage closet. The Mystery Bean bags were there, stacked in rows. The green beans were in burlap sacks on the lower shelf. She counted them. There were still 387 pounds of roasted beans left and 96 pounds of green, and the math was still the same: she needed $14,200 and she had $8,072 in cash and a shop that was losing money by the day.
 
-Maya said nothing.
+She went upstairs. She opened her laptop. She wrote Tom an email: "We need to do something big. Not just the shop. Outside the shop. Community event. Massive ticket push. We need to move 300 pounds in fourteen days or we're done."
 
-"I'm sorry," Leo said again. "Do you want me to go?"
+She sent it. Then she opened the spreadsheet Leo had made. She changed the dates. She tightened the targets. She made the impossible look slightly less impossible, the way spreadsheets could, if you were determined enough and if you didn't look too closely at the numbers.
 
-Maya looked at him. He was standing in the doorway of the back room, shoulders loose, no defense, no armor. He looked like someone who'd been carrying a weight for a long time and had just put it down.
+She didn't sleep for three hours. When she did sleep, she dreamed of Bean & Leaf suits, of coffee beans that wouldn't stop multiplying, of Leo's face when he'd said take the offer. She woke up at 3 a.m. and lay in the dark and listened to the silence of the apartment above the shop, which was a different kind of silence from the shop itself — the silence of a place that had been lived in for three years and had learned the sound of its inhabitant.
 
-The shop was quiet. The espresso machine was off. The refrigerator hummed its B-flat. Somewhere down the street, a bus was pulling away from a stop. The bell above the door had been silent for an hour.
+She got up at 5:30. She made coffee. She drank it standing at the window, watching Alberta Street wake up. She thought about Leo. She thought about the fight. She thought about the loan officer and the offer and the lantern of the shop that she'd been tending for three years, the light she'd kept on even when it had seemed like the dark was winning.
 
-Maya thought about the buyout. She thought about the buyout and the offer and the life that was easy and safe and available if she just said yes. She thought about Leo, who'd been fired and showed up anyway, who'd sorted three hundred pounds of green coffee, who'd made her laugh in a bar, who'd looked at her with eyes that were careful and hopeful and terrified.
+She was not selling the shop. Not today. Maybe not ever.
 
-"I don't want you to go," she said.
+She opened her phone. She deleted the message she'd drafted to Leo: "I'm sorry. Can we talk?"
 
-The words surprised her. They surprised Leo too, because he went very still.
+She replaced it with: "Pop-up event. Outside. Saturday. You in?"
 
-"I just — I need a minute," Maya said. "I need to think. We have three days. I need to think."
+She stared at it for a long time. Then she hit send.
 
-Leo nodded. "I'll be downstairs. I'll sort beans."
+The fight happened on day nineteen.
 
-"Leo," Maya said, and he stopped. "I'm sorry. For what I said. You didn't deserve that."
+It was 6:45 p.m. on a Thursday. The shop was empty. Maya had locked the front door. Leo was at the table by the window, going over the event spreadsheet with the particular intensity of someone who was trying to make a miracle happen with numbers. The Mystery Bean bags were on the shelf behind Maya. The invoices from Tom were on the counter. The Bean & Leaf acquisition card was in her pocket, where it had been for weeks.
 
-Leo looked at her. His eyes were wet. Not crying-wet. Just watching-wet. The kind of wet that said "this matters." "I know," he said. "But you were scared. It's okay to be scared."
+Leo stood up. "We need to talk about the timeline."
 
-He left.
+Maya looked at him. She was wiping the counter. "What about it."
 
-Maya sat down at the table. She looked at the spreadsheet. She looked at the bean inventory. She looked at the wall where Mrs. Hsu had stood and told her that Bean & Leaf was expanding and that she needed a business plan.
+"The event is in five days. We've sold twelve hundred tickets. That's twelve thousand dollars. We need fifty thousand. We're at twelve thousand on day nineteen of a thirty-day timeline. The math isn't working."
 
-She opened her laptop. She started writing.
+"The math never works," Maya said. "That's why we have events. That's why we have community."
 
----
+"Community doesn't pay invoices."
 
-*End of Chapter 10*
+Maya stopped wiping. She set down the rag. She looked at Leo. He looked tired. He looked frustrated. He looked like a man who'd been running on coffee and adrenaline for three weeks and was finally, understandably, hitting a wall.
+
+"Are you having second thoughts," she said.
+
+"I'm having math thoughts," Leo said. "Math thoughts that say this isn't going to work. That we need to reconsider the Bean & Leaf offer. That we should take the buyout before it's too late."
+
+The room went quiet. The refrigerator hummed. The espresso machine sighed. Maya could hear the floorboards creak — small, distant sounds that suddenly seemed very loud.
+
+"Excuse me."
+
+"Maya, listen —"
+
+"I don't want to listen. I want you to leave."
+
+"I'm not leaving until we talk about this —"
+
+"Leave, Leo."
+
+She said it loudly. She said it with a voice she didn't know she had. Leo stared at her. He picked up his laptop bag. He stood in the doorway. The bell above the door jingled when he moved.
+
+"I'll see you tomorrow," he said.
+
+"No," Maya said. "Don't come tomorrow. Don't come until I call you. I need to think."
+
+Leo nodded. He left. The door closed. The bell jingled again.
+
+Maya stood in the shop and listened to the silence. She listened to the refrigerator. She listened to the espresso machine. She listened to the floorboards, which seemed to be saying things she didn't want to hear.
+
+She was alone. She picked up the Bean & Leaf card from the counter. She looked at it. She threw it in the trash. Then she retrieved it, because throwing it away hadn't changed anything and because she needed the card, needed the proof, needed to remember that people wanted to buy what she'd built and people wanted to destroy it and most people were somewhere in between.
+
+She went upstairs. She opened her laptop. She wrote Tom an email: "We need a miracle. Or a better event. Or both. Can you call Marcus and see if we can get more bands? More sponsors? Anything."
+
+She sent it. Then she opened the spreadsheet. She stared at the numbers. They were the same numbers they'd been for three weeks. They were numbers that did not believe in community. They were numbers that believed only in arithmetic.
+
+She thought about Leo's face when he'd said the math wasn't working. She thought about the kiss in the doorway, the almost-kisses, the partnership, the way he'd driven to Seattle and back because he'd had a feeling and because he'd been too cowardly to talk to her about it. She thought about the espresso machine, which had blown its gasket and he'd fixed it, and which now sat silently, like a watchdog that had decided to take a nap.
+
+She didn't sleep for two hours. When she did sleep, she dreamed of Bean & Leaf suits, of coffee beans that wouldn't stop multiplying, of Leo's face saying the math wasn't working. She woke up at 3:17 a.m. and lay in the dark and listened to the silence of the apartment above the shop.
+
+She got up at 6:30. She made coffee. She stood at the window and watched Alberta Street. She thought about the event. She thought about the buyout. She thought about Leo.
+
+She didn't know what she was going to do. But she knew what she wasn't going to do. She wasn't going to sell. Not yet. Not without a fight.
+
+Her phone buzzed. A text from Leo: "I'm sorry. Can we talk."
+
+Maya stared at it. She wrote a reply: "Not today. Maybe tomorrow."
+
+She stared at the screen. Then she deleted it. Then she wrote: "Event prep. Today. You in."
+
+She stared at it. Then she sent it.

@@ -54,15 +54,107 @@ Leo looked at her. "For what."
 
 They kissed. It was a quiet, private kiss, the kind that happened in crowded rooms but felt like they were alone.
 
-Outside, the bell Above the door rang. A customer walked in. Maya looked up. She smiled.
+Outside, the bell above the door rang. A customer walked in. Maya looked up. She smiled.
 
-"Welcome Coffee Rings and Bad Decisions," she said. "What can I get you."
+"Welcome to Coffee Rings and Bad Decisions," she said. "What can I get you."
 
 The customer smiled. "Just coffee," they said. "The way it's supposed to taste."
 
 Maya laughed.
 
 She was home.
+
+The stories kept coming after that. The shop became the kind of place people wrote about in magazines and posted about on social media, but Maya made sure it never lost the thing that had made it worth saving: the chipped espresso machine, the door that stuck when it rained, the smell of beans and burnt scones and the particular noise the register made when it summed up a sale. She kept the Mystery Bean Lottery going on Tuesdays, not for the money, but because regulars asked for it. She kept the handwritten menu because some things are too important to print.
+
+Leo kept his spreadsheet, but it wasn't the shrinking, anxious document it had been once. It was colorful now. It had notes in the margins. It had a coffee stain on page three that neither of them wanted to clean.
+
+They fought sometimes. They fought about whether the newsletter should include personal stories or only coffee facts. They fought about whether the loyalty card should have a physical token or be fully digital. They fought about which song should play during the slow afternoons. But the fights were fast now, and they ended with coffee, and neither of them left.
+
+One night, after the shop was closed and the lights were out, Maya stood at the kitchen table and wrote a note on the back of a receipt. It said: I don't need destiny. I just need the door to stay unlocked.
+
+She taped it to the fridge.
+
+The next morning, Leo came in and saw it. He wrote underneath: The door is unlocked. So am I.
+
+Maya laughed. She left it there.
+
+On holidays, they closed early. They went to parks. They took Oat Milk to the river. They met Tom in Bend and roasted beans and ate at the diner downtown where the waitress knew everyone's order by heart.
+
+On Maya's birthday that year, Leo gave her a key. It was the key to the pharmacy building.
+
+"What's this for," Maya said.
+
+"It's for whenever we need more space," Leo said. "Roasting. Classes. Events. It's yours if you want it."
+
+Maya looked at the key. She looked at Leo. She thought about the girl she'd been, terrified and stubborn and holding a coffee cup like a shield, who'd never imagined that anyone would give her anything so simple and so real.
+
+She kissed him.
+
+Oat Milk, sitting on the counter, meowed.
+
+"I think Oat Milk is jealous," Maya said.
+
+"Oat Milk is a cat," Leo said. "Cats don't get jealous. Cats get annoyed. There's a difference."
+
+"Oat Milk is both."
+
+They laughed. They made coffee. They drank it sitting on the floor, because the kitchen chairs were still too good to sit on when you were half-asleep and fully happy.
+
+Sometimes, Maya still thought about Seattle. Not about the job or the salary or the office with the window. She thought about the night Leo had called from the hotel room, the night he'd said he wasn't coming back, the night she'd decided to drive to the airport and make him choose in person. She had gone, once, just to the parking lot. She'd sat in her car and watched the arrivals gate for three hours. She'd seen him come out, alone, carrying his bag, looking at the sky like it owed him an explanation. She'd almost gotten out. She hadn't.
+
+She didn't need to anymore.
+
+The shop survived. Not because of her alone. Not because of Leo alone. But because neither of them alone was the whole story. The story was Sam's loyalty cards and Mrs. Hsu's low rent and Tom's partnership and Jake's Substack and the Mystery Bean Lottery and the newsletter and the customers who kept coming back and the regulars who'd become friends and the cat who'd become their own.
+
+It was all of them. It was any of them. It was the particular stubbornness of people who refused to stop caring about coffee.
+
+Maya stood at the counter one afternoon, watching Daisy pour latte art with the precision of someone who'd practiced the same heart shape seven hundred times, and she thought about how far she'd come from the girl who'd answered a doorbell to a man in a suit and had thrown a business card in the trash.
+
+She'd kept the card, actually. Leo had found it in the recycling months later, taped to the back of the pantry door, and had asked her why. She'd told him it was evidence.
+
+"Evidence of what," he'd said.
+
+"That enemies make the best partners," Maya said.
+
+He'd kissed her.
+
+The shop was full. The day was good. The partnership was solid. The future was not a threat; it was a table, a room, a chair, another chair, and a man she trusted more than she'd trusted anyone in her life.
+
+Maya poured herself a coffee. She handed a scone to Sam, who was leaning against the counter waiting for her break. She tapped the chalkboard where the daily special was written. The customer on table four smiled.
+
+She was home.
+
+Not metaphorically. Not hopefully.
+
+Really.
+
+Outside, the bell jingled. A customer walked in. Maya looked up. She smiled.
+
+"Welcome to Coffee Rings and Bad Decisions," she said. "What can I get you."
+
+The customer smiled. "Just coffee," they said. "The way it's supposed to taste."
+
+Maya laughed.
+
+She poured.
+
+She steam.
+
+She wiped the counter.
+
+She looked at Leo, who was watching with that soft, steady smile. She winked.
+
+The day went on.
+
+The shop went on.
+
+The beans went on.
+
+The love went on.
+
+The coffee went on.
+
+And Maya, finally, was exactly where she belonged.
 
 ---
 

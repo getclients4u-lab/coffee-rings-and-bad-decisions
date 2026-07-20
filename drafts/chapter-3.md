@@ -1,207 +1,187 @@
 # Chapter 3 — The Man in the Navy Suit
 
-Maya had been calling Bean & Leaf "the enemy" for so long that the phrase had worn smooth, like a stone in a river. It fit in her mouth comfortably. It required no explanation, no nuance, no soft edges. The enemy was anything with a loyalty app and a CFO who'd never had to explain to a customer why the oat milk was out.
+Maya had been calling Bean & Leaf "the enemy" for so long that the phrase had worn smooth, like a stone in a river. It fit in her mouth comfortably. It required no explanation. When she said it, Sam nodded. When she wrote it on the chalkboard, customers chuckled. When she posted it on Instagram, people commented with fire emojis.
 
-She replied to the email with three words:
+It was a useful enemy. Clear. Definite. A target you could point at and say: this is why we can't have nice things.
 
-> We are not interested.
+Then Leo Bianchi had walked into her shop and laughed at her pour-over section and somehow, inexplicably, not been entirely terrible. Now the enemy had a face, and the face was annoyingly symmetrical, and Maya was finding it difficult to maintain the proper level of animosity.
 
-She sent it at 9:14 a.m. She regretted it by 9:15.
+She tried. She really tried.
 
-"Good," Sam said. "Now we just have to figure out fourteen thousand dollars."
+Monday morning arrived with the particular damp chill that Portland did in spring, the kind of morning that made you grateful for espresso and suspicious of people who claimed to enjoy it. The air felt like wet wool. The sky was the color of old concrete. Maya unlocked the shop at 6:45, humming the song she'd heard on the radio the night before — something about a highway, a woman, and a suitcase — and discovered that someone had taped a flyer to the front window.
 
-"I'm selling the Mystery Bean lottery."
+It was a Bean & Leaf flyer. Clean. Minimalist. A single coffee cup on a white background, the Bean & Leaf serif logo above it, and below it the words: NEW LOCATION COMING SOON — ALBERTA STREET.
 
-"You said it was the worst idea you've ever had."
+Maya stared at it. The flyer had been professionally printed on thick paper that felt expensive even through the glass. She touched it with her index finger. It was smooth. It was deliberate. It was a declaration of war disguised as a community announcement. She imagined the meeting where this had been approved, the designers in their clean boots, the marketing team nodding over gingham tablecloths, the CEO saying something about "planting roots" while someone made a spreadsheet about projected foot traffic and how many baristas they could underpay on their way to disrupting the local economy.
 
-"I refined it."
+She took it down. She crumpled it. She threw it in the trash outside, where it landed on top of yesterday's coffee grounds with a sound like surrender.
 
-The day unspooled in the usual pattern: cinnamon rolls that were technically yesterday's but had been reheated with enough love that they passed for fresh, a woman who asked if the coffee was organic and then ordered a large drip anyway because she "was on a budget but still wanted to support local," and a man who tried to pay with a parking ticket because "it's basically currency." Maya had accepted it. She'd taped it to the espresso machine. It now served as decor.
+Sam arrived at 7:15, tilted her head at the trash can, and said, "You look like you just found out your favorite band is now doing insurance commercials."
 
-At 2:00 p.m., a woman in her seventies walked in. She was wearing a cardigan that had probably been fashionable in 1994 and was still fashionable because she was Mrs. Hsu and Mrs. Hsu defined fashion by a set of internal rules that Maya had never fully understood.
+"Bean & Leaf put a flyer on our door."
 
-"Afternoon," Mrs. Hsu said.
+"Let me guess. Beige aesthetic. Pretentious font."
 
-"Afternoon." Maya reached for a mug. "The usual?"
+"Times New Roman-something. Very corporate. Very 'we care about community.'"
 
-"Black. Don't let it steep too long. You steeping it too long last week."
+Sam leaned against the doorframe. Her apron was slightly askew. She'd clearly already been drinking coffee — Maya could tell by the way her eyes were already a little too bright, the way she was vibrating at a frequency that suggested either success or too much caffeine. "They're opening a pharmacy location. I heard that from my cousin who works at the health food store across the street. They're converting the old music venue. Can you believe that?"
 
-"I steeping it fine."
+The old music venue. Maya felt something cold and familiar settle in her chest, something that was not quite anger and not quite grief but a mixture of both, stirred together over years of watching Portland change. The venue had been there since before she moved to the neighborhood. She'd seen shows there. She'd danced there once, at a wedding reception that had taken over the whole place, and the band played a song so good she'd cried into her drink. The owner had been a man with a gray beard who said he didn't care about making money as long as he could keep the building. Bean & Leaf had probably looked at his lease and seen a spread of numbers instead of a life.
 
-Maya steeping it was not fine. Maya steeping it was a cry for help.
+"The old music venue? That place has been there since before I moved to Portland."
 
-Mrs. Hsu took her coffee and sat at the corner table, the one with the wobbly leg that Maya had propped up with a coaster since 2023. She opened a newspaper — an actual paper newspaper, because Mrs. Hsu considered the internet "a time thief" — and turned to the business section.
+"Since before anyone moved to Portland, probably. Bean & Leaf bought it. They're gutting it."
 
-Maya watched her. Mrs. Hsu had been coming to the shop since before Maya owned it. She'd been there when the previous owners had run the place. She'd watched Maya sign the lease. She'd watched Maya paint the walls a color that Maya had described as "warm beige" and that everyone else had described as "paint."
+"Of course they are."
 
-"Beau Leaf is interesting," Mrs. Hsu said, without looking up.
+Maya turned back to the espresso machine. She started the boiler with more force than necessary. The machine hissed. Sam pushed off the doorframe and walked to the sink, where she began arranging her collection of thermometers with the care of a jeweler polishing diamonds.
 
-Maya froze. "Bean & Leaf."
+"I saw Leo yesterday," Sam said, not looking up.
 
-"Same thing. Beau, Bean. They sound the same. No wonder you're mixing them up."
+Maya's hands paused on the milk pitcher. "Leo who."
 
-Maya's heart did a small, traitorous thing that she tried very hard to ignore. "Mrs. Hsu, I don't need to hear you defending Bean & Leaf over coffee."
+"Leo the suit. I was at the grocery store. He was buying a single apple. Just one. Like a cartoon character who's trying to convey 'I am a complicated man with simple tastes.'"
 
-"I am not defending them. I am saying they are interesting. They just bought the old pharmacy on 28th."
+"You talked to him?"
 
-Maya's hand tightened on the milk pitcher. "They what."
+"He said hi. I said hi. He asked how the shop was doing. I told him we were surviving."
 
-"They bought it. Yesterday. Paperwork filed this morning. They're converting it into a shop."
+Maya steamed milk. She tried to focus on the pitcher, on the microfoam that was coming out smoother than usual for a Monday, on the science of heating milk to 150 degrees without scalding it. She couldn't. "What did he say to that?"
 
-The blood left Maya's head in a very specific, very unpleasant way. Bean & Leaf was expanding. They weren't just trying to out-brand her. They were physically expanding. The old pharmacy was three blocks away. It was in the same neighborhood. It was exactly the kind of location that would kill her shop stone dead.
+Sam finally looked up. She was holding a thermometer like a microphone. "He looked sad. He looked like a man who's planning to buy a building and turn it into a pharmacy and who also might not want to do that."
 
-"What are they going to do there?" Maya asked, her voice steady in a way that she did not feel.
+Maya poured the milk into a latte. She didn't need to steam it. She just liked the motion, the circular swirl that turned white into light brown into something that was almost art. "He's Leo Bianchi, acquisitions director. He plans to buy buildings and turn them into pharmacies. That's literally his job."
 
-"Retail. Coffee. The usual. They have a design team coming next week. The landlord told me. He's also my landlord, incidentally. Small world."
+"His job is also to smile at baristas and refer them to importers and buy single apples. I'm not saying he's not the enemy. I'm saying the enemy might have a backstory."
 
-"Your landlord is selling to Bean & Leaf?"
+"The enemy's backstory is 'went to business school and now wants to put us out of business.'"
 
-"Renting. Not selling. I own the building you're in, dear."
+"Says the woman who threw his business card in the trash but still remembers what he looks like."
 
-Maya stared at her. This was not news. Mrs. Hsu owned the building. Maya knew this. She'd known this since she'd signed the lease. But in the three years since, she'd managed to forget it in the same way she forgot to buy dish soap and to call her mother back — not out of malice, but out of a focused, single-minded attention to the things that felt like they were on fire and an equally focused, single-minded neglect of the things that weren't.
+Maya turned. Steam was rising from the boiler. Sam was looking at her with the particular expression of a best friend who had been Best Friend for long enough to know when something was happening even when the someone involved was denying it loudly.
 
-"Mrs. Hsu," Maya said, "how much is my rent?"
+"I do not still remember what he looks like."
 
-Mrs. Hsu took a sip of coffee. She made a small, dissatisfied face. "You steeping it again."
+"Right. And I don't remember what you looked like when he walked out that door. Face flushed. Eyes doing that thing they do when they're trying to memorize something. You stared at that card for, like, eleven seconds. I counted."
 
-"Mrs. Hsu."
+"You were watching me throw away a business card?"
 
-"Eight hundred a month."
+"I was watching my best friend accidentally develop a crush on the enemy."
 
-"Eight hundred." Maya's voice cracked. The going rate for commercial space on Alberta was three thousand. Eight hundred was a gift. Eight hundred was a favor. Eight hundred was the kind of number that made her throat tight. "Mrs. Hsu, why have you been charging me —"
+"It's not a crush. It's an observation."
 
-"I can raise it," Mrs. Hsu said. "But I won't."
+"An observation that he's attractive."
 
-"You — you wouldn't."
+"He's not attractive. He's... adequate."
 
-"Your grandmother and I played mahjong every Tuesday for fifteen years." Mrs. Hsu folded her newspaper with deliberate precision. "She was a better player than you. Don't think I don't know you cheat at cards. I'm charging you what she would have paid."
+"Adequate," Sam repeated, as if she were writing the word down for future reference, which Maya was fairly certain she was.
 
-Maya's grandmother had died four years ago. She'd left Maya the coffee shop in her will. Maya hadn't known about the rent arrangement. She'd just been grateful for the cheap space and the chance to make something of herself.
+Maya turned back to the espresso machine. She started pulling a shot. The machine gurgled. The shot came out too fast. She tamped again, harder this time, as if the pressure of the tamp would tamp away the inconvenient fact that she had, in fact, stared at Leo's face for eleven seconds and might have committed it to the kind of memory that was not meant for business cards and trash cans. The portafilter clanged against the group head. The machine sighed. The brown stream hit the cup with its usual steady rhythm.
 
-"You've been — you've been taking care of me," Maya said.
+The morning rush hit at 8:30. By 9:15, Maya had forgotten about Bean & Leaf and Leo and everything that wasn't a latte or a cold brew or a customer who wanted something that wasn't on the menu but could be approximated with oat milk and enthusiasm. She moved through the motions with the particular trance that good baristas achieved — the state where hands did the work and the brain did something else, probably nothing, probably just observed. A woman ordered a flat white with an extra shot and a laminated card that said THANK YOU. A teenager asked if they had anything vegan and gluten-free and low-caffeine and Maya said "we have water" and the teenager said "that's perfect." A man came in with a dog that sat politely under the table and Maya gave the dog a piece of biscotti and the man gave her an extra five dollars.
 
-Mrs. Hsu made a noise that was halfway between a scoff and an emotion. "I'm taking care of the building. You're taking care of the coffee. That's the deal. Now stop looking at me like I just gave you a kidney. Drink your own coffee. It's getting cold."
+It was a good morning. It was a normal morning. It was a morning that felt, briefly, like the shop might actually survive its own mythology.
 
-Mrs. Hsu stood, took her newspaper, and walked to the door. She paused. "By the way. Your bookkeeping is terrible. I've been looking at your spreadsheets. You need to write a business plan. Not now. But soon. Before the Bean & Leaf people figure out that you're cheaper than they are and offer to buy you out."
+At 10:42, her phone buzzed. Tom.
 
-"Bean & Leaf doesn't buy out," Maya said. "Bean & Leaf buys everybody."
+Her stomach did something gymnastic. She picked up. "Hello."
 
-Mrs. Hsu shrugged. "We'll see."
+"Maya? Tom here. From the green coffee."
 
-The bell jingled behind her.
+"Hi, Tom. I've been dreading this call."
 
-Maya stood in the center of the empty shop, holding a milk pitcher, and felt the ground shift just slightly under her feet. Eight hundred dollars a month. Fourteen thousand pounds of coffee. Bean & Leaf two blocks away. Everything was moving, and she hadn't noticed because she'd been too busy trying to keep her head above water to look around and see that the river was getting faster.
+"Don't dread it. I've got two words for you: Mystery Bean Lottery."
 
-The bell jingled again.
+Maya blinked. She was standing behind the counter. A customer was waiting. "Mystery Bean what."
 
-She looked up.
+"Lottery. You know what a coffee lottery is?"
 
-Leo Bianchi was standing in the doorway.
+"I know what a lottery is. I don't know what a coffee lottery is."
 
-He was wearing the same navy suit. He looked like he hadn't slept. He was holding a paper cup — not from Bean & Leaf, Maya noted with a strange flicker of hope that she immediately suppressed — and his hair was somehow even more precisely unkempt than it had been yesterday.
+"Simple. You buy tickets. You sell mystery beans. The beans are your 500 pounds. You create combinations — single origin, blend, whatever — and you sell them as mystery tickets. Each ticket is a pound or half-pound. People buy them because it's fun. They feel like they're supporting a local shop. They feel like they might get something amazing. And you move the product before your loan officer starts calling with that particular tone of voice that suggests he's been saving it for a Tuesday."
 
-"I need coffee," he said.
+Maya's brain started making connections. It was rusty. It had been three weeks since she'd done anything resembling strategic thinking. "The beans are already roasted?"
 
-"You have coffee."
+"Some are. Some aren't. You could roast a portion. You could blend. You could do whatever you want. The point is, people buy mystery. It's a gimmick. Gimmicks work."
 
-"This is bad coffee. I can tell from the way the barista made it."
+"You're telling me to turn five hundred pounds of Ethiopian into a lottery."
 
-Maya's jaw tightened. "We're not serving you."
+"I'm telling you that you already have the beans and you already have the customers and the only thing you're missing is the gimmick part. I can help you source bags. I can help you print labels. I can help you not declare bankruptcy before your 30th birthday."
 
-"I'm not here to fight," Leo said. He walked in anyway, like he owned the place, and sat at the counter on the stool that had a small chip in the wood that looked like the state of Oregon and that Maya had been meaning to fix for six months. "I'm here because I got fired."
+Maya laughed. It came out louder than she intended. A customer looked up from their laptop. "Sorry," she said to the customer. Into the phone: "You're really offering to help me turn a disaster into a lottery."
 
-Maya stared at him. "What."
+"I'm really offering to help a customer who can't afford beans she accidentally ordered turn into a customer who might just become something more. Also — and I should mention this last — the importer contact Leo gave you? That's me. Leo's been saying nice things about you. Said you're the real deal. Said you deserve a break."
 
-"Bean & Leaf fired me. This morning. Via email. Three sentences. 'We no longer require your services. Best of luck.' That's it. No handshake. No box. Just three sentences in a font that was designed to feel like an apology but wasn't."
+The room tilted, just slightly. Maya leaned against the espresso machine. She had spent months thinking of Bean & Leaf as a monolith, a faceless force of gentrification and bad coffee served in cups that cost more than the coffee inside them. She had thought of Leo as a representative of that monolith, a suit with a caffeine allergy and a loyalty app. She had been wrong about at least one of those things, and she was beginning to suspect she'd been wrong about more.
 
-Maya's first emotion was not the one she expected. She thought she'd feel satisfaction. She thought she'd feel the warm glow of justice served cold, with a side of schadenfreude and a dash of "I told you so." Instead, she felt something else. Something that felt like — no. She did not feel bad for him. She could not feel bad for him.
+"Thank you, Tom," she said. "I — I don't know what to say."
 
-"You got what you deserved," she said.
+"Say yes to the lottery. Say yes to the importer relationship. Say yes to the fact that sometimes bad decisions lead to people who might actually help you."
 
-"I did," Leo said. He didn't argue. He just sat there, looking at the coffee she'd slid across the counter, and took a sip. It was the same Ethiopian Yirgacheffe he'd had yesterday. He closed his eyes again. Opened them. Looked at the cup with the same expression of personal betrayal. "Can I have another?"
+Maya opened her eyes. She looked at the crumpled Bean & Leaf flyer in the trash can. She looked at the coffee bags stacked on the back shelf, each one a small biography of a place she'd never been and a farmer she'd never meet. She looked at the door, which was currently letting in a man who wanted a pour-over and who was already looking at his phone with the particular impatience of someone who believed coffee was a code for something else.
 
-"No."
+"Okay," she said. "Let's do the lottery."
 
-"Please."
+"Send me an email. We'll sketch it out. I'll have labels by Friday. You'll have a gimmick by Saturday."
 
-"I — no."
+She hung up. She stood there for a moment, phone in hand, while the shop continued its choreography around her — the refrigerator humming, the grinder waking up for another customer, Sam saying something about milk that Maya didn't quite catch. She felt a strange lightness in her chest, the kind that came not from solving the problem but from realizing the problem might not actually be insoluble. It was the feeling of standing in a dark room and realizing you'd been holding a flashlight the whole time.
 
-"You're being petty."
+Sam appeared at her elbow with a clipboard that had clearly been commandeered from the fundraiser supplies. "You look like you just heard good news."
 
-"I'm being a business owner who has fourteen thousand dollars of beans arriving and a lease that's about to get interesting and a coffee shop that's one bad month away from becoming a boutique candle store."
+"Tom called. He has a plan."
 
-Leo's eyebrows went up. "Fourteen thousand dollars of beans."
+"Tom the bean guy?"
 
-"How did you —"
+"Tom the bean guy is not just the bean guy. He's also the guy Leo referred me to. The same guy Leo has been telling nice things about me to."
 
-"Bean & Leaf orders in bulk. I know what a five-hundred-pound order looks like. That's the kind of order that's either a very committed wedding or a very bad business decision."
+Sam's eyebrows climbed so high they almost left her face. "Well," she said. "The enemy has relatives. Or something."
 
-"It was a business decision," Maya said. "It was a very bad business decision."
+"Something," Maya said. She picked up the portafilter and slung it into the group head. The machine hissed. The shot came out brown and beautiful. "Something like human."
 
-Leo sat in silence for a moment. Then he said, "I need a job."
+By afternoon, she had designed the first Mystery Bean Lottery ticket. Sam had drawn a little coffee cup with a question mark on it. Maya had written the rules on the chalkboard, where they were visible to everyone who walked in:
 
-"I don't hire ex-enemy agents."
+MYSTERY BEAN LOTTERY
+$10 per ticket. Each ticket = 1/2 lb mystery roast.
+Possible origins: Ethiopia, Colombia, Guatemala, Kenya, Blend.
+We roast. You guess. You win bragging rights.
+100% of proceeds go to LOCAL COFFEE RESCUE.
 
-"You don't hire anyone. You have one employee who's also your best friend and who you pay in scones."
+She wasn't sure what "Local Coffee Rescue" was yet, but she liked the sound of it. It sounded official. It sounded like something that had existed before she'd invented it and would exist after she was gone, a small temperature-stable institution in a neighborhood that kept changing its mind about what it wanted to be.
 
-"It's a great scone."
+An older woman who came in every morning for chamomile tea read the board three times. Her glasses were slightly smudged, and she kept taking them off and wiping them on her cardigan. "Is this legal?"
 
-"I'm good at supply chains," Leo said. "I know the import market. I know which roasters are lying about their sourcing and which ones are actually good. I know how to move inventory without getting stuck with it."
+"Of course it's legal," Maya said. "It's a lottery. There's no cash prize. It's just coffee. And bragging rights."
 
-Maya said nothing.
+The woman considered this. She put a twenty-dollar bill on the counter. "Four tickets. And keep the change. I want to support the shop."
 
-"I'm free starting today. I have no income. I have an apartment that I can't afford. I have a resume that says 'acquisitions director at Bean & Leaf' and a reputation in the industry that starts with 'oh, the guy who got fired.'"
+Maya took the money. She wrote the woman's name on four tickets. She thanked her. When she looked up, the woman was gone, and the bell above the door was still vibrating from her exit.
 
-"You got me fired," Maya said. "Sort of. Indirectly."
+Maya sat on the stool and stared at the ticket in her hand. It was just paper. It was just an idea. But the cash in the register was real. The woman's trust was real. The feeling in Maya's chest was real.
 
-"In a very roundabout way, yes. And for that I'm sorry. I'm also here to work off my debt. Literally. I'll work for free. I'll stock shelves. I'll clean the espresso machine. I'll sort the beans. I'll do anything."
+"Stop looking at it like it's a holy scroll," Sam said, passing by with a tray of scones. "It's a piece of paper with coffee beans written on it."
 
-Maya looked at him. He was sincere. He was not smiling. He was not charming her. He was offering to do manual labor for a woman whose business he'd been hired to destroy, because somehow, in the three minutes they'd spent talking about coffee, he'd decided that her shop was more real than the company he'd worked for.
+"It's a miracle," Maya said.
 
-It was, she thought, the most corporate thing he could possibly do. And also the least.
+"Close enough."
 
-"You can't work for free," she said. "I don't need charity."
+By closing time, they'd sold 73 tickets. It wasn't the massive influx Maya had dreamed of. It wasn't the kind of line that stretched around the block. But it was a beginning. It was a shape. It was the first time in three weeks she hadn't felt like she was staring at a wall and trying to convince herself it was a door.
 
-"I'm not offering charity. I'm offering a deal. You need the beans sold. I know how to sell beans. I'll work for three weeks. If we hit the target, you pay me. If we don't, I leave."
+She went home. She opened her laptop. She sent Tom a three-word email: "Let's do this."
 
-"Three weeks," Maya said. "Fourteen thousand dollars in three weeks."
+Then she did something she hadn't done in months. She opened her calendar. She looked at the next week. She began to schedule things — roaster visits, pop-up prep, Saturday's fundraiser, a meeting with Tom on Friday. The calendar filled up. It looked, for the first time in a long time, like a life.
 
-"Yeah."
+She went to bed at 10:30. She didn't dream about coffee beans. She didn't dream about Bean & Leaf or loan officers or floorboards that creaked in Morse code. She dreamed about the ocean, which was strange, because she hadn't seen the ocean in two years, but she dreamed about it anyway — waves, the particular gray-green of Oregon water, the way the beach smelled like salt and something alive. When she woke up, the invoice was still on her desk. But it didn't look the same. It looked like a starting point.
 
-"That's impossible."
+Later that night, after the calendar was full and the email to Tom had been sent and the wine had been poured into the good glasses — the ones with the stems she usually saved for nothing — Maya stood at the window of her apartment and looked down at the street. A car drove slowly past, music playing so quietly she could only hear the bass. A couple walked by holding hands and then suddenly not, as if they'd remembered they were fighting about something small and stupid. The Thai restaurant next door was closing up. The bookstore was dark. Alberta Street was not the loud, chaotic, wonderful place it had been that morning, but it was the same place, and that felt like enough.
 
-"Not with the right strategy. You've got a loyal customer base. You just don't have the reach. I do. Or —" he paused, "I did. Before I got fired."
+She thought about Leo. She thought about how he'd looked when he'd ordered the black coffee, the way he'd talked about adjectives the way other people talked about heartbreak. She thought about the flyer in the trash. She thought about the old music venue and the new pharmacy location and the way neighborhoods kept changing whether you wanted them to or not. She thought about what Sam had said — the enemy has relatives — and she laughed softly, because it was true and also because it was funny and also because it was the kind of truth that could only come from someone who knew you better than you knew yourself.
 
-Maya looked at him. She looked at the espresso machine hissing in the background. She looked at the Mystery Bean lottery idea still scribbled on a notepad behind the register, a gleam of a plan that was both terrible and somehow exactly what this situation needed. She looked at the door where Mrs. Hsu had left, and she thought about what Mrs. Hsu had said about Bean & Leaf expanding, and she thought about how she'd been fighting this war alone for three years.
+She went to bed. The sheets were cool. The pillow still smelled like the shop. She closed her eyes. She didn't think about the money. She didn't think about the phone call. She thought, instead, about the coffee in the morning, about the way it smelled when it was fresh, about the people who would come in and buy tickets and drink mystery beans and feel, for a second, like something fun was happening to them instead of something terrible. She thought about possibility. It was a strange feeling. It didn't feel like hope. It felt, instead, like a muscle that had atrophied and was now being used again — stiff, a little sore, but alive.
 
-She thought about the bell above the door, which had jingled twice already this afternoon, and she realized that the shop was, in some small way, responding. The shop wanted help. The shop was asking for it. The shop had been asking for it the entire time, and Maya had been too proud to hear it.
+When she woke up, the first thing she thought was: we need more tickets.
 
-"You start tomorrow," she said.
+The second thing she thought: Leo was right about Tom.
 
-Leo smiled. It was the real smile again. The one that made the corners of his eyes crinkle. "Thank you."
+The third thing she thought, and the one she kept to herself: maybe the enemy isn't always the enemy. Maybe the enemy is just a person who needs a better adjective.
 
-"Don't thank me. I'm not doing this because I like you. I'm doing this because I need fourteen thousand dollars and you're the only person in this city who knows how to sell beans without sounding like a press release."
-
-"Fair enough," Leo said. "Can I get that second cup?"
-
-"I'll make it," Maya said. "But I'm charging you full price."
-
-"Worth it."
-
-She made the coffee. She handed it to him across the counter. Their fingers brushed. The moment lasted exactly one second, but in that second, Maya felt something she hadn't felt in a long time — the particular electric jolt of contact with someone who wasn't trying to sell her anything.
-
-Leo took the cup. "See you tomorrow," he said.
-
-He left.
-
-Maya stood in the doorway and watched him walk down the street in his navy suit, carrying a paper cup of her coffee like it was something precious.
-
-She closed the door. Locked it. Leaned against it.
-
-"You're making a mistake," she told herself.
-
-"I know," said the part of her that had already decided it wasn't.
-
----
-
-*End of Chapter 3*
+She got out of bed. She opened the window. The morning air was cool and damp. The street was quiet. The shop below was humming. She drank water from the tap. She put on her apron. She opened the door to the stairs and went down to meet whatever the day brought.

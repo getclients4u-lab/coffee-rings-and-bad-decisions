@@ -1,126 +1,119 @@
 #!/usr/bin/env python3
-"""Build print-ready KDP paperback cover for 5.5x8.5 trim size."""
-from PIL import Image, ImageDraw, ImageFont
+"""Build KDP full-wrap print cover PDF.
+Estimates 178 pages -> spine ~0.40 inches for standard white paper.
+Trim 6x9, bleed 0.125, safe margin 0.25.
+"""
+from reportlab.lib.pagesizes import letter
+from reportlab.lib.units import inch
+from reportlab.lib.styles import ParagraphStyle
+from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_RIGHT
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Table, TableStyle, PageTemplate, Frame
+from reportlab.pdfgen import canvas
+from reportlab.lib.colors import HexColor
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
 from pathlib import Path
 
-src = '/home/ubuntu/.openclaw-author/coffee-rings-and-bad-decisions/cover/clean-base.png'
-out = '/home/ubuntu/.openclaw-author/coffee-rings-and-bad-decisions/cover/print-cover-alex-rogers.png'
-FONT_DIR = '/usr/share/fonts/truetype/liberation'
-BOLD = Path(FONT_DIR) / 'LiberationSerif-Bold.ttf'
-REG  = Path(FONT_DIR) / 'LiberationSerif-Regular.ttf'
-ITAL = Path(FONT_DIR) / 'LiberationSerif-Italic.ttf'
+PROJECT = Path('/home/ubuntu/.openclaw-author/coffee-rings-and-bad-decisions')
+COVER_IMG = PROJECT / 'cover' / 'authors' / 'alex-rogers-cover-kdp.png'
+OUT = PROJECT / 'cover' / 'print-cover-alex-rogers.pdf'
 
-# KDP 5.5x8.5 paperback: assembled full cover with bleed
-# Trim 5.5 + 5.5 = 11.0, spine ~0.85 for 230pp; add 0.125 bleed per side
-SPINE_INCHES = 0.85
-DPI = 300
-FRONT_PX = int(5.625 * DPI)    # 1688
-SPINE_PX = int((SPINE_INCHES + 0.25) * DPI)  # 330
-BACK_PX  = int(5.625 * DPI)    # 1688
-H_PX     = int(8.625 * DPI)    # 2588
+FONT_DIR = Path('/usr/share/fonts/truetype/liberation')
+pdfmetrics.registerFont(TTFont('LiberationSerif-Bold',    str(FONT_DIR / 'LiberationSerif-Bold.ttf')))
+pdfmetrics.registerFont(TTFont('LiberationSerif-Regular', str(FONT_DIR / 'LiberationSerif-Regular.ttf')))
+pdfmetrics.registerFont(TTFont('LiberationSerif-Italic',  str(FONT_DIR / 'LiberationSerif-Italic.ttf')))
 
-TOTAL_W = FRONT_PX + SPINE_PX + BACK_PX  # 3706
+# Trim / bleed
+TEXT_W = 6 * inch
+TEXT_H = 9 * inch
+BLEED = 0.125 * inch
+SPINE = 0.40 * inch  # 178 pages standard white
 
-# Open and crop source
-img = Image.open(src).convert('RGB')
-sw, sh = img.size
-ratio = max(TOTAL_W / sw, H_PX / sh)
-img = img.resize((int(sw*ratio), int(sh*ratio)), Image.LANCZOS)
-x = (img.width - TOTAL_W) // 2
-y = (img.height - H_PX) // 2
-img = img.crop((x, y, x + TOTAL_W, y + H_PX))
+WRAP_W = TEXT_W * 2 + SPINE
+WRAP_H = TEXT_H + 2 * BLEED
+SAFE = 0.25 * inch
 
-def fpath(p, size):
-    return ImageFont.truetype(str(p), size) if p.exists() else ImageFont.load_default()
+TITLE = 'Coffee Rings and Bad Decisions'
+AUTHOR = 'Alex Rogers'
+BLURB = ("Maya Chen built her Portland coffee shop on bad decisions and burnt beans. "
+         "When a rogue 500-pound order collapses her savings, the only way out is the Mystery Bean lottery—and the one man who might actually understand what she's fighting for.")
 
-canvas = Image.new('RGB', (TOTAL_W, H_PX), (28, 36, 50))
-canvas.paste(img, (0, 0))
-draw = ImageDraw.Draw(canvas, 'RGBA')
+def build_back_page(c, x_start, y_start, w, h):
+    c.saveState()
+    # cream background
+    c.setFillColor(HexColor('#F5F0E8'))
+    c.rect(x_start, y_start, w, h, fill=1, stroke=0)
 
-# Top/bottom gradients
-for i in range(90):
-    a = int(200 * (1 - i/90))
-    draw.line([(0,i),(TOTAL_W,i)], fill=(0,0,0,a))
-for i in range(H_PX-100, H_PX):
-    a = int(220 * ((i-(H_PX-100))/100))
-    draw.line([(0,i),(TOTAL_W,i)], fill=(0,0,0,a))
+    # decorative top bar
+    c.setFillColor(HexColor('#C9862A'))
+    c.rect(x_start, y_start + h - SAFE*1.8, w, SAFE*1.8, fill=1, stroke=0)
 
-CX = TOTAL_W // 2
-title_font  = fpath(BOLD, 114)
-small_font  = fpath(ITAL, 38)
-author_font = fpath(REG,  48)
+    c.setFillColor(HexColor('#0D1B2A'))
+    c.setFont('LiberationSerif-Bold', 20)
+    c.drawCentredString(x_start + w/2, y_start + h - SAFE*2.8 - 20, TITLE)
 
-draw.text((CX, 72),  'COFFEE',            font=title_font,  fill=(245, 240, 232), anchor='mm')
-draw.text((CX, 124), 'RINGS',             font=title_font,  fill=(245, 240, 232), anchor='mm')
-draw.text((CX, 182), 'and Bad Decisions', font=small_font,  fill=(201, 134,  42), anchor='mm')
-draw.text((CX, H_PX - 160), 'Alex Rogers', font=author_font, fill=(245, 240, 232), anchor='mm')
+    c.setFont('LiberationSerif-Italic', 24)
+    c.drawCentredString(x_start + w/2, y_start + h - SAFE*2.8 - 52, AUTHOR)
 
-# ISBN / Barcode placeholder on back
-bx, by = TOTAL_W - 200, H_PX - 280
-draw.rectangle([bx, by, bx+140, by+180], fill=(255,255,255))
-draw.text((bx+70, by+90), 'ISBN', font=fpath(REG, 18), fill=(0,0,0), anchor='mm')
+    # Blurb text with margins
+    c.setFillColor(HexColor('#1f1b16'))
+    c.setFont('LiberationSerif-Regular', 11)
+    y = y_start + h - SAFE*2.8 - 110
+    max_w = w - 2*SAFE
+    line_h = 15
+    words = BLURB.split()
+    line = []
+    for word in words:
+        test = ' '.join(line + [word])
+        if c.stringWidth(test, 'LiberationSerif-Regular', 11) <= max_w:
+            line.append(word)
+        else:
+            c.drawCentredString(x_start + w/2, y, ' '.join(line))
+            y -= line_h
+            line = [word]
+    if line:
+        c.drawCentredString(x_start + w/2, y, ' '.join(line))
 
-# Spine
-sp_x = FRONT_PX
-sp_y = 0
-for y in range(H_PX):
-    a = int(40 * abs(y - H_PX//2) / (H_PX//2))
-    draw.line([(sp_x,y),(sp_x+SPINE_PX,y)], fill=(0,0,0,a))
-for x in [sp_x, sp_x + SPINE_PX]:
-    draw.line([(x,60),(x,H_PX-60)], fill=(201,134,42), width=4)
+    # bottom band
+    c.setFillColor(HexColor('#2D6A9F'))
+    bottom_y = y_start + SAFE*0.8
+    c.rect(x_start, bottom_y, w, 18, fill=1, stroke=0)
+    c.setFont('LiberationSerif-Bold', 9)
+    c.setFillColor(HexColor('#F5F0E8'))
+    c.drawCentredString(x_start + w/2, bottom_y + 6, 'www.coffeerings.com')
+    c.restoreState()
 
-# Spine text (rotated)
-spine_center_x = sp_x + SPINE_PX//2
-spine_center_y = H_PX//2
-spine_img = Image.new('RGBA', (H_PX, SPINE_PX), (0,0,0,0))
-sd = ImageDraw.Draw(spine_img)
-sd.text((H_PX//2, 40), 'COFFEE RINGS', font=fpath(BOLD, 36), fill=(245,240,232), anchor='mm')
-sd.text((H_PX//2, 90), 'and Bad Decisions', font=fpath(ITAL, 22), fill=(201,134,42), anchor='mm')
-sd.text((H_PX//2, SPINE_PX-80), 'Alex Rogers', font=fpath(REG, 26), fill=(200,200,200), anchor='mm')
-spine_rot = spine_img.rotate(90, expand=True)
-sw, sh = spine_rot.size
-ox = spine_center_x - sh//2
-oy = spine_center_y - sw//2
-canvas.paste(spine_rot, (ox, oy), spine_rot)
+def build_front_page(c, x_start, y_start, w, h):
+    c.saveState()
+    # place cover image inside safe margin on front
+    cover_path = PROJECT / 'cover' / 'authors' / 'alex-rogers-cover-kdp.png'
+    c.drawImage(str(cover_path), x_start + SAFE, y_start + BLEED, TEXT_W, TEXT_H, preserveAspectRatio=True, anchor='c')
+    c.restoreState()
 
-# Spine border
-draw.rectangle([sp_x, 0, sp_x+SPINE_PX, H_PX], outline=(201,134,42), width=4)
+def build_spine(c, x_start, y_start, w, h):
+    c.saveState()
+    c.setFillColor(HexColor('#0D1B2A'))
+    c.rect(x_start, y_start, w, h, fill=1, stroke=0)
+    c.setFillColor(HexColor('#C9862A'))
+    c.rect(x_start, y_start + h - 6, w, 6, fill=1, stroke=0)
+    c.rotate(90)
+    c.setFillColor(HexColor('#F5F0E8'))
+    c.setFont('LiberationSerif-Bold', 9)
+    c.drawCentredString(y_start + h/2, - (x_start + w + 16), TITLE)
+    c.setFont('LiberationSerif-Bold', 7)
+    c.drawCentredString(y_start + h/2, - (x_start + w + 30), AUTHOR)
+    c.restoreState()
 
-# Back cover text
-pub_font = fpath(REG, 24)
-pub_lines = [
-    'Coffee Rings Press',
-    'coffeeringsnovel.com',
-    ' ',
-    'Coffee Rings and Bad Decisions',
-    'A Romantic Comedy Novel',
-    'by Alex Rogers',
-    ' ',
-    'Available on Amazon KDP:',
-    'eBook • Paperback • Kindle Unlimited',
-]
-for i, line in enumerate(pub_lines):
-    draw.text((120, 120 + i*36), line, font=pub_font, fill=(220,225,230), anchor='lm')
+def build_back_cover(c, x_start, y_start, w, h):
+    build_back_page(c, x_start, y_start, w, h)
 
-bio_font = fpath(ITAL, 22)
-bio = [
-    'About the Author',
-    ' ',
-    'Alex Rogers writes romantic comedies about coffee,',
-    'community, and the kind of love that sneaks up',
-    "on you when you're too busy arguing about grind",
-    'sizes to notice.',
-    ' ',
-    'Coffee Rings and Bad Decisions is her debut.',
-]
-for i, line in enumerate(bio):
-    draw.text((120, 880 + i*30), line, font=bio_font, fill=(180,190,200), anchor='lm')
+def on_page(c, doc):
+    build_front_page(c, BLEED, BLEED, TEXT_W, TEXT_H)
+    build_spine(c, BLEED + TEXT_W, BLEED, SPINE, TEXT_H)
+    build_back_page(c, BLEED + TEXT_W + SPINE, BLEED, TEXT_W, TEXT_H)
 
-# Front bleed border markers (safe area)
-# 0.25" bleed on all sides = 75px
-bleed_px = int(0.125 * DPI)  # 37px
-draw.rectangle([bleed_px, bleed_px, TOTAL_W-bleed_px, H_PX-bleed_px],
-               outline=(255,255,0,120), width=2)
-
-canvas.save(out, 'PNG')
-print('Print cover saved:', out, 'size:', canvas.size)
+doc = SimpleDocTemplate(str(OUT), pagesize=(WRAP_W, WRAP_H),
+                        leftMargin=0, rightMargin=0,
+                        topMargin=0, bottomMargin=0)
+doc.build([Spacer(1,1)], onFirstPage=on_page, onLaterPages=on_page)
+print('Print cover saved:', OUT, 'Size:', (WRAP_W, WRAP_H))

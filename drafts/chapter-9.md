@@ -1,145 +1,237 @@
 # Chapter 9 — The Buyout
 
-The festival accelerated things. Not in the way Maya had hoped — she'd thought it would bring customers and cash — but in the way that momentum does when you're moving fast and not looking where you're going.
+The festival accelerated things. Not in the way Maya had hoped — she'd thought it would bring customers and cash — but in the way that momentum does when you're moving fast and there's a large force standing still directly in your path. The force was Bean & Leaf. The force was a pharmacy location that was now, according to the flyers taped to streetlights, "coming soon to Alberta Street." The force was a Series B-armed corporation that had decided Maya's neighborhood was worth a bet.
 
-By the end of the second week, they'd sold ninety pounds of beans. Forty-three from the festival, another forty-seven from the shop, the parking lot, Sam's Instagram stories, and an impromptu cupping session that had accidentally turned into a pop-up at the Saturday market. Leo had called every roaster he knew. Maya had emailed every café within a twenty-mile radius. Sam had designed a loyalty card that was jazzy and colorful and had a coffee ring stain printed right on it because "authenticity."
+Tom called on Monday morning. "We need to talk about the beans," he said. "I have the roasted inventory. We need to move it. Fast."
 
-They had five thousand dollars in the bank. They still needed ten thousand more, and they had six days to do it.
+"I know," Maya said. She was standing at the counter, watching the rain. "I have the lottery. We're launching Tuesday."
 
-Maya was not sleeping.
+"Good. But we need more channels. We need a pop-up. We need an event. We need to move product while the city still cares about your shop."
 
-"I think you should sell," her mother said.
+"The city doesn't care about my shop. A blogger cared about my shop for three days."
 
-Maya was on the phone. It was 10:00 p.m. She was sitting on the floor of the back room surrounded by sack labels. Her mother had called to ask how the coffee business was going, and Maya had told her about the festival and the ninety pounds and the loyalty cards, and her mother had gone quiet.
+"The city cares. It just doesn't know it yet. That's where I come in."
 
-"Mom," Maya said.
+She hung up. She stared at the phone. She made coffee. She didn't drink it. She looked at the Mystery Bean tickets, now stacked in a wooden box on the counter. She thought about the 400 pounds of roasted bags in the back room and the 100 pounds still green and waiting and the loan officer's number stored in her contacts under a name she preferred not to say out loud.
 
-"Fourteen thousand pounds," her mother said. "You can't sell fourteen thousand pounds of coffee in six days. You're twenty-nine years old. You don't have to prove anything. You can take the offer and walk away."
+Sam arrived at 7:15. She looked at Maya. "You have the 'I'm thinking about something that's probably bad for me' face."
 
-"I'm not walking away."
+"I'm thinking about four hundred pounds of Ethiopian in my back room and a loan officer who wants it all back by next month."
 
-"Then what are you going to do?"
+"Four hundred pounds is a lot of beans."
 
-Maya looked at the spreadsheet Leo had made. She looked at the bean inventory, which had gone from five hundred pounds to four hundred and ten, which was technically progress but also a reminder of how far they still had to go.
+"It was five hundred. We've moved a hundred through the lottery."
 
-"I'm going to finish it," she said.
+"That's... not a lot."
 
-"With what?"
+"I know."
 
-"With Leo."
+Sam put her bag down. She went to the espresso machine. She started the boiler. The hiss was a kind of reassurance. "Okay. Here's what we do. First, we call Tom and we plan the pop-up. Second, we figure out how to use social media without feeling like we're betraying our indie values. Third, we accept that Leo is, against all odds, on our side, and we stop pretending he's the enemy when he's actively helping us."
 
-The silence on the other end of the line was the kind her mother did when she was measuring her words like coins. "Leo the ex-Bean & Leaf man."
+"Leo's a suit."
 
-"He's not ex-Bean & Leaf anymore. He's Leo."
+"Leo is a suit who can make coffee and has introduced you to the only importer in the Pacific Northwest who'll talk to a shop your size. Also, Leo liked the Mystery Bean concept when you first showed it to him. Also, Leo was right about the gimmick being a form of transparency. Also, Leo once told me that he grew up in a town that had one coffee shop and it was the last place to get wifi before the highway and that he doesn't want that for your neighborhood."
 
-"Leo who you met three weeks ago."
+Maya stared at her. "Leo talked to you about living in a town with one coffee shop?"
 
-"Leo who knows things I don't know. Leo who has a brain that works like a supply chain and a heart that works like — like a person who cares. Leo who showed up at our shop at 6:30 a.m. every day for two weeks."
+"Yesterday. At the festival. He bought a pastry. We talked. I have a mouth. I used it."
 
-"You like him."
+Maya closed her eyes. "I don't know whether to be grateful or annoyed."
 
-Maya flinched. "Mom."
+"Both. You can be both."
 
-"You liked him before I said anything. I can hear it in your voice. It's the same voice you used when you talked about Jake, and Jake was a disaster, and I liked him too."
+The phone rang. It was Tom, again. "I've got a venue," he said. "Saturday. Same time. Outside the shop. We'll do a roast demonstration. People can watch. They can smell. They can buy tickets. It's an event now, not just a lottery."
 
-"Jake was not a disaster. Jake was — Jake was complicated."
+"A roast demonstration," Maya said.
 
-"Jake was an influencer who tried to put a ring light in your coffee shop."
+"From green to cup. In forty-five minutes. With tasting. And a special mystery blend that I'm developing with your input."
 
-Maya laughed. It was a bitter, affectionate sound. "Okay. Fine. Leo is complicated too. But he's — he's here. He's actually here."
+"You're developing a blend with my input."
 
-"Where's Jake?"
+"I value your opinion. You're my favorite accidental 500-pound customer."
 
-Maya didn't answer. She couldn't. Because Jake was somewhere — maybe Los Angeles, maybe Bali, maybe at a coffee shop in Berlin that was going to be the subject of his next content series — and the thought of him didn't make her angry anymore or even sad. It just made her tired. She'd spent a year trying to be someone Jake wanted to film, and then she'd spent another year trying to be someone Maya wanted to be, and those two people had turned out to be very different.
+Maya laughed. She said yes. She said she'd have the setup ready. She said she'd call Leo, because Leo had become, without anyone quite saying so, the logistics guy, the social media guy, the person who knew how to make a spreadsheet and a playlist and a plan.
 
-"Mom," she said, "I have to go."
+She called Leo. He answered on the second ring.
 
-"Call me tomorrow."
+"Leo. Tom has a plan. Pop-up roast demo. Saturday. Outside the shop."
 
-"Tomorrow."
+"Perfect," Leo said. "I'll bring the sound system. The playlist from the festival worked. The data says sales were 40% higher during the music."
 
-She hung up. She sat in the dark.
+"Stop with the data."
 
-The bell jingled.
+"I can't. It's in my blood."
 
-She looked up. Leo was standing in the doorway. He was holding a paper cup of coffee that was definitely not from a coffee shop — it was from the convenience store across the street, the one with the fluorescent lights and the pre-made sandwiches that Maya had once described as "food-shaped objects."
+They arranged it. Leo would arrive at 9 a.m. with a speaker. Sam would handle the demo station. Maya would handle the tickets. Tom would handle the roast. The event would start at 11 and run until 4 or until they sold out, whichever came first.
 
-"Convenience store coffee," he said. "I know. I'm sorry."
+Maya spent the next four days in a state of heightened focus that was almost manic. She posted daily on Instagram — photos of the green beans, the roasting process, the Mystery Bean Lottery tickets, the shop. She replied to every comment. She made new friends with people who followed the account and then bought tickets and then told their friends. She learned to write captions that didn't sound corporate but also didn't sound too casual, the middle path that was harder than either extreme.
 
-"Sit," Maya said.
+On Friday night, Sam said, "You look like a different person than you did two weeks ago."
 
-He sat. The refrigerator hummed. The floor creaked. The two of them sat in the dim light of the back room, surrounded by coffee sacks and the future of a business that shouldn't have been possible but somehow was.
+"I feel like a different person," Maya said. She was sitting at the kitchen table, laptop open, spreadsheet open, phone in hand. "This is what running a business feels like when you're not drowning."
 
-"I got a call today," Leo said.
+"Wait until the loan officer calls," Sam said.
 
-Maya's stomach dropped. "From whom."
+The loan officer called on Saturday morning, precisely at 10 a.m., while Maya was pouring milk for the first customer of the roast demo. The caller ID said FIRST NATIONAL PORTLAND. Maya stared at it for three rings. Then she answered.
 
-"Rachel. She's offering to buy you out."
+"Ms. Chen," said a man's voice. Smooth. Professional. The voice of a man who said "Ms." instead of first names because he wanted you to know he had a title. "This is Richard from First National. I'm calling about your SBA loan."
 
-Maya went cold. "Buy me out."
+"Hi, Richard."
 
-"One hundred and fifty thousand dollars. For the shop, the equipment, the lease. She'll let you keep the name. She'll let you stay on as a consultant. You'd never have to make another cup of coffee if you didn't want to."
+"We've been reviewing your account. Your payment was due last week. We haven't received it."
 
-Maya said nothing.
+"I know. I was going to call you. I'm working on it."
 
-Leo continued. "It's a good offer. The lease is cheap — Mrs. Hsu's rent — and the location is good. Bean & Leaf could turn it into something profitable."
+"Working on it is not a payment plan, Ms. Chen. We need to discuss your options. Can we meet this week?"
 
-"I don't want profits," Maya said. "I want the shop."
+Maya looked around the shop. Tom was unpacking the roaster. Leo was setting up the sound system. Sam was handing out samples. The first customers were arriving. Outside, the sun was out. The air smelled like coffee and possibility.
 
-"Bean & Leaf isn't going to destroy the shop," Leo said. "They'll rebrand it. They'll keep the name. They'll keep the staff. They'll —"
+"I can't meet this week," Maya said. "I'm running a business event. I'll have the payment by the end of the month."
 
-"I don't care what they'll keep. I don't care what they'll change. This is mine. My grandmother left it to me. The paint on the walls is the color she chose. The espresso machine is the one she bought. The chalkboard menu is stained because she once dropped ink on it and I never fixed it."
+"Ms. Chen —"
 
-Leo was quiet. "I know."
+"End of the month. I'll call you Monday with a number."
 
-"Rachel knows that too. That's why she's offering. She wants the building because she knows it's not just a coffee shop. It's something that people care about." Maya's voice rose. "And you're sitting here telling me to take the offer because you don't believe I can sell fourteen thousand pounds of beans in six days."
+She hung up. She stood there for a moment, phone in hand, while the shop hummed around her. Tom looked at her. Leo looked at her. Sam didn't look at her; she was too busy being a professional.
 
-"I'm telling you to consider it," Leo said. "Because I know what failure feels like. I've been watching you for three weeks, and I know how much this matters to you, and I know that failure is not an option. But sometimes — sometimes the right move isn't the heroic one."
+Maya put the phone down. She picked up the portafilter. She made the espresso. She handed it to the customer, who said "thank you" with the particular gratitude of someone who'd been waiting for good coffee.
 
-Maya stood. "You don't get to decide what's heroic for me."
+The event went well. Very well. By 2 p.m., they'd sold every Mystery Bean ticket they'd printed. By 3 p.m., Tom had roasted three batches and the shop smelled like a combination of coffee and festival and money, or at least the promise of money. By 4 p.m., the total from the event was $3,200, added to the $4,872 from the festival, for a combined total of $8,072 — more than half of the $14,200.
 
-"I'm not deciding —"
+At 5:30, a man Maya didn't know walked in. He was wearing a suit. A Bean & Leaf suit. The kind with the logo embroidered discreetly on the lapel. He approached Maya at the counter.
 
-"Yes, you are. You're sitting here with Bean & Leaf's money in your head, telling me what I should do, when what you should be doing is helping me figure out how to sell the remaining three hundred and seventy pounds of beans in six days, because that's the deal. That's the partnership. That's what we said."
+"Maya Chen?"
 
-"Maya —"
+"Yes?"
 
-"I don't want to hear it. I don't want to hear about Bean & Leaf's generous offer. I don't want to hear about how they're going to 'preserve the brand.' I want to hear how we're going to sell these beans and prove to everyone — to Rachel, to the industry, to myself — that a coffee shop on Alberta Street with a chalkboard menu and a loyalty card from 1994 can out-compete a company with a Series B valuation and a design team."
+"My name is David Park. I'm the regional director for Bean & Leaf Oregon. I'd like to talk to you about a proposal."
 
-Leo was silent.
+Maya felt her stomach drop. "A proposal."
 
-"Leo," Maya said, softer now, "I don't need you to be the hero. I need you to be the person who knows how to sell coffee."
+"About your shop. We'd like to acquire it."
 
-Leo looked at her for a long moment. Then he stood. He took the convenience store coffee, which had gone cold, and tossed it in the trash.
+She looked at him. She looked at Leo, who was across the room, helping a customer, and who looked up at exactly that moment and met her eyes. She looked back at David Park.
 
-"I'll call Tom," he said.
+"We'd like to offer you a fair price," David said. "For the building and the business. We'd keep the name. We'd keep the staff, if you want. We'd make sure the shop continues to operate as it does now."
 
-Maya blinked. "Tom."
+"Under Bean & Leaf?"
 
-"Tom, the guy in Bend. The one who founded Bean & Leaf and who still has connections. He knows small roasters. He knows people who need beans. He'll help."
+"As an independent brand. Bean & Leaf owns independent brands. It's how we work."
 
-"Will he?"
+Maya thought about the lease. She thought about the loan. She thought about the Mystery Bean Lottery and the customers who'd bought tickets and the future she'd imagined for the shop. She thought about Leo, who was now watching this conversation with an expression that was unreadable across the distance.
 
-"He will. Because I helped him when he left. And because he hates what Bean & Leaf has become."
+"Can I have a day?" she said.
 
-Maya exhaled. She hadn't realized she'd been holding her breath. "Okay," she said. "Okay."
+"Of course," David said. He handed her a card. "Call me. The offer stands for two weeks."
 
-"Okay," Leo said.
+He left. Maya stood at the counter, holding the card. She felt something cold and heavy in her chest. The offer was good, probably. Fair, probably. The kind of offer that solved problems — the loan, the stress, the nightly anxiety. The kind of offer that let her walk away with enough money to start something new, somewhere else.
 
-He walked to the door. He paused. "I'm not trying to sell you out, Maya. I'm trying to keep you from hurting."
+Also the kind of offer that erased everything she'd built. Everything she'd fought for. The mystery beans, the community, the chalkboard dragon, the regulars who came every morning and knew her by name.
 
-"I know," Maya said. But she didn't. She wasn't sure she would ever fully trust his motives, because trust was a slow-brew thing, not an espresso. It took time. They had six days.
+She looked at Leo. He was staring at the door where David Park had left. He looked angry. He looked guilty.
 
-"See you tomorrow," Leo said.
+He came over. "I had nothing to do with that," he said before she could ask.
 
-He left.
+"I know," Maya said.
 
-Maya stood in the back room, surrounded by coffee sacks, and felt the edges of her panic soften just a little. She thought about Tom in Bend. She thought about Leo, who was complicated and compromised and somehow still trying to do the right thing. She thought about the buyout offer, which was generous and tempting and everything she'd been afraid of when she'd first walked into this shop as a twenty-six-year-old with a dream and a credit card.
+"I would have told you if I'd known. I swear."
 
-She was not selling.
+"I know," she said again.
 
-She sat down at the laptop. She opened the spreadsheet. She started writing emails.
+She looked at the card in her hand. Then she put it in her pocket. "I need to think."
 
----
+"Take your time."
 
-*End of Chapter 9*
+She did. She took five minutes, which was not nearly enough time but was the amount of time she had between the end of the event and the moment when customers started cleaning up and leaving and the shop went quiet. She stood in the doorway and watched Alberta Street. She thought about the pharmacy flyer. She thought about the music venue. She thought about the speakeasy floorboards and the storytelling and the time she'd lived in this neighborhood and watched it change.
+
+She thought about Leo, who was standing ten feet away, who'd helped her without being asked, who'd told her he wanted to quit his job, who'd maybe, possibly, kissed her with his eyes if eyes could kiss.
+
+She went back inside. She picked up her phone. She called Richard at First National.
+
+"Richard," she said. "I have a payment plan. I'll have the first installment next week. The rest will follow. I'm securing the shop. I need you to work with me."
+
+Richard was silent for a moment. Then he said, "Ms. Chen, can I ask how you're securing the shop?"
+
+"I can't tell you that yet. But I'll have the money. Trust me."
+
+She hung up. She looked at Leo. He was watching her.
+
+"Do it," he said. "Whatever it is. Do it."
+
+Maya nodded. She didn't know what "it" was yet. But she knew, standing there with the smell of coffee and the weight of the Bean & Leaf card in her pocket and the morning light through the window, that she was going to find out.
+
+The Bean & Leaf flyer appeared again the next morning, this time professionally printed and taped to the construction fence around the music venue. It had a rendering of the proposed pharmacy: glass and steel and minimalist, with the Bean & Leaf logo in the corner. Maya stood on the sidewalk and stared at it for a long time. She thought about the people who'd played music there. She thought about the first show she'd ever attended in Portland, at that venue, when she'd been 22 and had just moved to the city and had known no one and had stood in the back and listened to a band play songs about leaving and staying and the particular heartbreak of being young in a city that was already expensive.
+
+The venue would be gone in two months. The pharmacy would rise in its place. People would buy over-the-counter medication where they used to buy tickets. Maya felt a grief she couldn't name, a sadness that was larger than the shop, larger than the loan, larger than the 500 pounds of coffee that had started this whole thing.
+
+She went inside. She told Sam. Sam said, "We should do something."
+
+"We are doing something. We're running a lottery."
+
+"We should do something more. Something that honors the venue. Something that says we remember."
+
+Maya thought about it. She thought about the pop-up event. She thought about the music. She thought about Leo, who apparently knew people who knew people. She called Leo.
+
+"I have an idea," she said.
+
+"I love ideas," Leo said.
+
+"What if we do the Sunday roast event at the venue's outdoor space? Before they start construction. As a farewell. As a celebration. As a community gathering."
+
+Leo was quiet for a moment. "That's... that's actually brilliant. I can reach out to the venue owner. He's in my contacts. He owes me a favor."
+
+"He owes you a favor."
+
+"He does. I helped him with a zoning dispute last year."
+
+Of course he had. Of course Leo had helped a music venue owner with zoning before he'd become the guy who was supposed to be acquiring it for a pharmacy. Maya wasn't sure whether to be angry or grateful. She chose grateful. "Call him," she said.
+
+By noon, Leo had confirmed. The venue owner, whose name was Marcus, had said yes to the idea. He'd said, "If Bean & Leaf is going to take my building, at least let me throw one last party for the neighborhood before they do."
+
+The event was scheduled for Saturday, two weeks from now. It would be called "The Last Roast." It would feature Tom's roasting demonstration, Mystery Bean lottery tickets, live music from four local bands, and a silent auction with items donated by the neighborhood. The goal: raise enough to cover the remaining loan balance and have money left over for a new shop, if it came to that.
+
+Maya spent the rest of the day planning. She called Marcus. They talked about bands, about logistics, about the sound system. She called Tom. She called Sam. She wrote a press release and sent it to Claire at the Observer. She posted on Instagram and TikTok and Facebook. She wrote the word "farewell" and then deleted it and wrote "celebration" instead.
+
+At 6 p.m., Leo appeared. He'd been at a meeting at Bean & Leaf — "the worst meeting of my life," he said — and had come straight to the shop. He looked tired. He looked angry. He sat at the counter and drank a coffee he didn't order and said, "They're moving fast. The pharmacy timeline just got pulled up. Construction starts in six weeks instead of eight."
+
+Maya felt her stomach drop. "Six weeks."
+
+"I know. That means we have less time. The event needs to be bigger. The lottery needs to move more beans. We need to make this count."
+
+"How much do we need to make."
+
+"Fifty thousand."
+
+Maya stared at him. "Fifty thousand dollars."
+
+"That's what Marcus needs for his legal fees and what you need for the loan. We can do it. But we have to think bigger."
+
+"I'm thinking bigger. I'm thinking about a community event with four bands and a silent auction and a roast demonstration. That's bigger."
+
+"It's big," Leo agreed. "But it needs to be bigger. We need to get the word out. We need media. We need influencers. We need every person in this neighborhood to show up."
+
+Maya took a breath. "Okay. What do we do."
+
+"We call Claire. We call Lila. We make a TikTok that stops scrolling. We do something so good, so real, that nobody can look away."
+
+They worked until 10 p.m. Maya drafted an email to Claire. Leo made a list of TikTok creators he knew through Bean & Leaf's influencer program — "not the corporate ones," he said, "the real ones, the ones who actually care about community." They argued about music. They argued about marketing. They argued, briefly, about Leo's resignation — Maya wanted him to do it sooner, Leo wanted to wait until after the event, because he needed his access to the Bean & Leaf system.
+
+"You can't have it both ways," Maya said. "Either you're with us or you're with them."
+
+"I'm with you. But I can help more from the inside until Friday."
+
+Maya didn't like it. She didn't trust it. But she said yes anyway, because Leo was right: they needed every advantage they could get.
+
+At 11 p.m., Leo left. He kissed her in the doorway. It was a good kiss — tired but real. "Tomorrow," he said. "We call Claire. We plan the event. We save the shop and the venue and possibly the whole neighborhood."
+
+"Possibly," Maya said.
+
+She went upstairs. She lay in bed. She thought about the Bean & Leaf sign and the music venue and the 500 pounds of coffee and the fifty thousand dollars. She thought about Leo, who was both the problem and the solution, the corporate suit and the community advocate, the enemy and the partner.
+
+She fell asleep at 1 a.m. She dreamed of the venue. In the dream, she was playing a show there. She was on stage with a guitar she didn't know how to play. The crowd was cheering. Leo was in the front row, smiling. The building was shaking, not because of the music but because of something else, something beneath the floor, and she couldn't tell if it was the speakeasy floorboards or the earth itself.
+
+She woke up at 5:45 a.m. She looked at her phone. The first message was from Leo: "Called Claire. She's in. She'll send a crew. Event is happening. Let's make it legendary."
+
+Maya smiled. She got up. She made coffee. She stood at the window and watched the coffee shop across the street — the one owned by Bean & Leaf, the one with the loyalty app and the $2.50 drip and the beige walls. The one that was, in its way, the enemy.
+
+Today, she thought, we make them notice.
