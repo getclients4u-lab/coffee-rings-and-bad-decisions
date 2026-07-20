@@ -27,7 +27,7 @@ pdfmetrics.registerFont(TTFont('LiberationSerif-Italic',  str(FONT_DIR / 'Libera
 TEXT_W = 6 * inch
 TEXT_H = 9 * inch
 BLEED = 0.125 * inch
-SPINE = 0.40 * inch  # 178 pages standard white
+SPINE = 0.48 * inch  # 203 pages standard white
 
 WRAP_W = TEXT_W * 2 + SPINE
 WRAP_H = TEXT_H + 2 * BLEED
