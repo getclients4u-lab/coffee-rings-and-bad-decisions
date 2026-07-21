@@ -3,7 +3,7 @@
 from PIL import Image, ImageDraw, ImageFont
 from pathlib import Path
 
-src = '/home/ubuntu/.openclaw-author/coffee-rings-and-bad-decisions/cover/clean-base-v2.png'
+src = '/home/ubuntu/.openclaw-author/coffee-rings-and-bad-decisions/cover/clean-base-v5.png'
 out = '/home/ubuntu/.openclaw-author/coffee-rings-and-bad-decisions/cover/authors/alex-rogers-cover-kdp.png'
 
 FONT_DIR = '/usr/share/fonts/truetype/liberation'
@@ -62,22 +62,26 @@ draw.text((CX, 215), 'and Bad Decisions', font=sub_font, fill=(201, 134,  42), a
 draw.text((CX, 70),  'COFFEE',            font=title_font, fill=(255, 255, 255), anchor='mm')
 draw.text((CX, 140), 'RINGS',             font=title_font, fill=(255, 255, 255), anchor='mm')
 
-# Thin decorative rule below title
-rule_y = 258
-draw.line([(CX-220, rule_y), (CX+220, rule_y)], fill=(201, 134, 42), width=4)
-
-# --- Author name ---
-author_font = fpath(BOLD, 78)
-for dx, dy in [(3,3), (5,5), (7,7)]:
-    draw.text((CX, TARGET_H - 112), 'Alex Rogers', font=author_font, fill=(0,0,0,180), anchor='mm')
-    draw.text((CX, TARGET_H - 112), 'Alex Rogers', font=author_font, fill=(0,0,0,120), anchor='mm')
-    draw.text((CX, TARGET_H - 112), 'Alex Rogers', font=author_font, fill=(0,0,0,  60), anchor='mm')
-draw.text((CX, TARGET_H - 112), 'Alex Rogers', font=author_font, fill=(255, 252, 245), anchor='mm')
+# Fill lower text block with a fully opaque dark panel first
+for i in range(TARGET_H - 170, TARGET_H):
+    alpha = 255
+    draw.line([(0, i), (TARGET_W, i)], fill=(10, 8, 6, alpha))
 
 # Small "A NOVEL" above author
 tag_font = fpath(REG, 42)
 draw.text((CX, TARGET_H - 170), 'A NOVEL', font=tag_font, fill=(200, 210, 220), anchor='mm')
 
-img.save(out, 'PNG')
+# --- Author name ---
+author_font = fpath(BOLD, 80)
+for dx, dy in [(3,3), (5,5), (7,7)]:
+    draw.text((CX, TARGET_H - 112), 'Alex Rogers', font=author_font, fill=(0,0,0,180), anchor='mm')
+    draw.text((CX, TARGET_H - 112), 'Alex Rogers', font=author_font, fill=(0,0,0,120), anchor='mm')
+    draw.text((CX, TARGET_H - 112), 'Alex Rogers', font=author_font, fill=(0,0,0, 60), anchor='mm')
+draw.text((CX, TARGET_H - 112), 'Alex Rogers', font=author_font, fill=(255, 252, 245), anchor='mm')
+
+# Solid seal bottom edge so no ghost text remains below author
+for i in range(TARGET_H - 40, TARGET_H):
+    alpha = 255
+    draw.line([(0, i), (TARGET_W, i)], fill=(10, 8, 6, alpha))
 print('Cover:', out)
 print('Size:', img.size)
