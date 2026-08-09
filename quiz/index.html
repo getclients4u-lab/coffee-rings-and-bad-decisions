@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Personality Quiz — Coffee Rings and Bad Decisions</title>
+<meta name="description" content="Which Coffee Rings and Bad Decisions character are you? Take the quiz and find your match.">
+<link rel="canonical" href="https://coffee-rings-and-bad-decisions.vercel.app/quiz/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:'Inter',-apple-system,sans-serif;
+  color:#F5F0E8; background:#0D1B2A;
+  line-height:1.6; overflow-x:hidden;
+  min-height:100vh;
+}
+a { color:#C9862A; text-decoration:none; transition:all .25s ease; }
+a:hover { color:#e0a84c; }
+
+.container { width:100%; max-width:900px; margin:0 auto; padding:0 var(--space-lg); }
+:root {
+  --space-sm:1rem; --space-md:2rem; --space-lg:3rem; --space-xl:5rem; --space-2xl:8rem;
+  --font-display:'Cinzel',Georgia,serif;
+}
+
+/* Nav */
+.nav {
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  background:rgba(13,27,42,0.85); backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.nav-inner {
+  max-width:1100px; margin:0 auto; padding:0 var(--space-lg);
+  height:72px; display:flex; align-items:center; justify-content:space-between;
+}
+.nav-logo { font-family:var(--font-display); font-size:1.1rem; color:#fff; font-weight:600; letter-spacing:0.06em; }
+.nav-logo span { color:#C9862A; }
+.nav-links { display:flex; gap:var(--space-lg); }
+.nav-links a { font-size:0.8rem; font-weight:500; color:#8a9aa8; letter-spacing:0.06em; text-transform:uppercase; }
+.nav-links a:hover { color:#fff; }
+
+/* Hero */
+.hero {
+  padding:140px 0 80px; text-align:center; position:relative;
+}
+.hero::before {
+  content:''; position:absolute; inset:0; z-index:0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(201,134,42,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(45,106,159,0.08) 0%, transparent 50%);
+}
+.hero-inner { position:relative; z-index:1; }
+.hero h1 {
+  font-family:var(--font-display); font-size:clamp(1.8rem,4vw,3rem);
+  color:#fff; margin-bottom:var(--space-sm); letter-spacing:0.01em;
+}
+.hero p { color:#8a9aa8; font-size:1.1rem; max-width:600px; margin:0 auto; }
+
+/* Quiz Card */
+.quiz-wrapper { padding:var(--space-xl) 0; }
+.quiz-card {
+  background:rgba(10,22,40,0.6); border:1px solid rgba(255,255,255,0.06);
+  border-radius:16px; padding:var(--space-xl); position:relative;
+  backdrop-filter:blur(10px);
+  box-shadow:0 30px 80px rgba(0,0,0,0.3);
+}
+
+/* Progress */
+.progress-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:var(--space-md); }
+.progress-label { font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; color:#8a9aa8; font-weight:500; }
+.progress-count { font-size:0.85rem; color:#C9862A; font-weight:600; }
+.progress-track { height:4px; background:rgba(255,255,255,0.06); border-radius:2px; overflow:hidden; margin-bottom:var(--space-xl); }
+.progress-fill { height:100%; background:#C9862A; width:0%; transition:width .5s ease; border-radius:2px; }
+
+/* Question */
+.question { display:none; animation:fadeIn .5s ease; }
+.question.active { display:block; }
+.question-text {
+  font-family:var(--font-display); font-size:clamp(1.2rem,2.5vw,1.6rem);
+  color:#fff; margin-bottom:var(--space-lg); line-height:1.4;
+}
+
+/* Options */
+.options { display:flex; flex-direction:column; gap:var(--space-sm); }
+.option {
+  background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08);
+  border-radius:10px; padding:18px 22px; cursor:pointer;
+  transition:all .25s ease; text-align:left;
+  color:#d0dbe4; font-size:1rem; line-height:1.5;
+}
+.option:hover {
+  background:rgba(201,134,42,0.08); border-color:rgba(201,134,42,0.3);
+  transform:translateX(6px); color:#fff;
+}
+.option-icon { margin-right:12px; font-size:1.2rem; }
+
+/* Result */
+.result { display:none; text-align:center; animation:fadeIn .6s ease; }
+.result.active { display:block; }
+.result-badge {
+  display:inline-block; background:rgba(201,134,42,0.12); color:#C9862A;
+  padding:8px 20px; border-radius:100px; font-size:0.75rem; text-transform:uppercase;
+  letter-spacing:0.15em; font-weight:600; margin-bottom:var(--space-md);
+}
+.result-name {
+  font-family:var(--font-display); font-size:clamp(2rem,4vw,3rem);
+  color:#fff; margin-bottom:var(--space-sm);
+}
+.result-role { color:#8a9aa8; font-size:1.1rem; margin-bottom:var(--space-lg); font-style:italic; }
+.result-desc { color:#b8c5d0; font-size:1.05rem; line-height:1.8; max-width:600px; margin:0 auto var(--space-xl); }
+.result-quote {
+  color:#C9862A; font-style:italic; font-size:1.1rem;
+  border-left:3px solid rgba(201,134,42,0.3); padding-left:var(--space-md);
+  max-width:500px; margin:0 auto var(--space-xl); text-align:left;
+}
+.result-actions { display:flex; gap:var(--space-md); justify-content:center; flex-wrap:wrap; }
+
+@keyframes fadeIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+
+.footer {
+  text-align:center; padding:var(--space-xl) 0;
+  border-top:1px solid rgba(255,255,255,0.05); color:#5a6a78; font-size:0.85rem;
+}
+
+@media (max-width:768px) {
+  .quiz-card { padding:var(--space-lg); }
+  .result-actions { flex-direction:column; }
+  .nav-links { display:none; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Coffee <span>Rings</span></a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/reader.html">Read</a>
+      <a href="/quiz/">Quiz</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <h1>Coffee Personality Quiz</h1>
+    <p>Answer six questions about coffee, chaos, and choice — we'll reveal which character you really are.</p>
+  </div>
+</header>
+
+<main class="quiz-wrapper">
+  <div class="container">
+    <div class="quiz-card">
+
+      <div class="progress-header">
+        <span class="progress-label">Question</span>
+        <span class="progress-count" id="progressCount">1 / 6</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+      <div id="quiz">
+
+        <!-- Q1 -->
+        <div class="question active" data-index="1">
+          <div class="question-text">1. Your coffee order is basically a personality statement. What are you drinking?</div>
+          <div class="options">
+            <button class="option" data-score="maya"><span class="option-icon">☕</span>Black pour-over, no sugar, and yes, I judged your latte art.</button>
+            <button class="option" data-score="leo"><span class="option-icon">🍵</span>Something warm but forgettable — I'll drink whatever is easiest while I pretend to be busy.</button>
+            <button class="option" data-score="sam"><span class="option-icon">🥤</span>An iced monstrosity with four pumps of something. Cashier is scared of me.</button>
+            <button class="option" data-score="mrsHsu"><span class="option-icon">🫖</span>Hot water with a leaf in it. I've been ordering the same thing since 1987.</button>
+            <button class="option" data-score="jake"><span class="option-icon">📸</span>Whichever one photographs best. The coffee is secondary to the content.</button>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="question" data-index="2">
+          <div class="question-text">2. A stranger insults your favorite coffee shop on Instagram. Reaction?</div>
+          <div class="options">
+            <button class="option" data-score="maya"><span class="option-icon">🔥</span>Clap back immediately. I will write a thesis on why they're wrong and attach photos of our beans.</button>
+            <button class="option" data-score="leo"><span class="option-icon">🫠</span>Feel bad for them. Probably they've had a rough day. I'll draft a polite response at 2 AM.</button>
+            <button class="option" data-score="sam"><span class="option-icon">📲</span>Repost it. The drama is free marketing and I will turn this into a TikTok.</button>
+            <button class="option" data-score="mrsHsu"><span class="option-icon">🧋</span>Say nothing, but quietly start buying all my coffee elsewhere. I vote with my wallet and my silence.</button>
+            <button class="option" data-score="jake"><span class="option-icon">💰</span>Message them privately to see if we can collab. Views are views, even bad ones.</button>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question" data-index="3">
+          <div class="question-text">3. Your friend dares you to do something wildly impulsive. What happens?</div>
+          <div class="options">
+            <button class="option" data-score="maya"><span class="option-icon">✈️</span>I order 500 pounds of coffee beans at midnight and now I'm running a small business emergency.</button>
+            <button class="option" data-score="leo"><span class="option-icon">🎭</span>I go along with it, panic internally, and somehow fix everything before anyone notices I was scared.</button>
+            <button class="option" data-score="sam"><span class="option-icon">🎉</span>I not only do it — I start selling tickets. The chaos is the point.</button>
+            <button class="option" data-score="mrsHsu"><span class="option-icon">🏠</span>I've been doing impulsive things since 1972. I once bought a building because the owner seemed nice.</button>
+            <button class="option" data-score="jake"><span class="option-icon">📹</span>Film it, post it, hope it trends. If it fails, I'll edit the footage to look intentional.</button>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="question" data-index="4">
+          <div class="question-text">4. You need to sell something fast. What's your strategy?</div>
+          <div class="options">
+            <button class="option" data-score="maya"><span class="option-icon">💼</span>Lean into the story. People don't buy beans — they buy my stubborn journey.</button>
+            <button class="option" data-score="leo"><span class="option-icon">📦</span>Logistics. Supply chains. I turn panic into a spreadsheet and sell my way out.</button>
+            <button class="option" data-score="sam"><span class="option-icon">🎰</span>Lottery tickets. Mystery boxes. Guerilla pop-ups. If it's fun, it sells.</button>
+            <button class="option" data-score="mrsHsu"><span class="option-icon">🤝</span>Call my friends. We all know people. Community is the best distribution channel.</button>
+            <button class="option" data-score="jake"><span class="option-icon">🔥</span>Make it viral. If it's not trending, it doesn't exist.</button>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="question" data-index="5">
+          <div class="question-text">5. Someone you publicly argued with shows up at your door, soaking wet and needing help. Door policy?</div>
+          <div class="options">
+            <button class="option" data-score="maya"><span class="option-icon">🚪</span>Keep it closed. Then open it anyway because I'm secretly terrible at boundaries.</button>
+            <button class="option" data-score="leo"><span class="option-icon">🫂</span>Open it immediately. I can't leave someone in the rain — even if I was the one arguing with them yesterday.</button>
+            <button class="option" data-score="sam"><span class="option-icon">📸</span>Open it, film the reunion, and start a new hashtag before they're even inside.</button>
+            <button class="option" data-score="mrsHsu"><span class="option-icon">🪑</span>Open it, give them a seat by the heater, and say nothing about the argument. I've seen worse.</button>
+            <button class="option" data-score="jake"><span class="option-icon">🤳</span>Open it, make it about me, and post a thread summarizing what happened for my followers.</button>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="question" data-index="6">
+          <div class="question-text">6. What's your ideal Saturday morning?</div>
+          <div class="options">
+            <button class="option" data-score="maya"><span class="option-icon">🏪</span>Running the shop early, fighting with suppliers, and making 30 lattes before anyone else wakes up.</button>
+            <button class="option" data-score="leo"><span class="option-icon">☕</span>Quiet coffee, a book, and a plan that is definitely going to fall apart by noon.</button>
+            <button class="option" data-score="sam"><span class="option-icon">🎸</span>Vintage mug hunting, a farmers market, and probably accidentally starting a flash mob.</button>
+            <button class="option" data-score="mrsHsu"><span class="option-icon">🌿</span>Tea in the garden, reading the paper, and watching the neighborhood from my porch.</button>
+            <button class="option" data-score="jake"><span class="option-icon">🌅</span>Content creation brunch. If the food isn't photogenic, did it even happen?</button>
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div class="result" id="result">
+          <div class="result-badge">Your Character</div>
+          <div class="result-name" id="resultName"></div>
+          <div class="result-role" id="resultRole"></div>
+          <div class="result-desc" id="resultDesc"></div>
+          <div class="result-quote" id="resultQuote"></div>
+          <div class="result-actions">
+            <a href="/reader.html" class="btn btn-primary" style="padding:14px 28px; border-radius:8px; background:#C9862A; color:#0D1B2A; font-weight:600; display:inline-block;">Read the Book</a>
+            <button onclick="restartQuiz()" style="padding:14px 28px; border-radius:8px; background:transparent; color:#fff; border:1.5px solid rgba(255,255,255,0.2); cursor:pointer; font-family:'Inter',sans-serif; font-weight:500; font-size:0.95rem;">Retake Quiz</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Alex Rogers. Coffee Rings and Bad Decisions — a novel.</p>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const questions = document.querySelectorAll('.question');
+  const result = document.getElementById('result');
+  const progressFill = document.getElementById('progressFill');
+  const progressCount = document.getElementById('progressCount');
+  let current = 1;
+  const total = questions.length;
+  const scores = { maya:0, leo:0, sam:0, mrsHsu:0, jake:0 };
+
+  function updateProgress() {
+    const pct = ((current - 1) / total) * 100;
+    progressFill.style.width = pct + '%';
+    progressCount.textContent = current + ' / ' + total;
+  }
+
+  function showResult() {
+    const winner = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
+    const data = {
+      maya: {
+        name: 'Maya Chen',
+        role: 'The Coffee Shop Owner',
+        desc: 'You run on cold brew and bad decisions — and you wouldn\'t have it any other way. Sharp, stubborn, and secretly romantic, you fight for what matters even when it\'s easier to walk away. You\'re the person who accidentally orders 500 pounds of beans and somehow turns it into a love story.',
+        quote: '"The best decisions are usually the bad ones that turn out to be exactly right."'
+      },
+      leo: {
+        name: 'Leo Bianchi',
+        role: 'The Accidental Partner',
+        desc: 'Charming, understated, and hiding a whole lot of heart behind a calm surface. You hate being the bad guy, so you quietly fix things instead of talking about them. You play it safe — until you stop.',
+        quote: '"I didn\'t come here to save a coffee shop. I came because it\'s the only place that makes me feel like home."'
+      },
+      sam: {
+        name: 'Sam',
+        role: 'The Chaotic Best Friend',
+        desc: 'Chaotic support with wingman energy and a side hustle for everything. If there\'s a drama, you\'re the producer. If there\'s a plan, you\'re the one selling tickets to it. You turn every disaster into content.',
+        quote: '"I have a business idea for that. Also a TikTok. And a mug. We\'re doing all three."'
+      },
+      mrsHsu: {
+        name: 'Mrs. Hsu',
+        role: 'The Silent Guardian',
+        desc: 'Quiet, observant, and three steps ahead of everyone. You\'ve seen it all, so you don\'t panic. You just show up, make tea, and own the building. People underestimate you — that\'s your advantage.',
+        quote: '"I bought this building in \'98. I know a good investment when I see one."'
+      },
+      jake: {
+        name: 'Jake',
+        role: 'The Influencer Ex',
+        desc: 'Optimized for engagement, allergic to silence, and somehow always at the wrong place at the wrong time. You see every interaction as content. Not evil — just… branded.',
+        quote: '"Can we get this in a reel? The lighting is perfect right now."'
+      }
+    };
+    const r = data[winner];
+    document.getElementById('resultName').textContent = r.name;
+    document.getElementById('resultRole').textContent = r.role;
+    document.getElementById('resultDesc').textContent = r.desc;
+    document.getElementById('resultQuote').textContent = r.quote;
+
+    questions.forEach(q => q.classList.remove('active'));
+    result.classList.add('active');
+    progressFill.style.width = '100%';
+    progressCount.textContent = 'Done';
+  }
+
+  document.querySelectorAll('.option').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const score = btn.getAttribute('data-score');
+      scores[score]++;
+      if (current < total) {
+        questions[current - 1].classList.remove('active');
+        current++;
+        questions[current - 1].classList.add('active');
+        updateProgress();
+      } else {
+        questions[current - 1].classList.remove('active');
+        showResult();
+      }
+    });
+  });
+
+  window.restartQuiz = function() {
+    current = 1;
+    Object.keys(scores).forEach(k => scores[k] = 0);
+    result.classList.remove('active');
+    questions[0].classList.add('active');
+    updateProgress();
+  };
+
+  updateProgress();
+})();
+</script>
+
+</body>
+</html>
