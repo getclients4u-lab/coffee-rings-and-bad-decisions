@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bean Budget Calculator — Coffee Rings and Bad Decisions</title>
+<meta name="description" content="Calculate your coffee bean budget, discover roast recommendations, and see how Maya Chen would survive your numbers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:'Inter',-apple-system,sans-serif;
+  color:#F5F0E8; background:#0D1B2A;
+  line-height:1.6; overflow-x:hidden;
+}
+a { color:#C9862A; text-decoration:none; transition:all .25s ease; }
+a:hover { color:#e0a84c; }
+.container { width:100%; max-width:1100px; margin:0 auto; padding:0 2rem; }
+:root { --space-sm:1rem; --space-md:2rem; --space-lg:3rem; --space-xl:5rem; --space-2xl:8rem; --font-display:'Cinzel',Georgia,serif; }
+
+/* Nav */
+.nav {
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  background:rgba(13,27,42,0.85); backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.nav-inner {
+  max-width:1100px; margin:0 auto; padding:0 2rem;
+  height:80px; display:flex; align-items:center; justify-content:space-between;
+}
+.nav-logo { font-family:var(--font-display); font-size:1.1rem; color:#fff; font-weight:600; letter-spacing:0.06em; }
+.nav-logo span { color:#C9862A; }
+.nav-links { display:flex; gap:2rem; }
+.nav-links a { font-size:0.8rem; font-weight:500; color:#8a9aa8; letter-spacing:0.06em; text-transform:uppercase; }
+.nav-links a:hover { color:#fff; }
+
+.hero {
+  min-height:50vh; display:flex; align-items:center; position:relative;
+  padding:120px 0 60px;
+}
+.hero::before {
+  content:''; position:absolute; inset:0; z-index:0;
+  background: radial-gradient(circle at 30% 40%, rgba(201,134,42,0.08) 0%, transparent 50%),
+              radial-gradient(circle at 70% 60%, rgba(45,106,159,0.08) 0%, transparent 50%);
+}
+.hero-inner { position:relative; z-index:1; text-align:center; }
+.hero-inner h4 { font-size:0.75rem; text-transform:uppercase; letter-spacing:0.2em; color:#C9862A; margin-bottom:1rem; font-weight:600; }
+.hero-inner h1 { font-family:var(--font-display); font-size:clamp(2rem,4.5vw,3.2rem); color:#fff; line-height:1.15; margin-bottom:1rem; }
+.hero-inner p { color:#8a9aa8; font-size:1.1rem; max-width:600px; margin:0 auto; line-height:1.7; }
+
+.calculator-section { padding:2rem 0 5rem; position:relative; z-index:1; }
+.calc-card {
+  background:#0a1628; border:1px solid rgba(255,255,255,0.05); border-radius:12px;
+  padding:2.5rem; max-width:800px; margin:0 auto;
+  box-shadow:0 20px 60px rgba(0,0,0,0.3);
+}
+.calc-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:1.5rem; }
+.field { display:flex; flex-direction:column; gap:0.5rem; }
+.field.full { grid-column:1/-1; }
+.field label { font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; color:#8a9aa8; font-weight:600; }
+.field input, .field select {
+  padding:0.85rem 1rem; border-radius:6px; border:1px solid rgba(255,255,255,0.1);
+  background:#0D1B2A; color:#F5F0E8; font-size:1rem; font-family:'Inter',sans-serif;
+  transition:border-color .25s ease;
+}
+.field input:focus, .field select:focus { outline:none; border-color:#C9862A; }
+
+.actions { margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap; }
+.btn {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:14px 28px; border-radius:6px; font-weight:600;
+  font-size:0.9rem; letter-spacing:0.03em; cursor:pointer;
+  transition:all .3s ease; border:none; font-family:'Inter',sans-serif;
+}
+.btn-primary { background:#C9862A; color:#0D1B2A; }
+.btn-primary:hover { background:#e0a84c; transform:translateY(-2px); box-shadow:0 8px 30px rgba(201,134,42,0.3); }
+.btn-secondary { background:transparent; color:#fff; border:1.5px solid rgba(255,255,255,0.2); }
+.btn-secondary:hover { border-color:#fff; background:rgba(255,255,255,0.05); }
+
+.results {
+  margin-top:2rem; padding:1.5rem; background:#0D1B2A; border-radius:8px;
+  border:1px solid rgba(201,134,42,0.15); display:none;
+}
+.results.show { display:block; animation:fadeIn .4s ease; }
+@keyframes fadeIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+.results h3 { font-family:var(--font-display); color:#C9862A; font-size:1.2rem; margin-bottom:1rem; }
+.result-row {
+  display:flex; justify-content:space-between; padding:0.75rem 0;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.result-row:last-child { border:none; }
+.result-key { color:#8a9aa8; font-size:0.9rem; }
+.result-val { color:#fff; font-weight:600; font-size:1rem; }
+.result-val.highlight { color:#C9862A; font-size:1.2rem; }
+.result-val.danger { color:#e07a5f; }
+.result-val.safe { color:#81b29a; }
+
+.gauge-bar {
+  width:100%; height:8px; background:rgba(255,255,255,0.05); border-radius:4px;
+  margin-top:1rem; overflow:hidden; position:relative;
+}
+.gauge-fill {
+  height:100%; background:linear-gradient(90deg, #81b29a, #C9862A, #e07a5f);
+  border-radius:4px; transition:width .6s ease;
+}
+
+.story {
+  margin-top:2.5rem; padding:1.5rem; background:rgba(201,134,42,0.05);
+  border-left:3px solid #C9862A; border-radius:6px;
+}
+.story h4 { color:#C9862A; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.75rem; }
+.story p { color:#b8c5d0; font-size:0.95rem; line-height:1.7; font-style:italic; }
+
+.roast-section { padding:3rem 0; border-top:1px solid rgba(255,255,255,0.05); }
+.roast-section h2 { font-family:var(--font-display); color:#fff; font-size:1.8rem; margin-bottom:1.5rem; text-align:center; }
+.roast-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1.5rem; }
+.roast-card {
+  background:#0a1628; border:1px solid rgba(255,255,255,0.05); border-radius:8px;
+  padding:1.5rem; text-align:center; transition:transform .3s ease, border-color .3s ease;
+}
+.roast-card:hover { transform:translateY(-4px); border-color:rgba(201,134,42,0.3); }
+.roast-icon { font-size:2.5rem; margin-bottom:0.75rem; }
+.roast-card h4 { color:#fff; font-size:1rem; margin-bottom:0.5rem; }
+.roast-card p { color:#8a9aa8; font-size:0.85rem; line-height:1.6; }
+
+.footer {
+  padding:2rem 0; text-align:center; border-top:1px solid rgba(255,255,255,0.05);
+  color:#5a6a78; font-size:0.85rem;
+}
+
+@media (max-width:768px) {
+  .calc-grid { grid-template-columns:1fr; }
+  .nav-links { display:none; }
+  .hero { padding:100px 0 40px; min-height:auto; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Coffee Rings</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/reader.html">Read</a>
+      <a href="/quiz/">Quiz</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <h4>Interactive Tool</h4>
+    <h1>Bean Budget Calculator</h1>
+    <p>Figure out your coffee bean math — the same kind Maya was scrambling to solve when her midnight order triggered a 500-pound emergency.</p>
+  </div>
+</header>
+
+<section class="calculator-section">
+  <div class="container">
+    <div class="calc-card">
+      <h2 style="font-family:var(--font-display); color:#fff; font-size:1.4rem; margin-bottom:0.5rem;">Your Coffee Budget</h2>
+      <p style="color:#8a9aa8; font-size:0.9rem;">Enter your habits and see how far your beans go.</p>
+
+      <div class="calc-grid">
+        <div class="field">
+          <label>Cups per day</label>
+          <input type="number" id="cups" value="2" min="0" max="20" step="0.5">
+        </div>
+        <div class="field">
+          <label>Bean price ($/lb)</label>
+          <input type="number" id="price" value="14" min="1" max="100" step="0.5">
+        </div>
+        <div class="field">
+          <label>Beans per cup (tbsp)</label>
+          <select id="ratio">
+            <option value="0.6">Fine / Espresso (0.6)</option>
+            <option value="0.8" selected>Standard (0.8)</option>
+            <option value="1.0">Strong (1.0)</option>
+            <option value="1.2">Extra bold (1.2)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Bag size (lb)</label>
+          <input type="number" id="bagsize" value="12" min="1" max="50" step="1">
+        </div>
+        <div class="field full">
+          <label>Roast preference</label>
+          <select id="roast">
+            <option value="light">Light — bright, fruity, tea-like</option>
+            <option value="medium" selected>Medium — balanced, smooth, versatile</option>
+            <option value="dark">Dark — bold, chocolatey, smoky</option>
+            <option value="ethiopian">Ethiopian Single-Origin — floral, citrus, wild (Maya's pick)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-primary" onclick="calculate()">Calculate Budget</button>
+        <button class="btn btn-secondary" onclick="resetCalc()">Reset</button>
+      </div>
+
+      <div class="results" id="results">
+        <h3>📊 Your Results</h3>
+        <div class="result-row">
+          <span class="result-key">Beans per day</span>
+          <span class="result-val" id="res-daily">—</span>
+        </div>
+        <div class="result-row">
+          <span class="result-key">Beans per week</span>
+          <span class="result-val" id="res-weekly">—</span>
+        </div>
+        <div class="result-row">
+          <span class="result-key">Beans per month</span>
+          <span class="result-val" id="res-monthly">—</span>
+        </div>
+        <div class="result-row">
+          <span class="result-key">Cost per day</span>
+          <span class="result-val" id="res-cpd">—</span>
+        </div>
+        <div class="result-row">
+          <span class="result-key">Cost per month</span>
+          <span class="result-val" id="res-cpm">—</span>
+        </div>
+        <div class="result-row">
+          <span class="result-key">Bag lasts</span>
+          <span class="result-val" id="res-lasts">—</span>
+        </div>
+        <div class="result-row">
+          <span class="result-key">Maya's 500-lb emergency</span>
+          <span class="result-val highlight" id="res-emergency">—</span>
+        </div>
+        <div class="gauge-bar"><div class="gauge-fill" id="gauge"></div></div>
+        <div class="story" id="story" style="display:none;">
+          <h4>📖 From the novel</h4>
+          <p id="story-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="roast-section">
+  <div class="container">
+    <h2>Know Your Roast</h2>
+    <div class="roast-grid">
+      <div class="roast-card">
+        <div class="roast-icon">🌱</div>
+        <h4>Light Roast</h4>
+        <p>Bright acidity, floral notes, and a tea-like body. Best for pour-over and origin tasting.</p>
+      </div>
+      <div class="roast-card">
+        <div class="roast-icon">☕</div>
+        <h4>Medium Roast</h4>
+        <p>The everyday hero — balanced sweetness, smooth finish. Works for everything from drip to French press.</p>
+      </div>
+      <div class="roast-card">
+        <div class="roast-icon">🖤</div>
+        <h4>Dark Roast</h4>
+        <p>Bold, chocolatey, and smoky. Rich crema for espresso, or a heavy-bodied French press cup.</p>
+      </div>
+      <div class="roast-card">
+        <div class="roast-icon">🌍</div>
+        <h4>Ethiopian Single-Origin</h4>
+        <p>Wild, citrusy, and unforgettable. The roast that started Maya's 500-pound emergency. Taste the chaos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Alex Rogers. <em>Coffee Rings and Bad Decisions</em> is a work of fiction.</p>
+    <p style="margin-top:0.5rem;"><a href="/">← Back to the book</a> · <a href="/quiz/">Take the Quiz</a></p>
+  </div>
+</footer>
+
+<script>
+const TSPOON = 0.0025; // 1 tbsp = 0.0025 lb
+
+const stories = {
+  light: `"If you're going to brew single-origin Ethiopian light roast, you might as well know you're about three espresso shots away from accidentally ordering five hundred pounds of beans." — Maya Chen, probably`,
+  medium: `Maya's medium roast was the only thing that got her through the morning inventory recount. The beans didn't trigger emergencies. People did.`,
+  dark: `Dark roast at midnight: the fuel behind every caffeine-fueled decision Maya would later regret. Including the bean order.`,
+  ethiopian: `The Ethiopian single-origin was Leo's undoing. One cup, and suddenly he was in a meeting defending a corporate acquisition he'd originally opposed. The beans do things to people.`
+};
+
+function fmt(n) {
+  if (n >= 1000) return n.toLocaleString('en-US', { maximumFractionDigits: 1 });
+  return n.toFixed(2);
+}
+
+function calculate() {
+  const cups = parseFloat(document.getElementById('cups').value) || 0;
+  const price = parseFloat(document.getElementById('price').value) || 0;
+  const tbsp = parseFloat(document.getElementById('ratio').value) || 0.8;
+  const bag = parseFloat(document.getElementById('bagsize').value) || 12;
+  const roast = document.getElementById('roast').value;
+
+  const dailyLb = cups * tbsp * TSPOON;
+  const weeklyLb = dailyLb * 7;
+  const monthlyLb = dailyLb * 30;
+  const costDay = dailyLb * price;
+  const costMonth = monthlyLb * price;
+
+  document.getElementById('res-daily').textContent = fmt(dailyLb) + ' lb';
+  document.getElementById('res-weekly').textContent = fmt(weeklyLb) + ' lb';
+  document.getElementById('res-monthly').textContent = fmt(monthlyLb) + ' lb';
+  document.getElementById('res-cpd').textContent = '$' + fmt(costDay);
+  document.getElementById('res-cpm').textContent = '$' + fmt(costMonth);
+
+  if (bag > 0) {
+    const days = Math.floor(bag / dailyLb);
+    const weeks = (days / 7).toFixed(1);
+    document.getElementById('res-lasts').textContent = days + ' days (~' + weeks + ' weeks)';
+  }
+
+  const emergencyMonths = monthlyLb > 0 ? (500 / monthlyLb).toFixed(1) : '∞';
+  document.getElementById('res-emergency').textContent = monthlyLb > 0 ? 'Your monthly supply equals ' + emergencyMonths + '% of the emergency' : 'N/A';
+
+  const pct = monthlyLb > 0 ? Math.min((monthlyLb / 500) * 100, 100) : 0;
+  document.getElementById('gauge').style.width = pct + '%';
+
+  const storyEl = document.getElementById('story');
+  storyEl.style.display = 'block';
+  document.getElementById('story-text').textContent = stories[roast] || stories.medium;
+
+  const res = document.getElementById('results');
+  res.classList.add('show');
+}
+
+function resetCalc() {
+  document.getElementById('cups').value = 2;
+  document.getElementById('price').value = 14;
+  document.getElementById('ratio').value = '0.8';
+  document.getElementById('bagsize').value = 12;
+  document.getElementById('roast').value = 'medium';
+  document.getElementById('results').classList.remove('show');
+}
+</script>
+
+</body>
+</html>
