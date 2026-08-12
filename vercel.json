@@ -1,4 +1,22 @@
 {
   "framework": null,
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "rewrites": [
+    { "source": "/about-us", "destination": "/about-us/" },
+    { "source": "/contact", "destination": "/contact/" },
+    { "source": "/faq", "destination": "/faq/" },
+    { "source": "/how-it-works", "destination": "/how-it-works/" },
+    { "source": "/blog", "destination": "/blog/" },
+    { "source": "/blog/summer-sunglasses-for-women-2026", "destination": "/blog/summer-sunglasses-for-women-2026/" },
+    { "source": "/blog/dita-flight-006-7806-sunglasses-buyers-guide", "destination": "/blog/dita-flight-006-7806-sunglasses-buyers-guide/" },
+    { "source": "/blog/robert-downey-jr-sunglasses", "destination": "/blog/robert-downey-jr-sunglasses/" },
+    { "source": "/collections/all", "destination": "/collections/all/" },
+    { "source": "/collections/mens-sunglasses", "destination": "/collections/mens-sunglasses/" },
+    { "source": "/collections/womens-sunglasses", "destination": "/collections/womens-sunglasses/" },
+    { "source": "/collections/unisex-sunglasses", "destination": "/collections/unisex-sunglasses/" },
+    { "source": "/products/mens-polarized-aviator-sunglasses-lightweight-metal-frame-uv400-pc-lenses-all-day-comfort-aerolux", "destination": "/products/mens-polarized-aviator-sunglasses-lightweight-metal-frame-uv400-pc-lenses-all-day-comfort-aerolux/" },
+    { "source": "/uv-check", "destination": "/uv-check/" },
+    { "source": "/style-finder", "destination": "/style-finder/" },
+    { "source": "/brew", "destination": "/brew/" }
+  ]
 }

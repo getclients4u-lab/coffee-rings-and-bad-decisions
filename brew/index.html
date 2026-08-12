@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brew Timer — Coffee Rings and Bad Decisions</title>
+<meta name="description" content="Interactive coffee brew timer with step-by-step guides for pour over, French press, espresso, and more. Brew like Maya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;color:#F5F0E8;background:#0D1B2A;line-height:1.6;overflow-x:hidden}
+a{color:#C9862A;text-decoration:none;transition:all .25s ease}
+a:hover{color:#e0a84c}
+.container{width:100%;max-width:1100px;margin:0 auto;padding:0 2rem}
+:root{--space-sm:1rem;--space-md:2rem;--space-lg:3rem;--space-xl:5rem;--space-2xl:8rem;--font-display:'Cinzel',Georgia,serif}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,27,42,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.05)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 2rem;height:80px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--font-display);font-size:1.1rem;color:#fff;font-weight:600;letter-spacing:0.06em}
+.nav-logo span{color:#C9862A}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{font-size:0.8rem;font-weight:500;color:#8a9aa8;letter-spacing:0.06em;text-transform:uppercase}
+.nav-links a:hover{color:#fff}
+
+/* Hero */
+.brew-hero{min-height:45vh;display:flex;align-items:center;position:relative;padding:120px 0 40px;overflow:hidden}
+.brew-hero::before{content:'';position:absolute;inset:0;z-index:0;background:radial-gradient(circle at 20% 30%,rgba(201,134,42,0.1) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(45,106,159,0.08) 0%,transparent 50%)}
+.brew-hero-inner{position:relative;z-index:1;text-align:center;width:100%}
+.brew-hero-inner h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.2em;color:#C9862A;margin-bottom:1rem;font-weight:600}
+.brew-hero-inner h1{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.2rem);color:#fff;line-height:1.15;margin-bottom:1rem}
+.brew-hero-inner p{color:#8a9aa8;font-size:1.1rem;max-width:600px;margin:0 auto;line-height:1.7}
+
+/* Layout */
+.brew-layout{display:grid;grid-template-columns:1fr 1.1fr;gap:3rem;padding:2rem 0 5rem;position:relative;z-index:1;align-items:start}
+
+/* Method Card */
+.method-card{background:#0a1628;border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:2.5rem;box-shadow:0 20px 60px rgba(0,0,0,0.3);height:fit-content;position:sticky;top:100px}
+.method-card h3{font-family:var(--font-display);font-size:1.3rem;color:#fff;margin-bottom:1.25rem;display:flex;align-items:center;gap:0.75rem}
+.method-card .icon{font-size:1.5rem}
+.method-card .desc{color:#8a9aa8;font-size:0.95rem;line-height:1.7;margin-bottom:1.5rem}
+
+.method-select{width:100%;padding:0.85rem 1rem;border-radius:6px;border:1px solid rgba(255,255,255,0.1);background:#0D1B2A;color:#F5F0E8;font-size:1rem;font-family:'Inter',sans-serif;margin-bottom:1.5rem;cursor:pointer}
+.method-select:focus{outline:none;border-color:#C9862A}
+
+.meta-row{display:flex;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.meta-pill{flex:1;min-width:90px;background:rgba(201,134,42,0.08);border:1px solid rgba(201,134,42,0.15);border-radius:8px;padding:0.75rem;text-align:center}
+.meta-pill .label{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:#8a9aa8;font-weight:600;display:block;margin-bottom:0.25rem}
+.meta-pill .val{font-size:1.1rem;color:#C9862A;font-weight:700}
+
+.tip-box{background:linear-gradient(135deg,rgba(201,134,42,0.1),rgba(45,106,159,0.08));border:1px solid rgba(201,134,42,0.2);border-radius:8px;padding:1rem;margin-bottom:1.5rem}
+.tip-box p{font-size:0.9rem;color:#e0a84c;font-style:italic;line-height:1.6}
+.tip-box .attribution{font-size:0.75rem;color:#8a9aa8;margin-top:0.5rem;font-style:normal;font-weight:600;letter-spacing:0.05em;text-transform:uppercase}
+
+/* Timer */
+.timer-section{background:#0a1628;border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:2.5rem;box-shadow:0 20px 60px rgba(0,0,0,0.3);display:flex;flex-direction:column;align-items:center}
+.timer-ring-wrap{position:relative;width:260px;height:260px;margin-bottom:1.5rem}
+.timer-ring-wrap svg{transform:rotate(-90deg);width:260px;height:260px}
+.timer-ring-bg{fill:none;stroke:rgba(255,255,255,0.05);stroke-width:10}
+.timer-ring-fg{fill:none;stroke:#C9862A;stroke-width:10;stroke-linecap:round;stroke-dasharray:754;stroke-dashoffset:0;transition:stroke-dashoffset 0.3s linear}
+.timer-text{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.timer-text .time{font-family:var(--font-display);font-size:3.2rem;color:#fff;line-height:1;font-variant-numeric:tabular-nums}
+.timer-text .phase{font-size:0.8rem;color:#C9862A;text-transform:uppercase;letter-spacing:0.1em;margin-top:0.5rem;font-weight:600}
+
+.timer-controls{display:flex;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:6px;font-weight:600;font-size:0.9rem;letter-spacing:0.03em;cursor:pointer;transition:all .3s ease;border:none;font-family:'Inter',sans-serif}
+.btn-primary{background:#C9862A;color:#0D1B2A}
+.btn-primary:hover{background:#e0a84c;transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,134,42,0.3)}
+.btn-secondary{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.2)}
+.btn-secondary:hover{border-color:#fff;background:rgba(255,255,255,0.05)}
+
+/* Steps */
+.steps-title{font-family:var(--font-display);font-size:1.1rem;color:#fff;margin-bottom:1rem;align-self:flex-start;width:100%}
+.steps-list{width:100%;display:flex;flex-direction:column;gap:0.75rem}
+.step{display:flex;gap:1rem;align-items:flex-start;padding:1rem;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.04);transition:all .4s ease;opacity:0.5}
+.step.active{opacity:1;background:rgba(201,134,42,0.06);border-color:rgba(201,134,42,0.25)}
+.step.done{opacity:0.7}
+.step-num{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:700;color:#8a9aa8;flex-shrink:0;border:1px solid rgba(255,255,255,0.1)}
+.step.active .step-num{background:#C9862A;color:#0D1B2A;border-color:#C9862A}
+.step.done .step-num{background:#2D6A9F;color:#fff;border-color:#2D6A9F}
+.step-body{flex:1}
+.step-body .step-label{font-weight:600;color:#fff;font-size:0.95rem;margin-bottom:0.15rem}
+.step-body .step-desc{font-size:0.85rem;color:#8a9aa8;line-height:1.5}
+
+.footer{background:#0a1628;padding:2rem 0;border-top:1px solid rgba(255,255,255,0.05);text-align:center;margin-top:auto}
+.footer p{color:#5a6a78;font-size:0.85rem}
+
+@media(max-width:860px){
+  .brew-layout{grid-template-columns:1fr}
+  .method-card{position:static}
+  .timer-ring-wrap{width:220px;height:220px}
+  .timer-ring-wrap svg{width:220px;height:220px}
+  .timer-text .time{font-size:2.6rem}
+  .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Coffee Rings</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/reader.html">Read</a>
+      <a href="/quiz/">Quiz</a>
+      <a href="/beans/">Bean Calculator</a>
+      <a href="/brew/">Brew Timer</a>
+    </div>
+  </div>
+</nav>
+
+<section class="brew-hero">
+  <div class="container brew-hero-inner">
+    <h4>Interactive Tool</h4>
+    <h1>Brew Timer</h1>
+    <p>Pick your method, set your pace, and let the timer guide you. Because even Maya needs a perfect cup before she makes any more bad decisions.</p>
+  </div>
+</section>
+
+<section class="container">
+  <div class="brew-layout">
+    <div class="method-card">
+      <h3><span class="icon">☕</span> Brew Method</h3>
+      <p class="desc">Choose how you're brewing today. Each method has its own rhythm — and its own consequences if you rush it.</p>
+
+      <select id="method" class="method-select" aria-label="Select brew method">
+        <option value="pour-over">Pour Over</option>
+        <option value="french-press">French Press</option>
+        <option value="cold-brew">Cold Brew</option>
+        <option value="espresso">Espresso</option>
+        <option value="aeropress">AeroPress</option>
+        <option value="moka">Moka Pot</option>
+      </select>
+
+      <div class="meta-row">
+        <div class="meta-pill">
+          <span class="label">Time</span>
+          <span class="val" id="meta-time">3:30</span>
+        </div>
+        <div class="meta-pill">
+          <span class="label">Ratio</span>
+          <span class="val" id="meta-ratio">1:16</span>
+        </div>
+        <div class="meta-pill">
+          <span class="label">Grind</span>
+          <span class="val" id="meta-grind">Medium</span>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <p id="tip-text">"Rushing a pour over is like skimming a romance novel — you miss the good parts."</p>
+        <div class="attribution">— Maya Chen</div>
+      </div>
+    </div>
+
+    <div class="timer-section">
+      <div class="timer-ring-wrap">
+        <svg viewBox="0 0 260 260">
+          <circle class="timer-ring-bg" cx="130" cy="130" r="120"></circle>
+          <circle class="timer-ring-fg" id="ring" cx="130" cy="130" r="120"></circle>
+        </svg>
+        <div class="timer-text">
+          <div class="time" id="time-display">3:30</div>
+          <div class="phase" id="phase-label">Ready to brew</div>
+        </div>
+      </div>
+
+      <div class="timer-controls">
+        <button class="btn btn-primary" id="start-btn">Start</button>
+        <button class="btn btn-secondary" id="reset-btn">Reset</button>
+      </div>
+
+      <div class="steps-title">Steps</div>
+      <div class="steps-list" id="steps-list"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>Coffee Rings and Bad Decisions by Alex Rogers</p>
+  </div>
+</footer>
+
+<script>
+const METHODS = {
+  'pour-over': {
+    name: 'Pour Over',
+    time: 210,
+    ratio: '1:16',
+    grind: 'Medium',
+    tip: '"Rushing a pour over is like skimming a romance novel — you miss the good parts."',
+    steps: [
+      { label: 'Heat water to 205°F', desc: 'Boil, then let it rest 30 seconds. Not 200, not 212 — 205 is the sweet spot.' },
+      { label: 'Rinse the filter', desc: 'Hot water through the paper eliminates papery taste and warms the dripper.' },
+      { label: 'Add 24g of coffee', desc: 'Medium-fine grind. Give it a gentle shake to level the bed.' },
+      { label: 'Bloom with 60g water', desc: 'Pour just enough to wet all grounds. Wait 30 seconds for the bubbles to rise.' },
+      { label: 'First pour — 60g', desc: 'Slow spiral from center outward. Let the water drain almost completely.' },
+      { label: 'Second pour — 100g', desc: 'Repeat the spiral. Keep the stream gentle and steady.' },
+      { label: 'Final pour — 260g', desc: 'Top up to total 420g water. Your cup should be done dripping by now.' },
+      { label: 'Give it a swirl', desc: 'Gently swirl the dripper to even extraction. Remove filter and enjoy.' }
+    ]
+  },
+  'french-press': {
+    name: 'French Press',
+    time: 240,
+    ratio: '1:15',
+    grind: 'Coarse',
+    tip: '"Patience is a virtue. Also, pushing the plunger too fast will just make you look foolish."',
+    steps: [
+      { label: 'Boil water and let sit', desc: '205°F — off heat for 45 seconds. While you wait, grind 30g coarse.' },
+      { label: 'Add coffee to press', desc: 'Pour in grounds. Give the carafe a gentle tap to level them.' },
+      { label: 'Start the timer and pour', desc: 'Pour 450g water over all grounds slowly. Stir once to break the crust.' },
+      { label: 'Put the lid on', desc: 'Do not press yet. Just rest the lid on top to keep heat in.' },
+      { label: 'Let it steep', desc: 'Four minutes exactly. No peeking, no pushing early.' },
+      { label: 'Press slowly', desc: 'Steady, even pressure. If it fights back, back off slightly and try again.' },
+      { label: 'Pour immediately', desc: 'Serve right away. Left in the press, coffee keeps extracting and turns bitter.' }
+    ]
+  },
+  'cold-brew': {
+    name: 'Cold Brew',
+    time: 600,
+    ratio: '1:12',
+    grind: 'Coarse',
+    tip: '"Good cold brew is like a good relationship: it takes time, and you shouldn\'t rush it."',
+    steps: [
+      { label: 'Grind 100g coarse', desc: 'Coarse as sea salt. Too fine and you will have sediment soup.' },
+      { label: 'Combine with 1.2L water', desc: 'Room-temperature filtered water. Stir to wet every speck.' },
+      { label: 'Cover and refrigerate', desc: 'Seal the jar. Put it somewhere dark and quiet — like a Sunday morning.' },
+      { label: 'Wait 12 hours', desc: 'Set a timer. Go sleep. Do not peek. Patience is the secret ingredient.' },
+      { label: 'Strain slowly', desc: 'Use a fine-mesh sieve or cheesecloth. Let gravity do the work.' },
+      { label: 'Store up to 2 weeks', desc: 'Keep it in the fridge. Dilute with water or milk before serving.' }
+    ]
+  },
+  'espresso': {
+    name: 'Espresso',
+    time: 30,
+    ratio: '1:2',
+    grind: 'Fine',
+    tip: '"If your shot runs too fast, grind finer. If it runs too slow, grind coarser. If you still mess it up, blame the machine."',
+    steps: [
+      { label: 'Dose 18g coffee', desc: 'Weigh precisely. Espresso is a science, not a guessing game.' },
+      { label: 'Grind fine and tamp', desc: 'Fine as table salt. Tamp with 30lb of pressure — evenly and level.' },
+      { label: 'Purge the group', desc: 'Run water through the portafilter for 2 seconds to clear temperature drift.' },
+      { label: 'Lock and start shot', desc: 'Place your warmed cup. Start the pump and stop at 36g liquid.' },
+      { label: 'Watch the stream', desc: 'Honey-like, not watery. A good shot drips like warm caramel.' },
+      { label: 'Serve immediately', desc: 'Espresso waits for no one. Drink within 60 seconds or write it a sad poem.' }
+    ]
+  },
+  'aeropress': {
+    name: 'AeroPress',
+    time: 120,
+    ratio: '1:14',
+    grind: 'Medium-Fine',
+    tip: '"The AeroPress is forgiving — unless you flip it over your favorite shirt. Then it is not forgiving."',
+    steps: [
+      { label: 'Boil water and cool slightly', desc: '200°F is ideal. Grind 15g to a texture between sand and salt.' },
+      { label: 'Assemble inverted', desc: 'Plunger on counter, chamber upside down. Add coffee before water for even wetting.' },
+      { label: 'Add 210g water', desc: 'Pour all at once. Stir vigorously for 10 seconds to mix thoroughly.' },
+      { label: 'Steep 1 minute', desc: 'Let it sit. Invert onto your mug, then press slowly for 20–30 seconds.' },
+      { label: 'Press until hiss', desc: 'Stop when you hear the air hiss. That is the signal: you are done.' },
+      { label: 'Enjoy clean cup', desc: 'AeroPress makes a remarkably clean, bright cup. Dilute with hot water if you like.' }
+    ]
+  },
+  'moka': {
+    name: 'Moka Pot',
+    time: 300,
+    ratio: '1:10',
+    grind: 'Fine',
+    tip: '"The Moka pot hisses like a angry cat. When it starts, take it off the heat immediately."',
+    steps: [
+      { label: 'Fill base with water', desc: 'Use filtered water up to the safety valve. Do not cover the valve.' },
+      { label: 'Add coffee to basket', desc: 'Fine grind, mound it slightly, but do not tamp. Level with a finger.' },
+      { label: 'Assemble and heat', desc: 'Screw top on tight. Medium-low heat. Lid open so you can watch.' },
+      { label: 'Wait for the hiss', desc: 'Coffee will start to sputter. The moment it gurgles loudly, take it off heat.' },
+      { label: 'Run under cold water', desc: 'Briefly cool the base to stop extraction. This prevents bitterness.' },
+      { label: 'Stir and serve', desc: 'Pour into cups. Moka is strong — treat it like a short, intense espresso.' }
+    ]
+  }
+};
+
+const TOTAL_SECONDS = METHODS['pour-over'].time;
+const CIRCUMFERENCE = 2 * Math.PI * 120;
+let selected = 'pour-over';
+let totalSeconds = TOTAL_SECONDS;
+let remaining = totalSeconds;
+let interval = null;
+let running = false;
+let currentStepIndex = -1;
+
+const ring = document.getElementById('ring');
+const timeDisplay = document.getElementById('time-display');
+const phaseLabel = document.getElementById('phase-label');
+const startBtn = document.getElementById('start-btn');
+const resetBtn = document.getElementById('reset-btn');
+const methodSelect = document.getElementById('method');
+const stepsList = document.getElementById('steps-list');
+const metaTime = document.getElementById('meta-time');
+const metaRatio = document.getElementById('meta-ratio');
+const metaGrind = document.getElementById('meta-grind');
+const tipText = document.getElementById('tip-text');
+
+function formatTime(sec) {
+  const m = Math.floor(sec / 60);
+  const s = Math.floor(sec % 60);
+  return m + ':' + String(s).padStart(2, '0');
+}
+
+function setProgress(fraction) {
+  const offset = CIRCUMFERENCE * (1 - fraction);
+  ring.style.strokeDashoffset = offset;
+}
+
+function updateMeta() {
+  const m = METHODS[selected];
+  metaTime.textContent = formatTime(m.time);
+  metaRatio.textContent = m.ratio;
+  metaGrind.textContent = m.grind;
+  tipText.textContent = m.tip;
+}
+
+function renderSteps() {
+  const steps = METHODS[selected].steps;
+  stepsList.innerHTML = '';
+  steps.forEach((s, i) => {
+    const div = document.createElement('div');
+    div.className = 'step';
+    div.id = 'step-' + i;
+    div.innerHTML = '<div class="step-num">' + (i + 1) + '</div><div class="step-body"><div class="step-label">' + s.label + '</div><div class="step-desc">' + s.desc + '</div></div>';
+    stepsList.appendChild(div);
+  });
+}
+
+function highlightStep(index) {
+  document.querySelectorAll('.step').forEach((el, i) => {
+    el.classList.remove('active', 'done');
+    if (i < index) el.classList.add('done');
+    else if (i === index) el.classList.add('active');
+  });
+}
+
+function resetTimer() {
+  clearInterval(interval);
+  interval = null;
+  running = false;
+  remaining = totalSeconds;
+  setProgress(0);
+  timeDisplay.textContent = formatTime(remaining);
+  phaseLabel.textContent = 'Ready to brew';
+  startBtn.textContent = 'Start';
+  currentStepIndex = -1;
+  highlightStep(-1);
+}
+
+function tick() {
+  remaining -= 0.1;
+  if (remaining <= 0) {
+    remaining = 0;
+    clearInterval(interval);
+    interval = null;
+    running = false;
+    startBtn.textContent = 'Start';
+    phaseLabel.textContent = 'Brew complete';
+    setProgress(1);
+    timeDisplay.textContent = '0:00';
+    currentStepIndex = METHODS[selected].steps.length;
+    highlightStep(currentStepIndex);
+    return;
+  }
+  timeDisplay.textContent = formatTime(Math.ceil(remaining));
+  setProgress(1 - remaining / totalSeconds);
+  phaseLabel.textContent = 'Brewing...';
+
+  const steps = METHODS[selected].steps;
+  const progress = 1 - remaining / totalSeconds;
+  const targetIndex = Math.min(steps.length - 1, Math.floor(progress * steps.length));
+  if (targetIndex !== currentStepIndex) {
+    currentStepIndex = targetIndex;
+    highlightStep(currentStepIndex);
+  }
+}
+
+startBtn.addEventListener('click', () => {
+  if (running) {
+    clearInterval(interval);
+    interval = null;
+    running = false;
+    startBtn.textContent = 'Resume';
+    phaseLabel.textContent = 'Paused';
+    return;
+  }
+  if (remaining <= 0) {
+    resetTimer();
+    return;
+  }
+  running = true;
+  startBtn.textContent = 'Pause';
+  interval = setInterval(tick, 100);
+});
+
+resetBtn.addEventListener('click', resetTimer);
+
+methodSelect.addEventListener('change', (e) => {
+  selected = e.target.value;
+  totalSeconds = METHODS[selected].time;
+  resetTimer();
+  updateMeta();
+  renderSteps();
+});
+
+// init
+setProgress(0);
+updateMeta();
+renderSteps();
+</script>
+</body>
+</html>
