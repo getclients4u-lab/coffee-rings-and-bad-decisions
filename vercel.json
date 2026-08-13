@@ -17,6 +17,7 @@
     { "source": "/products/mens-polarized-aviator-sunglasses-lightweight-metal-frame-uv400-pc-lenses-all-day-comfort-aerolux", "destination": "/products/mens-polarized-aviator-sunglasses-lightweight-metal-frame-uv400-pc-lenses-all-day-comfort-aerolux/" },
     { "source": "/uv-check", "destination": "/uv-check/" },
     { "source": "/style-finder", "destination": "/style-finder/" },
-    { "source": "/brew", "destination": "/brew/" }
+    { "source": "/brew", "destination": "/brew/" },
+    { "source": "/bad-decision", "destination": "/bad-decision/" }
   ]
 }

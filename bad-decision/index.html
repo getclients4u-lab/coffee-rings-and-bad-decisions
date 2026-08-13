@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bad Decision of the Day — Coffee Rings and Bad Decisions</title>
+<meta name="description" content="Spin the Bad Decision Roulette. Every day a new, gloriously terrible decision in the spirit of Coffee Rings and Bad Decisions by Alex Rogers. Share yours — Maya Chen has 3 weeks to fix hers.">
+<link rel="canonical" href="https://coffee-rings-and-bad-decisions.vercel.app/bad-decision/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:'Inter',-apple-system,sans-serif;
+  color:#F5F0E8; background:#0D1B2A;
+  line-height:1.6; overflow-x:hidden; min-height:100vh;
+}
+a { color:#C9862A; text-decoration:none; transition:all .25s ease; }
+a:hover { color:#e0a84c; }
+.container { width:100%; max-width:900px; margin:0 auto; padding:0 1.5rem; }
+:root {
+  --space-sm:1rem; --space-md:2rem; --space-lg:3rem;
+  --font-display:'Cinzel',Georgia,serif;
+}
+
+/* Nav */
+.nav {
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  background:rgba(13,27,42,0.85); backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.nav-inner {
+  max-width:1100px; margin:0 auto; padding:0 var(--space-lg);
+  height:72px; display:flex; align-items:center; justify-content:space-between;
+}
+.nav-logo { font-family:var(--font-display); font-size:1.1rem; color:#fff; font-weight:600; letter-spacing:0.06em; }
+.nav-logo span { color:#C9862A; }
+.nav-links { display:flex; gap:var(--space-lg); }
+.nav-links a { font-size:0.8rem; font-weight:500; color:#8a9aa8; letter-spacing:0.06em; text-transform:uppercase; }
+.nav-links a:hover { color:#fff; }
+
+/* Hero */
+.hero { padding:150px 0 60px; text-align:center; position:relative; }
+.hero::before {
+  content:''; position:absolute; inset:0; z-index:0;
+  background:
+    radial-gradient(circle at 25% 25%, rgba(201,134,42,0.10) 0%, transparent 50%),
+    radial-gradient(circle at 75% 70%, rgba(45,106,159,0.10) 0%, transparent 50%);
+}
+.hero-inner { position:relative; z-index:1; }
+.hero h4 {
+  font-size:0.7rem; text-transform:uppercase; letter-spacing:0.2em;
+  color:#C9862A; margin-bottom:var(--space-md); font-weight:600;
+}
+.hero h1 {
+  font-family:var(--font-display); font-size:clamp(2rem,4.5vw,3.4rem);
+  color:#fff; line-height:1.2; margin-bottom:var(--space-sm);
+}
+.hero p.sub { font-size:1.05rem; color:#8a9aa8; max-width:640px; margin:0 auto var(--space-lg); }
+.hero p.sub strong { color:#b8c5d0; font-weight:600; }
+
+/* Roulette card */
+.roulette {
+  position:relative; z-index:1;
+  max-width:640px; margin:0 auto;
+  background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));
+  border:1px solid rgba(201,134,42,0.25);
+  border-radius:14px; padding:var(--space-lg);
+  box-shadow:0 30px 80px rgba(0,0,0,0.4);
+}
+.date-tag {
+  display:inline-block; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.16em;
+  color:#8a9aa8; background:rgba(201,134,42,0.08); border:1px solid rgba(201,134,42,0.2);
+  padding:6px 14px; border-radius:999px; margin-bottom:var(--space-md);
+}
+.decision-box {
+  min-height:170px; display:flex; align-items:center; justify-content:center;
+  text-align:center; padding:var(--space-md) var(--space-sm);
+}
+#decisionText {
+  font-family:var(--font-display); font-size:clamp(1.2rem,2.6vw,1.6rem);
+  color:#F5F0E8; line-height:1.5; transition:opacity .25s ease;
+}
+#decisionText.fade { opacity:0; }
+.decision-kicker {
+  font-size:0.75rem; letter-spacing:0.14em; text-transform:uppercase;
+  color:#C9862A; margin-bottom:10px; font-weight:600;
+}
+.verdict {
+  font-size:0.9rem; color:#8a9aa8; font-style:italic; margin-top:var(--space-sm);
+  min-height:1.6em;
+}
+
+/* Buttons */
+.cta-group { display:flex; gap:var(--space-sm); flex-wrap:wrap; justify-content:center; margin-top:var(--space-md); }
+.btn {
+  display:inline-flex; align-items:center; gap:10px;
+  padding:14px 26px; border-radius:6px; font-weight:600;
+  font-size:0.88rem; letter-spacing:0.03em; cursor:pointer;
+  transition:all .3s ease; border:none; font-family:'Inter',sans-serif;
+}
+.btn-primary { background:#C9862A; color:#0D1B2A; }
+.btn-primary:hover { background:#e0a84c; transform:translateY(-2px); box-shadow:0 8px 30px rgba(201,134,42,0.3); }
+.btn-secondary { background:transparent; color:#fff; border:1.5px solid rgba(255,255,255,0.2); }
+.btn-secondary:hover { border-color:#fff; background:rgba(255,255,255,0.05); }
+.btn:disabled { opacity:0.6; cursor:default; transform:none; }
+
+/* Share */
+.share-row { margin-top:var(--space-md); padding-top:var(--space-md); border-top:1px solid rgba(255,255,255,0.06); }
+.share-label { font-size:0.7rem; text-transform:uppercase; letter-spacing:0.16em; color:#8a9aa8; margin-bottom:12px; }
+.share-btns { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+.share-btn {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:10px 18px; border-radius:6px; font-size:0.82rem; font-weight:600;
+  border:1px solid rgba(255,255,255,0.15); color:#d0dbe4; background:rgba(255,255,255,0.03);
+  cursor:pointer; transition:all .25s ease; font-family:'Inter',sans-serif;
+}
+.share-btn:hover { border-color:#C9862A; color:#C9862A; background:rgba(201,134,42,0.08); }
+#copyMsg { font-size:0.8rem; color:#C9862A; margin-top:10px; min-height:1.2em; }
+
+/* Launch list */
+.launch {
+  position:relative; z-index:1; padding:var(--space-lg) 0 90px; text-align:center;
+}
+.launch h2 {
+  font-family:var(--font-display); font-size:clamp(1.5rem,3vw,2.2rem);
+  color:#fff; margin-bottom:var(--space-sm);
+}
+.launch p { color:#b8c5d0; font-size:0.98rem; max-width:560px; margin:0 auto var(--space-md); line-height:1.8; }
+#launchForm {
+  display:flex; flex-direction:column; gap:var(--space-sm);
+  max-width:460px; margin:0 auto; text-align:left;
+}
+#launchForm input {
+  background:rgba(255,255,255,0.05); border:1.5px solid rgba(255,255,255,0.15);
+  border-radius:8px; padding:14px 18px; color:#F5F0E8; font-size:1rem; font-family:'Inter',sans-serif;
+}
+#launchForm input::placeholder { color:#5a6a78; }
+#launchMsg { margin-top:var(--space-sm); color:#C9862A; font-size:0.95rem; display:none; }
+.launch .tiny { margin-top:var(--space-sm); color:#5a6a78; font-size:0.8rem; }
+
+/* Footer */
+.footer { background:#0a1628; padding:var(--space-xl) 0; border-top:1px solid rgba(255,255,255,0.05); text-align:center; }
+.footer p { color:#5a6a78; font-size:0.85rem; }
+.footer a { color:#C9862A; }
+
+@media (max-width:768px) {
+  .nav-links { display:none; }
+  .hero { padding-top:120px; }
+  .roulette { padding:var(--space-md); }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Coffee Rings</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/reader.html">Read</a>
+      <a href="/quiz/">Quiz</a>
+      <a href="/beans/">Bean Calculator</a>
+      <a href="/brew/">Brew Timer</a>
+      <a href="/bad-decision/" style="color:#C9862A;">Bad Decisions</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <h4>In the spirit of Maya Chen</h4>
+    <h1>The Bad Decision Roulette</h1>
+    <p class="sub">Maya Chen's midnight espresso order caused a <strong>$14,000 coffee emergency</strong> and three weeks to fix it. Spin the wheel. See what bad decision the universe has queued for you today — and how badly it could go.</p>
+    <div class="roulette">
+      <div style="text-align:center;"><span class="date-tag" id="dateTag">Today's Pick</span></div>
+      <div class="decision-box">
+        <div>
+          <div class="decision-kicker" id="kickerText">Bad Decision #—</div>
+          <div id="decisionText">Spinning...</div>
+          <div class="verdict" id="verdictText"></div>
+        </div>
+      </div>
+      <div class="cta-group">
+        <button class="btn btn-primary" id="spinBtn">🎰 Spin Again</button>
+        <button class="btn btn-secondary" id="bookBtn" onclick="location.href='/reader.html'">📖 Read the Book</button>
+      </div>
+      <div class="share-row">
+        <div class="share-label">Inflict this on your group chat</div>
+        <div class="share-btns">
+          <button class="share-btn" id="copyBtn">📋 Copy</button>
+          <button class="share-btn" id="xBtn">𝕏 Post</button>
+          <button class="share-btn" id="tBtn">🕊️ Tweet</button>
+        </div>
+        <div id="copyMsg"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="launch" id="launch">
+  <div class="container">
+    <h2>Made your decision? Fix it like Maya.</h2>
+    <p>She has three weeks to sell 500 pounds of Ethiopian beans. You have one good email. Join <strong>The Coffee Ring</strong> for a free bonus chapter, the cover reveal, and a launch-day discount code — no spam, just one good email.</p>
+    <form id="launchForm">
+      <input type="text" id="launchName" placeholder="First name (optional)">
+      <input type="email" id="launchEmail" placeholder="you@example.com" required>
+      <button type="submit" class="btn btn-primary" style="justify-content:center; font-size:1rem; padding:16px 40px; cursor:pointer; border:none;">☕ Get on the List</button>
+    </form>
+    <p id="launchMsg"></p>
+    <p class="tiny">Free bonus chapter · Launch-day discount · No spam, ever</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Alex Rogers. All rights reserved. · <em>Coffee Rings and Bad Decisions</em> is a work of fiction.</p>
+    <p style="margin-top:8px;">Published by Coffee Rings Press · <a href="https://www.amazon.com" target="_blank">Amazon</a></p>
+  </div>
+</footer>
+
+<script>
+(function() {
+  // ── The bad decisions (in the book's voice) ──────────────────────────
+  var DECISIONS = [
+    { d: "Order 500 pounds of Ethiopian single-origin beans at 2:47 a.m. 'for the wholesale discount.'", v: "Estimated fallout: $14,000 and a loan default. Maya says hi." },
+    { d: "Publicly call the chain-store acquisitions director 'a corporate suit with a caffeine allergy.'", v: "He will remember. He always remembers. He may also be the only one who can save you." },
+    { d: "Skip the backup roaster inspection because the weather is nice.", v: "The weather is a lie. The roaster is not." },
+    { d: "Text your ex at 1 a.m. to ask if he remembers your coffee order.", v: "He remembers the order. That's the problem." },
+    { d: "Buy a TikTok ad slot with your rent money. Viral is basically free money, right?", v: "Viral is not a currency. Your landlord disagrees." },
+    { d: "Let the mysterious bean lottery ticket ride for 'one more week.'", v: "Lotteries are for people with a backup plan. You are not those people." },
+    { d: "Name the new signature drink after the man you're supposed to hate.", v: "Customers will ask. You will blush. It will be on the menu forever." },
+    { d: "Promise a wedding party 200 balloon-free custom arrangements in 48 hours.", v: "It's not balloons. It's 200 centerpieces. There is no 48 hours." },
+    { d: "Reply-all on the bank's 'past due' notice with a joke about espresso shots.", v: "Banks have no sense of humor. They have interest rates." },
+    { d: "Use the emergency fund to buy a vintage espresso machine 'as an investment.'", v: "It is an investment. In espresso. Not in solvency." },
+    { d: "Agree to co-host a tasting with your biggest competitor. In matching aprons.", v: "Matching aprons. That's the real bad decision here." },
+    { d: "Hide the 500-pound bean shipment in the back room and pretend it's a surprise.", v: "The surprise is structural. The floor is load-bearing. Barely." },
+    { d: "Record a 'Day 1 of 21 to save the shop' video. Post it. Tag nobody.", v: "Nobody becomes everybody by Thursday. Say hi to viral." },
+    { d: "Swap your decaf beans for the real thing and blame 'the grind.'", v: "The grind is fine. Your sleep schedule is not." },
+    { d: "Double down on the bad idea that's 40% working. Quit the one at 60%.", v: "Maya's special move. The loan officer calls it 'a personality.'" },
+    { d: "Invite the corporate suit to the shop's anniversary party. Alone. On purpose.", v: "The worst part is you'll be glad you did." },
+    { d: "Write 'I quit' on a napkin, then decide to keep the shop anyway. Keep the napkin.", v: "Frame it. It becomes the origin story." },
+    { d: "Buy 40 pounds of beans from a supplier named 'Definitely Not a Scam, LLC.'", v: "The beans are fine. The LLC is not. It's a lifestyle." },
+    { d: "Try to carry three full carafes at once because 'it's faster.'", v: "It is faster. Everything is faster until it isn't." },
+    { d: "Set the shop's Wi-Fi password to the rival chain's tagline.", v: "Petty. Legendary. Undeniable." },
+    { d: "Agree to a 'friendly competition' where the loser closes their shop.", v: "There is no friendly. There is only the loser." },
+    { d: "Fall for the charming corporate guy with a crisis of his own.", v: "The worst bad decision on this list. Also the best." },
+    { d: "Open a second location before the first one breaks even.", v: "Two shops, two loans, one heartbeat." },
+    { d: "Let your best friend name the seasonal menu. It's 'All Fall Down.'", v: "October is a lawsuit waiting to happen. It's also sold out." },
+    { d: "Do the math on 500 pounds of beans in cups of coffee. Do it out loud. In front of the whole shop.", v: "The answer is 38,400 cups. The crowd gasps. So do you." },
+    { d: "Buy a billboard that says 'Bean & Leaf who?' above your competitor's office.", v: "Bold. Public. Very, very on brand." },
+    { d: "Go into a meeting with the bank wearing an apron that says 'Certified Disaster.'", v: "They approve the extension anyway. Charisma is a loan product." },
+    { d: "Teach the corporate suit to pull a proper shot. Let him get good at it.", v: "He will. Then he'll steal your heart and your oat milk." },
+    { d: "Decide that 21 days is plenty of time. Take a nap first.", v: "The nap is nice. The spreadsheet after is not." },
+    { d: "Host 'Bring Your Ex Night' to boost Tuesday traffic.", v: "Tuesday traffic is up 400%. Security is up 1000%." },
+    { d: "Sign the loan extension in pen, at the counter, mid-rush.", v: "You're a coffee shop. It's either a signature or a latte. Both matter." },
+    { d: "Trust the TikTok algorithm. Then check it at 3 a.m. Then check it again.", v: "It's all anyone will talk about. Including the man in the suit." },
+    { d: "Put a 'free coffee for life' card in your own birthday cake.", v: "It's a trap. You'll still pay. You'll love it." },
+    { d: "Get emotional support from a stranger who happens to be your rival.", v: "This is called 'meet-cute.' Enjoy the ride." }
+  ];
+
+  // ── Daily seeding: same decision all day, new every day ──────────────
+  function dayIndex() {
+    var now = new Date();
+    var start = new Date(now.getFullYear(), 0, 0);
+    var day = Math.floor((now - start) / 86400000);
+    return day % DECISIONS.length;
+  }
+
+  var currentIdx = -1;
+  var el = document.getElementById('decisionText');
+  var kicker = document.getElementById('kickerText');
+  var verdict = document.getElementById('verdictText');
+  var dateTag = document.getElementById('dateTag');
+  var spinBtn = document.getElementById('spinBtn');
+  var spinning = false;
+
+  function fmtDate() {
+    return new Date().toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric', year:'numeric' });
+  }
+  dateTag.textContent = '☕ Bad Decision of the Day — ' + fmtDate();
+
+  function show(idx, animate) {
+    var item = DECISIONS[idx];
+    if (animate) el.classList.add('fade');
+    setTimeout(function() {
+      kicker.textContent = 'Bad Decision #' + (idx + 1);
+      el.textContent = '“' + item.d + '”';
+      verdict.textContent = item.v;
+      if (animate) el.classList.remove('fade');
+    }, animate ? 220 : 0);
+    currentIdx = idx;
+  }
+
+  function randomIdx() {
+    var i;
+    do { i = Math.floor(Math.random() * DECISIONS.length); } while (i === currentIdx && DECISIONS.length > 1);
+    return i;
+  }
+
+  function spin() {
+    if (spinning) return;
+    spinning = true; spinBtn.disabled = true;
+    show(randomIdx(), true);
+    setTimeout(function() { spinning = false; spinBtn.disabled = false; }, 300);
+  }
+
+  // Start with the seeded daily pick
+  show(dayIndex(), false);
+
+  spinBtn.addEventListener('click', spin);
+  document.addEventListener('keydown', function(e) { if (e.key === ' ' && e.target.tagName !== 'INPUT') { e.preventDefault(); spin(); } });
+
+  // ── Share ─────────────────────────────────────────────────────────────
+  function currentLine() {
+    return 'Bad Decision #' + (currentIdx + 1) + ': ' + DECISIONS[currentIdx].d;
+  }
+  function shareText() {
+    return currentLine() + ' — my Bad Decision of the Day. Maya Chen has 3 weeks to fix hers. ☕📖 #CoffeeRingsAndBadDecisions';
+  }
+  var siteUrl = 'https://coffee-rings-and-bad-decisions.vercel.app/bad-decision/';
+
+  document.getElementById('copyBtn').addEventListener('click', function() {
+    var msg = document.getElementById('copyMsg');
+    var text = shareText() + ' ' + siteUrl;
+    function done(ok) { msg.textContent = ok ? 'Copied! Now go make it. ☕' : 'Couldn\'t copy — select & copy manually!'; }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function(){ done(true); }, function(){ done(false); });
+    } else {
+      var ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta);
+      ta.select(); try { document.execCommand('copy'); done(true); } catch(e) { done(false); }
+      document.body.removeChild(ta);
+    }
+  });
+
+  function openX(kind) {
+    var base = kind === 'x' ? 'https://x.com/intent/post' : 'https://twitter.com/intent/tweet';
+    var u = base + '?text=' + encodeURIComponent(shareText()) + '&url=' + encodeURIComponent(siteUrl);
+    window.open(u, '_blank', 'width=600,height=520');
+  }
+  document.getElementById('xBtn').addEventListener('click', function() { openX('x'); });
+  document.getElementById('tBtn').addEventListener('click', function() { openX('t'); });
+
+  // ── Launch list funnel (same API as homepage) ─────────────────────────
+  var form = document.getElementById('launchForm');
+  var msg = document.getElementById('launchMsg');
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var btn = form.querySelector('button');
+    var original = btn.textContent;
+    btn.textContent = 'Pouring...'; btn.disabled = true;
+    msg.style.display = 'none';
+    try {
+      var r = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: document.getElementById('launchName').value, email: document.getElementById('launchEmail').value })
+      });
+      var d = await r.json().catch(function() { return {}; });
+      if (r.ok) {
+        msg.textContent = d.duplicate ? 'You\'re already on the list — see you at launch ☕' : 'You\'re on the list! Welcome to the Coffee Ring ☕';
+        msg.style.display = 'block';
+        form.reset();
+        form.style.display = 'none';
+      } else {
+        msg.textContent = d.error === 'Valid email required' ? 'Hmm, that email doesn\'t look right — try again?' : 'Something spilled. Try again in a sec.';
+        msg.style.display = 'block';
+      }
+    } catch (err) {
+      msg.textContent = 'Something spilled. Try again in a sec.';
+      msg.style.display = 'block';
+    }
+    btn.textContent = original; btn.disabled = false;
+  });
+})();
+</script>
+
+</body>
+</html>
