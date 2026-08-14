@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Ring Studio — Coffee Rings and Bad Decisions</title>
+<meta name="description" content="Create your own coffee ring art. Click to stain, express, and download your masterpiece.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;color:#F5F0E8;background:#0D1B2A;line-height:1.6;overflow-x:hidden}
+a{color:#C9862A;text-decoration:none;transition:all .25s ease}
+a:hover{color:#e0a84c}
+.container{width:100%;max-width:1100px;margin:0 auto;padding:0 2rem}
+:root{--space-sm:1rem;--space-md:2rem;--space-lg:3rem;--space-xl:5rem;--space-2xl:8rem;--font-display:'Cinzel',Georgia,serif}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,27,42,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.05)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 2rem;height:80px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--font-display);font-size:1.1rem;color:#fff;font-weight:600;letter-spacing:0.06em}
+.nav-logo span{color:#C9862A}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{font-size:0.8rem;font-weight:500;color:#8a9aa8;letter-spacing:0.06em;text-transform:uppercase}
+.nav-links a:hover{color:#fff}
+
+.rings-hero{min-height:40vh;display:flex;align-items:center;position:relative;padding:120px 0 40px;overflow:hidden}
+.rings-hero::before{content:'';position:absolute;inset:0;z-index:0;background:radial-gradient(circle at 20% 30%,rgba(201,134,42,0.1) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(45,106,159,0.08) 0%,transparent 50%)}
+.rings-hero-inner{position:relative;z-index:1;text-align:center;width:100%}
+.rings-hero-inner h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.2em;color:#C9862A;margin-bottom:1rem;font-weight:600}
+.rings-hero-inner h1{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.2rem);color:#fff;line-height:1.15;margin-bottom:1rem}
+.rings-hero-inner p{color:#8a9aa8;font-size:1.1rem;max-width:600px;margin:0 auto;line-height:1.7}
+
+.studio{display:grid;grid-template-columns:300px 1fr;gap:2rem;padding:2rem 0 5rem;position:relative;z-index:1}
+@media(max-width:900px){.studio{grid-template-columns:1fr}}
+
+.panel{background:#0a1628;border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:1.75rem;box-shadow:0 20px 60px rgba(0,0,0,0.3);height:fit-content;position:sticky;top:100px}
+.panel h3{font-family:var(--font-display);font-size:1.1rem;color:#fff;margin-bottom:1.25rem}
+.panel .label{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:#8a9aa8;font-weight:600;margin-bottom:0.6rem;display:block}
+.mb-2{margin-bottom:1.5rem}
+
+.size-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0.5rem}
+.size-btn{padding:0.6rem;border-radius:6px;border:1.5px solid rgba(255,255,255,0.1);background:transparent;color:#F5F0E8;font-size:0.8rem;font-weight:600;cursor:pointer;transition:all .2s}
+.size-btn:hover{border-color:#C9862A;background:rgba(201,134,42,0.08)}
+.size-btn.active{border-color:#C9862A;background:#C9862A;color:#0D1B2A}
+
+.color-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0.5rem}
+.color-btn{width:100%;aspect-ratio:1;border-radius:50%;border:2px solid transparent;cursor:pointer;transition:all .2s;box-shadow:0 2px 8px rgba(0,0,0,0.3)}
+.color-btn:hover{transform:scale(1.1)}
+.color-btn.active{border-color:#fff;box-shadow:0 0 0 2px #C9862A}
+
+.action-row{display:flex;gap:0.5rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 14px;border-radius:6px;font-weight:600;font-size:0.8rem;letter-spacing:0.03em;cursor:pointer;transition:all .25s ease;border:none;font-family:'Inter',sans-serif;flex:1}
+.btn-primary{background:#C9862A;color:#0D1B2A}
+.btn-primary:hover{background:#e0a84c;transform:translateY(-1px);box-shadow:0 6px 20px rgba(201,134,42,0.3)}
+.btn-secondary{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.2)}
+.btn-secondary:hover{border-color:#fff;background:rgba(255,255,255,0.05)}
+.btn-danger{background:transparent;color:#e07070;border:1.5px solid rgba(224,112,112,0.3)}
+.btn-danger:hover{background:rgba(224,112,112,0.1);border-color:#e07070}
+
+.canvas-wrap{background:#0a1628;border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:1rem;box-shadow:0 20px 60px rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;min-height:520px;position:relative;overflow:hidden}
+#ringCanvas{display:block;max-width:100%;cursor:crosshair;border-radius:4px;background:#f4f1ea;image-rendering:auto}
+
+.hint{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);background:rgba(13,27,42,0.85);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:0.5rem 1.25rem;color:#8a9aa8;font-size:0.8rem;letter-spacing:0.03em;pointer-events:none;transition:opacity .4s}
+.hint.hidden{opacity:0}
+
+.quote{margin-top:1.25rem;padding:1rem;background:linear-gradient(135deg,rgba(201,134,42,0.1),rgba(45,106,159,0.08));border:1px solid rgba(201,134,42,0.2);border-radius:8px}
+.quote p{font-size:0.9rem;color:#e0a84c;font-style:italic;line-height:1.6}
+.quote .attribution{font-size:0.75rem;color:#8a9aa8;margin-top:0.5rem;font-style:normal;font-weight:600;letter-spacing:0.05em;text-transform:uppercase}
+
+.footer{background:#0a1628;padding:2rem 0;border-top:1px solid rgba(255,255,255,0.05);text-align:center;margin-top:auto}
+.footer p{color:#5a6a78;font-size:0.85rem}
+
+@media(max-width:900px){
+  .panel{position:static}
+  .canvas-wrap{min-height:60vh}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Coffee Rings</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/reader.html">Read</a>
+      <a href="/quiz/">Quiz</a>
+      <a href="/beans/">Bean Calculator</a>
+      <a href="/brew/">Brew Timer</a>
+      <a href="/rings/">Ring Studio</a>
+    </div>
+  </div>
+</nav>
+
+<section class="rings-hero">
+  <div class="container rings-hero-inner">
+    <h4>Interactive Tool</h4>
+    <h1>Coffee Ring Studio</h1>
+    <p>Every ring tells a story. Click the canvas to stain your own masterpiece, then save it and share the chaos.</p>
+  </div>
+</section>
+
+<section class="container">
+  <div class="studio">
+    <div class="panel">
+      <h3>🎨 Studio Controls</h3>
+
+      <div class="mb-2">
+        <span class="label">Ring Size</span>
+        <div class="size-grid">
+          <button class="size-btn active" data-size="small" aria-label="Small ring">S</button>
+          <button class="size-btn" data-size="medium" aria-label="Medium ring">M</button>
+          <button class="size-btn" data-size="large" aria-label="Large ring">L</button>
+          <button class="size-btn" data-size="xlarge" aria-label="Extra large ring">XL</button>
+        </div>
+      </div>
+
+      <div class="mb-2">
+        <span class="label">Roast Level</span>
+        <div class="color-grid">
+          <button class="color-btn active" data-roast="light" style="background:#c8a882" aria-label="Light roast"></button>
+          <button class="color-btn" data-roast="medium" style="background:#8b5a3c" aria-label="Medium roast"></button>
+          <button class="color-btn" data-roast="dark" style="background:#3e2117" aria-label="Dark roast"></button>
+          <button class="color-btn" data-roast="mocha" style="background:#5c3a2a" aria-label="Mocha"></button>
+          <button class="color-btn" data-roast="espresso" style="background:#1a0f0a" aria-label="Espresso"></button>
+        </div>
+      </div>
+
+      <div class="mb-2">
+        <span class="label">Actions</span>
+        <div class="action-row">
+          <button class="btn btn-secondary" id="undoBtn">Undo</button>
+          <button class="btn btn-danger" id="clearBtn">Clear</button>
+        </div>
+        <div class="action-row" style="margin-top:0.5rem">
+          <button class="btn btn-primary" id="downloadBtn">Download PNG</button>
+        </div>
+      </div>
+
+      <div class="quote">
+        <p id="quoteText">"The best cups leave the best rings. The worst decisions leave the best stories."</p>
+        <div class="attribution">— Maya Chen</div>
+      </div>
+    </div>
+
+    <div class="canvas-wrap">
+      <canvas id="ringCanvas" width="900" height="620"></canvas>
+      <div class="hint" id="hint">Click anywhere to drop a ring</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>Coffee Rings and Bad Decisions by Alex Rogers</p>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const canvas = document.getElementById('ringCanvas');
+  const ctx = canvas.getContext('2d');
+  const hint = document.getElementById('hint');
+  const quoteText = document.getElementById('quoteText');
+
+  // Paper background
+  function drawPaper() {
+    ctx.fillStyle = '#f4f1ea';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    // subtle noise texture
+    for (let i = 0; i < 18000; i++) {
+      const x = Math.random() * canvas.width;
+      const y = Math.random() * canvas.height;
+      ctx.fillStyle = `rgba(120,100,80,${Math.random() * 0.04})`;
+      ctx.fillRect(x, y, 1.5, 1.5);
+    }
+    // faint ruled lines
+    ctx.strokeStyle = 'rgba(180,170,150,0.15)';
+    ctx.lineWidth = 1;
+    for (let y = 60; y < canvas.height; y += 28) {
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(canvas.width, y);
+      ctx.stroke();
+    }
+  }
+
+  const SIZES = {
+    small: { radius: 22, variance: 0.15 },
+    medium: { radius: 36, variance: 0.18 },
+    large: { radius: 54, variance: 0.22 },
+    xlarge: { radius: 78, variance: 0.25 }
+  };
+
+  const ROASTS = {
+    light:  { base: [200, 168, 130], alpha: 0.55, edge: [180, 150, 120] },
+    medium: { base: [139, 90, 60], alpha: 0.65, edge: [120, 75, 45] },
+    dark:   { base: [62, 33, 23], alpha: 0.75, edge: [40, 20, 12] },
+    mocha:  { base: [92, 58, 42], alpha: 0.7, edge: [70, 40, 25] },
+    espresso:{ base: [26, 15, 10], alpha: 0.8, edge: [14, 8, 5] }
+  };
+
+  const QUOTES = [
+    { text: '"The best cups leave the best rings. The worst decisions leave the best stories."', who: 'Maya Chen' },
+    { text: '"I spilled more than coffee that morning. I spilled my entire plan."', who: 'Maya Chen' },
+    { text: '"A coffee ring is just a map showing where good coffee and poor judgment intersected."', who: 'Maya Chen' },
+    { text: '"Leo once said my coffee rings were \"character flaws.\" I said they were art."', who: 'Maya Chen' },
+    { text: '"Every ring is a reminder: someone sat here, stayed too long, and enjoyed it."', who: 'Maya Chen' },
+    { text: '"In this shop, the rings have better attendance than the customers on Mondays."', who: 'Maya Chen' },
+    { text: '"I have a ring-shaped stain on my resume. It says \"not afraid of a little mess.\"", who: 'Maya Chen' },
+    { text: '"Coffee stains are just proof that life is messy, caffeinated, and worth living."', who: 'Maya Chen' },
+    { text: '"If my walls could talk, they would describe themselves in concentric brown circles."', who: 'Maya Chen' },
+    { text: '"The loan officer was unimpressed by my 500-pound bean emergency. The rings were not my defense."', who: 'Maya Chen' },
+  ];
+
+  let currentSize = 'small';
+  let currentRoast = 'light';
+  let rings = [];
+  let undoStack = [];
+
+  function showHint(show) {
+    if (show) hint.classList.remove('hidden');
+    else hint.classList.add('hidden');
+  }
+
+  function drawRing(x, y, sizeKey, roastKey) {
+    const size = SIZES[sizeKey];
+    const roast = ROASTS[roastKey];
+    const r = size.radius + (Math.random() - 0.5) * size.radius * size.variance;
+
+    ctx.save();
+    ctx.globalCompositeOperation = 'source-over';
+
+    // outer bleed
+    const bleedGrad = ctx.createRadialGradient(x, y, r * 0.7, x, y, r * 1.25);
+    bleedGrad.addColorStop(0, `rgba(${roast.base[0]},${roast.base[1]},${roast.base[2]},0)`);
+    bleedGrad.addColorStop(0.6, `rgba(${roast.base[0]},${roast.base[1]},${roast.base[2]},${roast.alpha * 0.25})`);
+    bleedGrad.addColorStop(1, `rgba(${roast.base[0]},${roast.base[1]},${roast.base[2]},0)`);
+    ctx.fillStyle = bleedGrad;
+    ctx.beginPath();
+    ctx.ellipse(x, y, r * 1.25, r * (0.9 + Math.random() * 0.35), Math.random() * Math.PI, 0, Math.PI * 2);
+    ctx.fill();
+
+    // main ring
+    const inner = r * (0.35 + Math.random() * 0.25);
+    const ringGrad = ctx.createRadialGradient(x, y, inner, x, y, r);
+    ringGrad.addColorStop(0, `rgba(${roast.base[0]},${roast.base[1]},${roast.base[2]},0)`);
+    ringGrad.addColorStop(0.35, `rgba(${roast.base[0]},${roast.base[1]},${roast.base[2]},${roast.alpha * 0.4})`);
+    ringGrad.addColorStop(0.65, `rgba(${roast.base[0]},${roast.base[1]},${roast.base[2]},${roast.alpha})`);
+    ringGrad.addColorStop(0.85, `rgba(${roast.edge[0]},${roast.edge[1]},${roast.edge[2]},${roast.alpha * 0.7})`);
+    ringGrad.addColorStop(1, `rgba(${roast.base[0]},${roast.base[1]},${roast.base[2]},0)`);
+    ctx.fillStyle = ringGrad;
+    ctx.beginPath();
+    ctx.ellipse(x, y, r, r * (0.85 + Math.random() * 0.3), Math.random() * Math.PI, 0, Math.PI * 2);
+    ctx.fill();
+
+    // tiny speckles
+    for (let i = 0; i < 18; i++) {
+      const angle = Math.random() * Math.PI * 2;
+      const dist = r * (0.4 + Math.random() * 0.8);
+      const sx = x + Math.cos(angle) * dist;
+      const sy = y + Math.sin(angle) * dist * 0.85;
+      ctx.fillStyle = `rgba(${roast.base[0]},${roast.base[1]},${roast.base[2]},${Math.random() * 0.25})`;
+      ctx.beginPath();
+      ctx.arc(sx, sy, Math.random() * 2.5, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    ctx.restore();
+  }
+
+  function render() {
+    drawPaper();
+    rings.forEach(ring => {
+      drawRing(ring.x, ring.y, ring.size, ring.roast);
+    });
+  }
+
+  canvas.addEventListener('click', function(e) {
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
+
+    undoStack.push({ ...rings });
+    rings.push({ x, y, size: currentSize, roast: currentRoast });
+    render();
+    showHint(false);
+    cycleQuote();
+  });
+
+  document.querySelectorAll('.size-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentSize = btn.dataset.size;
+    });
+  });
+
+  document.querySelectorAll('.color-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentRoast = btn.dataset.roast;
+    });
+  });
+
+  document.getElementById('undoBtn').addEventListener('click', () => {
+    if (undoStack.length > 0) {
+      rings = undoStack.pop();
+      render();
+      if (rings.length === 0) showHint(true);
+    }
+  });
+
+  document.getElementById('clearBtn').addEventListener('click', () => {
+    if (rings.length > 0) {
+      undoStack.push({ ...rings });
+      rings = [];
+      render();
+      showHint(true);
+    }
+  });
+
+  document.getElementById('downloadBtn').addEventListener('click', () => {
+    const link = document.createElement('a');
+    link.download = 'coffee-ring-art.png';
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+  });
+
+  function cycleQuote() {
+    const q = QUOTES[Math.floor(Math.random() * QUOTES.length)];
+    quoteText.textContent = q.text;
+    quoteText.nextElementSibling.textContent = '— ' + q.who;
+  }
+
+  // init
+  drawPaper();
+  showHint(true);
+})();
+</script>
+</body>
+</html>
