@@ -18,6 +18,7 @@
     { "source": "/uv-check", "destination": "/uv-check/" },
     { "source": "/style-finder", "destination": "/style-finder/" },
     { "source": "/brew", "destination": "/brew/" },
-    { "source": "/rings", "destination": "/rings/" }
+    { "source": "/rings", "destination": "/rings/" },
+    { "source": "/tarot", "destination": "/tarot/" }
   ]
 }
