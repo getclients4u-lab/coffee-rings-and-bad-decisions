@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Bean Lottery — Coffee Rings and Bad Decisions</title>
+<meta name="description" content="Scratch your ticket and see what the mysterious bean lottery decides. A coffee-flavored fortune from the world of Coffee Rings and Bad Decisions.">
+<link rel="canonical" href="https://coffee-rings-and-bad-decisions.vercel.app/lottery/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;color:#F5F0E8;background:#0D1B2A;line-height:1.6;overflow-x:hidden;min-height:100vh;display:flex;flex-direction:column}
+a{color:#C9862A;text-decoration:none;transition:all .25s ease}
+a:hover{color:#e0a84c}
+.container{width:100%;max-width:1100px;margin:0 auto;padding:0 2rem}
+:root{--space-sm:1rem;--space-md:2rem;--space-lg:3rem;--space-xl:5rem;--space-2xl:8rem;--font-display:'Cinzel',Georgia,serif;--gold:#C9862A}
+
+/* Navigation */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,27,42,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.05)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 2rem;height:80px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--font-display);font-size:1.1rem;color:#fff;font-weight:600;letter-spacing:0.06em}
+.nav-logo span{color:#C9862A}
+.nav-links{display:flex;gap:2rem;flex-wrap:wrap;justify-content:flex-end}
+.nav-links a{font-size:0.8rem;font-weight:500;color:#8a9aa8;letter-spacing:0.06em;text-transform:uppercase}
+.nav-links a:hover{color:#fff}
+.nav-links a.current{color:#C9862A}
+
+/* Hero */
+.hero{min-height:44vh;display:flex;align-items:center;position:relative;padding:140px 0 50px;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;z-index:0;background:radial-gradient(circle at 20% 30%,rgba(201,134,42,0.12) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(45,106,159,0.08) 0%,transparent 50%)}
+.hero-inner{position:relative;z-index:1;text-align:center;width:100%}
+.hero-inner h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.2em;color:#C9862A;margin-bottom:1rem;font-weight:600}
+.hero-inner h1{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.2rem);color:#fff;line-height:1.15;margin-bottom:1rem}
+.hero-inner p{color:#8a9aa8;font-size:1.1rem;max-width:620px;margin:0 auto;line-height:1.7}
+
+/* Ticket */
+.ticket-section{padding:1rem 0 4rem;position:relative;z-index:1}
+.ticket-wrap{max-width:440px;margin:0 auto}
+.ticket{background:linear-gradient(160deg,#1a2f45 0%,#0D1B2A 60%);border:1px solid rgba(201,134,42,0.35);border-radius:16px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,0.5);position:relative}
+.ticket-top{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;border-bottom:1px dashed rgba(201,134,42,0.3)}
+.ticket-title{font-family:var(--font-display);font-size:1rem;color:#fff;letter-spacing:0.1em}
+.ticket-title small{display:block;font-family:'Inter',sans-serif;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:#C9862A;font-weight:600}
+.ticket-no{font-family:'Inter',monospace;font-size:0.8rem;color:#8a9aa8;letter-spacing:0.06em;text-align:right}
+.ticket-no b{color:#C9862A;font-weight:600;display:block}
+
+.scratch-zone{position:relative;height:260px;margin:0}
+.prize{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:1.5rem;background:
+  radial-gradient(circle at 50% 0%,rgba(201,134,42,0.10) 0%,transparent 60%),
+  #0a1628;}
+.prize .symbol{font-size:2.6rem;margin-bottom:0.4rem;filter:drop-shadow(0 4px 12px rgba(201,134,42,0.4))}
+.prize .name{font-family:var(--font-display);color:#fff;font-size:1.35rem;margin-bottom:0.5rem;letter-spacing:0.02em;line-height:1.3}
+.prize .fortune{color:#b8c5d0;font-size:0.92rem;line-height:1.65;font-style:italic;max-width:340px}
+.prize .won{font-size:0.62rem;text-transform:uppercase;letter-spacing:0.25em;color:#C9862A;font-weight:600;margin-bottom:0.6rem}
+canvas.foil{position:absolute;inset:0;z-index:2;cursor:pointer;touch-action:none;border-radius:0}
+
+.ticket-bottom{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-top:1px dashed rgba(201,134,42,0.3)}
+.ticket-bottom .odds{font-size:0.7rem;color:#8a9aa8;letter-spacing:0.04em}
+.ticket-bottom .odds b{color:#C9862A}
+.barcode{display:flex;gap:2px;align-items:flex-end;height:26px}
+.barcode i{display:block;width:2px;background:#8a9aa8;height:100%;opacity:0.55}
+
+.hint{text-align:center;margin-top:1.5rem;color:#8a9aa8;font-size:0.9rem;letter-spacing:0.03em;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:0.55}50%{opacity:1}}
+
+/* Actions */
+.actions{text-align:center;margin-top:1.75rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:6px;font-weight:600;font-size:0.9rem;letter-spacing:0.03em;cursor:pointer;transition:all .3s ease;border:none;font-family:'Inter',sans-serif}
+.btn-primary{background:#C9862A;color:#0D1B2A}
+.btn-primary:hover{background:#e0a84c;transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,134,42,0.3)}
+.btn-secondary{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.2)}
+.btn-secondary:hover{border-color:#fff;background:rgba(255,255,255,0.05)}
+.btn-secondary:disabled{opacity:0.4;cursor:not-allowed}
+
+/* Reveal burst */
+.ticket.revealed .scratch-zone{box-shadow:inset 0 0 0 2px rgba(201,134,42,0.4)}
+@keyframes popIn{0%{transform:scale(0.92);opacity:0}60%{transform:scale(1.02)}100%{transform:scale(1);opacity:1}}
+.ticket.revealed .prize{animation:popIn .5s cubic-bezier(0.4,0,0.2,1) both}
+
+/* Confetti */
+.confetti{position:fixed;top:-10px;width:8px;height:14px;z-index:200;pointer-events:none;border-radius:2px;opacity:0.9}
+@keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:0}}
+
+/* Footer */
+.footer{background:#0a1628;padding:2rem 0;border-top:1px solid rgba(255,255,255,0.05);text-align:center;margin-top:auto}
+.footer p{color:#5a6a78;font-size:0.85rem}
+
+/* Story tie-in */
+.story-note{max-width:620px;margin:2.5rem auto 0;padding:1.5rem 2rem;background:rgba(201,134,42,0.05);border:1px solid rgba(201,134,42,0.2);border-radius:10px;text-align:center}
+.story-note p{color:#b8c5d0;font-size:0.95rem;line-height:1.7;font-style:italic}
+.story-note b{color:#C9862A}
+
+@media(max-width:768px){
+  .nav-links{display:none}
+  .scratch-zone{height:240px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Coffee <span>Rings</span></a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/reader.html">Read</a>
+      <a href="/quiz/">Quiz</a>
+      <a href="/beans/">Bean Calculator</a>
+      <a href="/brew/">Brew Timer</a>
+      <a href="/rings/">Ring Studio</a>
+      <a href="/tarot/">Tarot</a>
+      <a href="/lottery/" class="current">Bean Lottery</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <h4>A Mysterious Bean Lottery</h4>
+    <h1>The Bean Lottery</h1>
+    <p>Somewhere between the supply chain and the TikTok rescue, there's a lottery nobody quite remembers starting. Scratch your ticket and see what the beans decide.</p>
+  </div>
+</header>
+
+<section class="ticket-section">
+  <div class="container">
+    <div class="ticket-wrap">
+      <div class="ticket" id="ticket">
+        <div class="ticket-top">
+          <div class="ticket-title">THE BEAN LOTTERY<small>Official · Probably Not Real</small></div>
+          <div class="ticket-no"><b id="lotNo">NO. 0542</b>PORTLAND, OR</div>
+        </div>
+        <div class="scratch-zone" id="scratchZone">
+          <div class="prize" id="prize">
+            <div class="won">You Won</div>
+            <div class="symbol" id="prizeSymbol">🫘</div>
+            <div class="name" id="prizeName">A Mystery</div>
+            <div class="fortune" id="prizeFortune">Scratch to find out what the beans have in store for you.</div>
+          </div>
+          <canvas class="foil" id="foil"></canvas>
+        </div>
+        <div class="ticket-bottom">
+          <div class="odds">Odds of winning: <b>absolutely 1:1</b> (you always win something)</div>
+          <div class="barcode" id="barcode"></div>
+        </div>
+      </div>
+    </div>
+    <p class="hint" id="hint">Use your finger or cursor to scratch off the foil ✨</p>
+    <div class="actions">
+      <button class="btn btn-primary" id="newBtn">🎟️ New Ticket</button>
+      <button class="btn btn-secondary" id="revealBtn">👀 Reveal It</button>
+      <button class="btn btn-secondary" id="shareBtn" disabled>📋 Share My Luck</button>
+    </div>
+    <div class="story-note">
+      <p>"Three weeks to sell five hundred pounds of beans, and the only thing keeping her afloat was a <b>mysterious bean lottery</b> nobody could explain." — <em>Coffee Rings and Bad Decisions</em></p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Alex Rogers. Coffee Rings and Bad Decisions is a work of fiction. ☕</p>
+    <p style="margin-top:6px;font-size:0.75rem;">The Bean Lottery is for fun only. No actual beans were distributed.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const PRIZES = [
+    { symbol:"🫘", name:"500 lbs of Ethiopian Single-Origin Beans", fortune:"You've just inherited Maya's exact problem. But you also inherited her stubbornness, and that's worth more than the beans." },
+    { symbol:"💼", name:"A Date with a Corporate Suit", fortune:"He's charming, understated, and secretly terrified of espresso. Wear something that doesn't stain." },
+    { symbol:"🥛", name:"The Last Oat Milk on a Monday", fortune:"You've unlocked peak barista goodwill. Spend it wisely — probably on a Tuesday." },
+    { symbol:"📱", name:"A Viral TikTok Moment", fortune:"Your very ordinary coffee just got 4.2M views. Fame is fleeting; the free refill is forever." },
+    { symbol:"💛", name:"A Perfect Latte Art Heart", fortune:"Someone is about to notice you. The art is temporary. The feeling isn't." },
+    { symbol:"⏳", name:"A 3-Week Deadline", fortune:"You now have three weeks to do the thing. The bad news: it's hard. The good news: you work best under pressure." },
+    { symbol:"😴", name:"A Guilt-Free Nap", fortune:"The rarest prize of all. Take it. The beans can wait — they've been waiting 500 pounds already." },
+    { symbol:"🎁", name:"A Mysterious Bean Donor", fortune:"Someone anonymous just covered your tab. Kindness shows up when you least expect it." },
+    { symbol:"☕", name:"A Refill That Never Ends", fortune:"One bottomless cup, and the seat by the window. The universe is telling you to stay a while." },
+    { symbol:"🪄", name:"A Bad Decision That Works Out", fortune:"You're about to make the wrong call — and it's going to be exactly right. Lean in." }
+  ];
+
+  const canvas = document.getElementById('foil');
+  const ctx = canvas.getContext('2d');
+  const scratchZone = document.getElementById('scratchZone');
+  const ticket = document.getElementById('ticket');
+  const hint = document.getElementById('hint');
+  const shareBtn = document.getElementById('shareBtn');
+
+  let currentPrize = null;
+  let revealed = false;
+  let scratching = false;
+  let strokeCount = 0;
+  let lastX = 0, lastY = 0;
+  const REVEAL_THRESHOLD = 170;
+
+  function randomLotNo(){
+    const n = String(Math.floor(Math.random() * 9000) + 1000);
+    const letters = 'ABCDFGHJKLMNPRSTUVWXYZ';
+    const l = letters[Math.floor(Math.random()*letters.length)];
+    return "NO. " + l + "-" + n;
+  }
+
+  function drawFoil(){
+    const dpr = window.devicePixelRatio || 1;
+    const w = scratchZone.clientWidth;
+    const h = scratchZone.clientHeight;
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    // Base foil gradient
+    const g = ctx.createLinearGradient(0, 0, w, h);
+    g.addColorStop(0, '#e9c26a');
+    g.addColorStop(0.25, '#c9862a');
+    g.addColorStop(0.5, '#f4d98c');
+    g.addColorStop(0.75, '#c9862a');
+    g.addColorStop(1, '#a96f1f');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, w, h);
+
+    // Sheen + speckle texture
+    for (let i = 0; i < 900; i++){
+      ctx.fillStyle = Math.random() > 0.5 ? 'rgba(255,255,255,0.14)' : 'rgba(90,55,10,0.18)';
+      const x = Math.random() * w, y = Math.random() * h;
+      ctx.beginPath();
+      ctx.arc(x, y, Math.random() * 1.6 + 0.4, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // Inner border
+    ctx.strokeStyle = 'rgba(255,255,255,0.35)';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(10, 10, w - 20, h - 20);
+
+    // Hint text
+    ctx.fillStyle = 'rgba(60,35,10,0.75)';
+    ctx.font = '600 15px Inter, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('SCRATCH HERE', w / 2, h / 2 - 8);
+    ctx.font = '400 12px Inter, sans-serif';
+    ctx.fillStyle = 'rgba(60,35,10,0.6)';
+    ctx.fillText('— you can\'t lose —', w / 2, h / 2 + 16);
+  }
+
+  function setPrize(){
+    currentPrize = PRIZES[Math.floor(Math.random() * PRIZES.length)];
+    document.getElementById('prizeSymbol').textContent = currentPrize.symbol;
+    document.getElementById('prizeName').textContent = currentPrize.name;
+    document.getElementById('prizeFortune').textContent = currentPrize.fortune;
+    document.getElementById('lotNo').textContent = randomLotNo();
+  }
+
+  function drawBarcode(){
+    const el = document.getElementById('barcode');
+    el.innerHTML = '';
+    const bars = 40;
+    for (let i = 0; i < bars; i++){
+      const b = document.createElement('i');
+      b.style.height = (Math.random() * 100) + '%';
+      if (Math.random() < 0.25) b.style.opacity = '0.25';
+      el.appendChild(b);
+    }
+  }
+
+  function reset(){
+    revealed = false;
+    strokeCount = 0;
+    ticket.classList.remove('revealed');
+    setPrize();
+    drawBarcode();
+    drawFoil();
+    hint.textContent = 'Use your finger or cursor to scratch off the foil ✨';
+    hint.style.display = 'block';
+    shareBtn.disabled = true;
+  }
+
+  function reveal(){
+    if (revealed) return;
+    revealed = true;
+    ticket.classList.add('revealed');
+    hint.textContent = 'The beans have spoken. Your prize is revealed ☕';
+    shareBtn.disabled = false;
+    canvas.style.transition = 'opacity 0.45s ease';
+    canvas.style.opacity = '0';
+    setTimeout(() => { canvas.style.display = 'none'; }, 450);
+    burstConfetti();
+  }
+
+  function burstConfetti(){
+    const colors = ['#C9862A','#e0a84c','#f4d98c','#2D6A9F','#ffffff'];
+    for (let i = 0; i < 46; i++){
+      const c = document.createElement('div');
+      c.className = 'confetti';
+      c.style.left = (Math.random() * 100) + 'vw';
+      c.style.background = colors[Math.floor(Math.random() * colors.length)];
+      c.style.animationDuration = (Math.random() * 2 + 1.8) + 's';
+      c.style.animationDelay = (Math.random() * 0.4) + 's';
+      c.style.transform = 'rotate(' + (Math.random() * 360) + 'deg)';
+      c.style.width = (Math.random() * 5 + 5) + 'px';
+      c.style.height = (Math.random() * 8 + 8) + 'px';
+      document.body.appendChild(c);
+      setTimeout(() => c.remove(), 4200);
+    }
+  }
+
+  function getPos(e){
+    const rect = canvas.getBoundingClientRect();
+    return { x: e.clientX - rect.left, y: e.clientY - rect.top };
+  }
+
+  function scratchLine(x0, y0, x1, y1){
+    const dist = Math.hypot(x1 - x0, y1 - y0);
+    const steps = Math.max(1, Math.floor(dist / 6));
+    for (let i = 0; i <= steps; i++){
+      const t = i / steps;
+      const x = x0 + (x1 - x0) * t;
+      const y = y0 + (y1 - y0) * t;
+      ctx.globalCompositeOperation = 'destination-out';
+      ctx.beginPath();
+      ctx.arc(x, y, 22, 0, Math.PI * 2);
+      ctx.fill();
+      strokeCount++;
+    }
+    if (strokeCount >= REVEAL_THRESHOLD) reveal();
+  }
+
+  canvas.addEventListener('pointerdown', function(e){
+    if (revealed) return;
+    scratching = true;
+    canvas.setPointerCapture(e.pointerId);
+    const p = getPos(e);
+    lastX = p.x; lastY = p.y;
+    scratchLine(p.x, p.y, p.x, p.y);
+  });
+
+  canvas.addEventListener('pointermove', function(e){
+    if (!scratching || revealed) return;
+    const p = getPos(e);
+    scratchLine(lastX, lastY, p.x, p.y);
+    lastX = p.x; lastY = p.y;
+  });
+
+  function endScratch(){
+    scratching = false;
+  }
+  canvas.addEventListener('pointerup', endScratch);
+  canvas.addEventListener('pointercancel', endScratch);
+  canvas.addEventListener('pointerleave', endScratch);
+
+  document.getElementById('newBtn').addEventListener('click', function(){
+    canvas.style.transition = 'none';
+    canvas.style.opacity = '1';
+    canvas.style.display = 'block';
+    reset();
+  });
+
+  document.getElementById('revealBtn').addEventListener('click', reveal);
+
+  document.getElementById('shareBtn').addEventListener('click', function(){
+    if (!currentPrize) return;
+    const text = `☕ The Bean Lottery — I won...\n\n${currentPrize.symbol} ${currentPrize.name}\n"${currentPrize.fortune}"\n\nTry your luck: coffee-rings-and-bad-decisions.vercel.app/lottery/`;
+    if (navigator.share){
+      navigator.share({ title: 'The Bean Lottery', text }).catch(() => {});
+    } else if (navigator.clipboard){
+      navigator.clipboard.writeText(text).then(() => {
+        const orig = shareBtn.textContent;
+        shareBtn.textContent = '✅ Copied!';
+        setTimeout(() => shareBtn.textContent = orig, 2000);
+      });
+    }
+  });
+
+  window.addEventListener('resize', function(){
+    if (!revealed) drawFoil();
+  });
+
+  reset();
+})();
+</script>
+
+</body>
+</html>
