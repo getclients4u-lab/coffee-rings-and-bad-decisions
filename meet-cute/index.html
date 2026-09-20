@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Meet-Cute Machine — Coffee Rings and Bad Decisions</title>
+<meta name="description" content="Spin up your own coffee-shop meet-cute inspired by Coffee Rings and Bad Decisions. Every pull generates a brand-new rom-com scene, your chapter title, and a bad-decision rating.">
+<link rel="canonical" href="https://coffee-rings-and-bad-decisions.vercel.app/meet-cute/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:'Inter',-apple-system,sans-serif;
+  color:#F5F0E8; background:#0D1B2A;
+  line-height:1.6; overflow-x:hidden; min-height:100vh;
+}
+a { color:#C9862A; text-decoration:none; transition:all .25s ease; }
+a:hover { color:#e0a84c; }
+.container { width:100%; max-width:900px; margin:0 auto; padding:0 var(--space-lg); }
+:root {
+  --space-sm:1rem; --space-md:2rem; --space-lg:3rem; --space-xl:5rem; --space-2xl:8rem;
+  --font-display:'Cinzel',Georgia,serif;
+}
+
+.nav {
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  background:rgba(13,27,42,0.85); backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.nav-inner {
+  max-width:1100px; margin:0 auto; padding:0 var(--space-lg);
+  height:72px; display:flex; align-items:center; justify-content:space-between;
+}
+.nav-logo { font-family:var(--font-display); font-size:1.1rem; color:#fff; font-weight:600; letter-spacing:0.06em; }
+.nav-logo span { color:#C9862A; }
+.nav-links { display:flex; gap:var(--space-lg); }
+.nav-links a { font-size:0.8rem; font-weight:500; color:#8a9aa8; letter-spacing:0.06em; text-transform:uppercase; }
+.nav-links a:hover { color:#fff; }
+.nav-links a.current { color:#C9862A; }
+
+.hero { padding:150px 0 60px; text-align:center; position:relative; }
+.hero::before {
+  content:''; position:absolute; inset:0; z-index:0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(201,134,42,0.10) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(45,106,159,0.10) 0%, transparent 50%);
+}
+.hero-inner { position:relative; z-index:1; }
+.hero h1 { font-family:var(--font-display); font-size:clamp(1.8rem,4vw,3rem); color:#fff; margin-bottom:var(--space-sm); letter-spacing:0.01em; }
+.hero p { color:#8a9aa8; font-size:1.1rem; max-width:620px; margin:0 auto; }
+
+.machine-wrap { padding:0 0 var(--space-xl); }
+.machine-card {
+  background:rgba(10,22,40,0.6); border:1px solid rgba(255,255,255,0.06);
+  border-radius:16px; padding:var(--space-xl); position:relative;
+  backdrop-filter:blur(10px); box-shadow:0 30px 80px rgba(0,0,0,0.3);
+  overflow:hidden;
+}
+.machine-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:3px;
+  background:linear-gradient(90deg, transparent, #C9862A, #2D6A9F, transparent);
+}
+
+/* Pull lever */
+.pull-area { text-align:center; padding:var(--space-md) 0 var(--space-lg); }
+.machine-line { color:#8a9aa8; font-size:0.9rem; margin-bottom:var(--space-lg); letter-spacing:0.02em; }
+.big-btn {
+  display:inline-flex; align-items:center; gap:12px;
+  padding:20px 44px; border-radius:100px; font-weight:700; font-size:1.05rem;
+  letter-spacing:0.04em; cursor:pointer; border:none; font-family:'Inter',sans-serif;
+  background:#C9862A; color:#0D1B2A; transition:all .3s ease;
+  box-shadow:0 10px 40px rgba(201,134,42,0.35);
+}
+.big-btn:hover { background:#e0a84c; transform:translateY(-3px); box-shadow:0 16px 50px rgba(201,134,42,0.5); }
+.big-btn:active { transform:translateY(0); }
+.big-btn.spinning { animation:spinpulse .6s ease; }
+@keyframes spinpulse { 0%{transform:scale(1);} 40%{transform:scale(0.94);} 100%{transform:scale(1);} }
+
+/* Scene output */
+.scene { display:none; animation:fadeIn .7s ease; }
+.scene.show { display:block; }
+.chapter-tag {
+  display:inline-block; background:rgba(201,134,42,0.12); color:#C9862A;
+  padding:8px 20px; border-radius:100px; font-size:0.72rem; text-transform:uppercase;
+  letter-spacing:0.18em; font-weight:600; margin-bottom:var(--space-md);
+}
+.chapter-title {
+  font-family:var(--font-display); font-size:clamp(1.5rem,3vw,2.1rem);
+  color:#fff; margin-bottom:var(--space-lg); line-height:1.3;
+}
+.scene-prose { color:#c4d0da; font-size:1.08rem; line-height:1.85; margin-bottom:var(--space-lg); }
+.scene-prose em { color:#e0a84c; font-style:normal; font-weight:600; }
+
+/* Cards of details */
+.detail-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--space-md); margin-bottom:var(--space-lg); }
+.detail {
+  background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07);
+  border-radius:10px; padding:18px 20px;
+}
+.detail .k { font-size:0.68rem; text-transform:uppercase; letter-spacing:0.14em; color:#C9862A; font-weight:600; margin-bottom:6px; }
+.detail .v { color:#e6edf3; font-size:0.98rem; line-height:1.5; }
+
+/* Meters */
+.meters { display:grid; grid-template-columns:1fr 1fr; gap:var(--space-md); margin-bottom:var(--space-lg); }
+.meter { padding:18px 20px; border-radius:10px; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.05); }
+.meter .label { display:flex; justify-content:space-between; font-size:0.8rem; color:#b8c5d0; margin-bottom:10px; font-weight:500; }
+.meter .label .val { color:#e0a84c; font-weight:700; }
+.track { height:8px; background:rgba(255,255,255,0.06); border-radius:4px; overflow:hidden; }
+.fill { height:100%; border-radius:4px; width:0; transition:width 1.1s cubic-bezier(.22,1,.36,1); }
+.fill.chem { background:linear-gradient(90deg,#C9862A,#e0a84c); }
+.fill.awk { background:linear-gradient(90deg,#2D6A9F,#5b8fc0); }
+
+/* Sealed drink */
+.seal {
+  text-align:center; padding:var(--space-md); margin-bottom:var(--space-lg);
+  border:1px dashed rgba(201,134,42,0.35); border-radius:12px;
+  background:rgba(201,134,42,0.05);
+}
+.seal .k { font-size:0.7rem; text-transform:uppercase; letter-spacing:0.16em; color:#C9862A; font-weight:600; margin-bottom:6px; }
+.seal .v { font-family:var(--font-display); font-size:1.15rem; color:#fff; font-style:italic; line-height:1.5; }
+
+.actions { display:flex; gap:var(--space-md); justify-content:center; flex-wrap:wrap; }
+.action-btn {
+  padding:14px 26px; border-radius:8px; font-weight:600; font-size:0.9rem; cursor:pointer;
+  border:1.5px solid rgba(255,255,255,0.2); background:transparent; color:#fff;
+  font-family:'Inter',sans-serif; transition:all .25s ease;
+}
+.action-btn:hover { border-color:#C9862A; background:rgba(201,134,42,0.1); }
+.action-btn.primary { background:#C9862A; color:#0D1B2A; border:none; }
+.action-btn.primary:hover { background:#e0a84c; }
+
+.pull-count { text-align:center; margin-top:var(--space-md); font-size:0.78rem; color:#5a6a78; }
+
+@keyframes fadeIn { from { opacity:0; transform:translateY(16px);} to {opacity:1; transform:translateY(0);} }
+
+.footer { text-align:center; padding:var(--space-xl) 0; border-top:1px solid rgba(255,255,255,0.05); color:#5a6a78; font-size:0.85rem; }
+
+@media (max-width:768px) {
+  .machine-card { padding:var(--space-lg); }
+  .detail-grid, .meters { grid-template-columns:1fr; }
+  .actions { flex-direction:column; }
+  .nav-links { display:none; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Coffee <span>Rings</span></a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/reader.html">Read</a>
+      <a href="/quiz/">Quiz</a>
+      <a href="/meet-cute/" class="current">Meet-Cute</a>
+      <a href="/beans/">Bean Calculator</a>
+      <a href="/brew/">Brew Timer</a>
+      <a href="/rings/">Ring Studio</a>
+      <a href="/tarot/">Tarot</a>
+      <a href="/lottery/">Bean Lottery</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <h1>The Meet-Cute Machine</h1>
+    <p>Every great coffee-shop romance starts with a perfectly imperfect first meeting. Pull the lever and the machine will spin up yours — chapter title, bad decision, and all.</p>
+  </div>
+</header>
+
+<main class="machine-wrap">
+  <div class="container">
+    <div class="machine-card">
+
+      <div class="pull-area" id="pullArea">
+        <p class="machine-line" id="machineLine">Insert your dignity. No refunds.</p>
+        <button class="big-btn" id="pullBtn">☕ Pull the Lever</button>
+        <p class="pull-count" id="pullCount"></p>
+      </div>
+
+      <div class="scene" id="scene">
+        <div class="chapter-tag" id="sceneTag">Chapter</div>
+        <div class="chapter-title" id="chapterTitle"></div>
+
+        <div class="scene-prose" id="sceneProse"></div>
+
+        <div class="detail-grid">
+          <div class="detail"><div class="k">You</div><div class="v" id="dYou"></div></div>
+          <div class="detail"><div class="k">Them</div><div class="v" id="dThem"></div></div>
+          <div class="detail"><div class="k">Where</div><div class="v" id="dWhere"></div></div>
+          <div class="detail"><div class="k">The Bad Decision</div><div class="v" id="dBad"></div></div>
+        </div>
+
+        <div class="meters">
+          <div class="meter">
+            <div class="label"><span>Chemistry</span><span class="val" id="chemVal">0%</span></div>
+            <div class="track"><div class="fill chem" id="chemFill"></div></div>
+          </div>
+          <div class="meter">
+            <div class="label"><span>Awkwardness Index</span><span class="val" id="awkVal">0%</span></div>
+            <div class="track"><div class="fill awk" id="awkFill"></div></div>
+          </div>
+        </div>
+
+        <div class="seal">
+          <div class="k">The Drink That Seals It</div>
+          <div class="v" id="sealDrink"></div>
+        </div>
+
+        <div class="actions">
+          <button class="action-btn primary" id="againBtn">↻ Spin Again</button>
+          <button class="action-btn" id="shareBtn">🔗 Share My Meet-Cute</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Alex Rogers. Inspired by <em>Coffee Rings and Bad Decisions</em> — a romantic comedy.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const pick = a => a[Math.floor(Math.random() * a.length)];
+  const clamp = (n,lo,hi) => Math.max(lo, Math.min(hi, n));
+
+  var settings = [
+    "Maya's shop, Coffee Rings, at 7:42 AM during the pre-work rush",
+    "the Portland Farmers Market, table four, next to the man selling artisanal honey",
+    "a rainy bus stop on Burnside with one broken awning",
+    "the 14th-floor break room at Bean & Leaf corporate headquarters",
+    "a 24-hour diner at 2 AM, the only place in town still pouring coffee",
+    "the loading dock behind the shop, buried under 500 pounds of misordered Ethiopian beans",
+    "the self-help aisle of Powell's Books on a Tuesday afternoon",
+    "line B at the DMV, three hours deep, one shared bagel between you"
+  ];
+
+  var you = [
+    "a sleep-deprived small-business owner down to their last clean apron",
+    "a barista who has everyone's order memorized except their own",
+    "a writer on deadline who hasn't spoken out loud in eleven hours",
+    "a chronic people-pleaser with 42 open browser tabs and one working nerve",
+    "someone who claims they're 'just here for the wi-fi' but has memorized the espresso menu",
+    "a night-owl florist who accidentally scheduled their life around someone else's lunch break"
+  ];
+
+  var them = [
+    "a corporate acquisitions director in an ill-fitting tie, pretending the coffee isn't terrible",
+    "a quiet consultant who has never ordered the same drink twice and never once complained",
+    "a barista moonlighting as a poet who can't stop editing the drink names on the chalkboard",
+    "someone who eats lunch alone at their desk and calls it 'maximizing throughput'",
+    "a regular who has been coming for six years and you still don't know their name",
+    "an off-duty bicycle courier reading a paperback with the cover torn off"
+  ];
+
+  var incidents = [
+    "You both reach for the last sesame bagel at the same time, and your hands touch for a solid three seconds longer than either of you will ever admit.",
+    "You collide in the doorway and their coffee goes down your shirt — you're not even mad, just genuinely impressed by the trajectory.",
+    "You accidentally pick up each other's complicated drink order, and now you're locked in a polite, flustered standoff over a single cup.",
+    "They trip over the same loose floorboard you've been warning people about for weeks, and you both go down in a tangle of apologies and laughter.",
+    "You each insist on paying for the other's coffee, and the barista just watches like it's the best show in town.",
+    "Your umbrella flips inside-out in the wind and theirs is somehow already angle-perfect to shield you both."
+  ];
+
+  var badDecisions = [
+    "flirting exclusively through passive-aggressive Post-it notes left on the register",
+    "agreeing to a 'strictly fake' coffee date that you both secretly hope becomes real",
+    "rearranging your entire week to 'accidentally' run into them again",
+    "memorizing their order so you can say it before they do, then pretending you didn't",
+    "giving them your number written on a coffee ring — on a napkin — that you then drop in their latte",
+    "both of you texting your best friend 'it's not a big deal' at the exact same time when it is, in fact, a very big deal"
+  ];
+
+  var sealDrinks = [
+    "a decaf oat-milk cappuccino with exactly one shot of espresso and two shots of bad judgment",
+    "two cups of 'whatever they're having,' which is how you learn you have the same terrible taste",
+    "a pour-over so slow the two of you basically went on a date waiting for it",
+    "an iced monstrosity with four pumps of something that the cashier is now afraid of",
+    "one small black coffee, shared, because the machine broke and now neither of you can leave",
+    "a 'house special' that neither of you ordered but the barista insists you'll both love"
+  ];
+
+  var titleAdjs = ["The One With the", "Two Idiots and a", "How I Met Someone Over a", "A Study in", "Of Course It Was a", "The Inevitable"];
+  var titleNouns = ["Spilled Latte", "Last Bagel", "Wrong Order", "Coffee Ring", "Broken Awning", "Shared Cup", "Loose Floorboard", "Midnight Espresso", "Decaf Disaster"];
+
+  var proseTemplates = [
+    "It started, as these things always do, with coffee and a complete failure of coordination. <em>{incident}</em> Any sane person would have exited gracefully. Instead, the two of you decided the most reasonable next move was <em>{bad}</em> — and somehow, impossibly, it worked.",
+    "Somewhere in Portland, the universe scribbled your name next to a stranger's in the margin and said, \"You're welcome.\" <em>{incident}</em> In the space of a single heartbeat, your whole carefully-planned day quietly filed for resignation and quietly began drafting its notice: <em>{bad}</em>.",
+    "There was nothing romantic about it. Not at first. There was only <em>{incident}</em> — and then that long, loaded pause where neither of you looked away. What followed was the kind of choice you'd describe later as a lapse in judgment, and your friends would describe as the plot of a rom-com. It was <em>{bad}</em>."
+  ];
+
+  var machineLines = [
+    "Insert your dignity. No refunds.",
+    "Caffeine levels: dangerously optimistic.",
+    "Warning: this machine ships with zero chill.",
+    "Your meet-cute is brewing. Please stand awkwardly by.",
+    "We see a tall, dark... hold on, that's just the espresso.",
+    "Do not make eye contact with the machine. It's shy."
+  ];
+
+  let count = 0;
+
+  function slug() {
+    const s = 'abcdefghijkmnpqrstuvwxyz23456789';
+    return Array.from({length:6},()=>s[Math.floor(Math.random()*s.length)]).join('');
+  }
+
+  function buildScene() {
+    const incident = pick(incidents);
+    const bad = pick(badDecisions);
+    const chemistry = clamp(58 + Math.floor(Math.random()*42), 50, 100); // 58-99
+    const awk = clamp(20 + Math.floor(Math.random()*65), 15, 90);
+
+    const title = pick(titleAdjs) + " " + pick(titleNouns);
+    const prose = pick(proseTemplates).replace("{incident}", incident).replace("{bad}", bad);
+
+    const chapterNo = 1 + Math.floor(Math.random()*58);
+
+    document.getElementById('sceneTag').textContent = "Chapter " + (chapterNo < 10 ? "0" : "") + chapterNo + " · Generated Just For You #" + slug().toUpperCase();
+    document.getElementById('chapterTitle').textContent = title;
+    document.getElementById('sceneProse').innerHTML = prose;
+    document.getElementById('dYou').textContent = pick(you);
+    document.getElementById('dThem').textContent = pick(them);
+    document.getElementById('dWhere').textContent = pick(settings);
+    document.getElementById('dBad').textContent = bad;
+    document.getElementById('sealDrink').textContent = pick(sealDrinks);
+
+    // animate meters
+    requestAnimationFrame(() => {
+      document.getElementById('chemFill').style.width = chemistry + '%';
+      document.getElementById('awkFill').style.width = awk + '%';
+      document.getElementById('chemVal').textContent = chemistry + '%';
+      document.getElementById('awkVal').textContent = awk + '%';
+    });
+
+    window.__meetCute = { title, chemistry, awk, seal: document.getElementById('sealDrink').textContent };
+  }
+
+  function spin() {
+    count++;
+    const btn = document.getElementById('pullBtn');
+    btn.classList.remove('spinning'); void btn.offsetWidth; btn.classList.add('spinning');
+    document.getElementById('machineLine').textContent = pick(machineLines);
+    document.getElementById('pullCount').textContent = count === 1 ? "First pull! The machine likes you." : count + " meet-cutes pulled so far.";
+    buildScene();
+    document.getElementById('scene').classList.add('show');
+    document.getElementById('scene').scrollIntoView({ behavior:'smooth', block:'start' });
+  }
+
+  document.getElementById('pullBtn').addEventListener('click', spin);
+  document.getElementById('againBtn').addEventListener('click', spin);
+
+  document.getElementById('shareBtn').addEventListener('click', function(){
+    const c = window.__meetCute;
+    if (!c) return;
+    const text = `☕ My Meet-Cute, fresh from the Meet-Cute Machine:\n\n${c.title}\nChemistry ${c.chemistry}% · Awkwardness ${c.awk}%\nSealed by: ${c.seal}\n\nSpin yours: coffee-rings-and-bad-decisions.vercel.app/meet-cute/`;
+    if (navigator.share) {
+      navigator.share({ title: 'The Meet-Cute Machine', text }).catch(()=>{});
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(()=>{
+        const b = document.getElementById('shareBtn'); const o = b.textContent;
+        b.textContent = '✓ Copied!'; setTimeout(()=> b.textContent = o, 1500);
+      });
+    }
+  });
+
+  // kick off with a first scene so the page feels alive on load
+  requestAnimationFrame(spin);
+})();
+</script>
+
+</body>
+</html>

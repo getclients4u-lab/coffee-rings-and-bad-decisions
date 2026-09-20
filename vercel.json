@@ -20,6 +20,7 @@
     { "source": "/brew", "destination": "/brew/" },
     { "source": "/rings", "destination": "/rings/" },
     { "source": "/tarot", "destination": "/tarot/" },
-    { "source": "/lottery", "destination": "/lottery/" }
+    { "source": "/lottery", "destination": "/lottery/" },
+    { "source": "/meet-cute", "destination": "/meet-cute/" }
   ]
 }
