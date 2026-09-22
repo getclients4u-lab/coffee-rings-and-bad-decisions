@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barista Rush — Coffee Rings and Bad Decisions</title>
+<meta name="description" content="Work a chaotic shift at Maya's Bean & Leaf coffee shop. Take orders, pour the right drink, and don't let anyone's patience run dry. A coffee-flavored arcade game from the world of Coffee Rings and Bad Decisions.">
+<link rel="canonical" href="https://coffee-rings-and-bad-decisions.vercel.app/barista-rush/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;color:#F5F0E8;background:#0D1B2A;line-height:1.6;overflow-x:hidden;min-height:100vh;display:flex;flex-direction:column}
+a{color:#C9862A;text-decoration:none;transition:all .25s ease}
+a:hover{color:#e0a84c}
+.container{width:100%;max-width:1100px;margin:0 auto;padding:0 2rem}
+:root{--space-sm:1rem;--space-md:2rem;--space-lg:3rem;--space-xl:5rem;--space-2xl:8rem;--font-display:'Cinzel',Georgia,serif;--gold:#C9862A}
+
+/* Navigation */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,27,42,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.05)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 2rem;height:80px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--font-display);font-size:1.1rem;color:#fff;font-weight:600;letter-spacing:0.06em}
+.nav-logo span{color:#C9862A}
+.nav-links{display:flex;gap:2rem;flex-wrap:wrap;justify-content:flex-end}
+.nav-links a{font-size:0.8rem;font-weight:500;color:#8a9aa8;letter-spacing:0.06em;text-transform:uppercase}
+.nav-links a:hover{color:#fff}
+.nav-links a.current{color:#C9862A}
+
+/* Hero */
+.hero{min-height:38vh;display:flex;align-items:center;position:relative;padding:140px 0 40px;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;z-index:0;background:radial-gradient(circle at 20% 30%,rgba(201,134,42,0.12) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(45,106,159,0.08) 0%,transparent 50%)}
+.hero-inner{position:relative;z-index:1;text-align:center;width:100%}
+.hero-inner h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.2em;color:#C9862A;margin-bottom:1rem;font-weight:600}
+.hero-inner h1{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.2rem);color:#fff;line-height:1.15;margin-bottom:1rem}
+.hero-inner p{color:#8a9aa8;font-size:1.1rem;max-width:620px;margin:0 auto;line-height:1.7}
+
+/* Game shell */
+.game-section{padding:0 0 4rem;position:relative;z-index:1;flex:1}
+.game-card{max-width:720px;margin:0 auto;background:linear-gradient(160deg,#16283c 0%,#0D1B2A 65%);border:1px solid rgba(201,134,42,0.3);border-radius:18px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,0.5);position:relative}
+
+/* HUD */
+.hud{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid rgba(201,134,42,0.25);background:rgba(10,22,40,0.6)}
+.hud-item{display:flex;flex-direction:column;align-items:center;min-width:64px}
+.hud-item .k{font-size:0.6rem;text-transform:uppercase;letter-spacing:0.14em;color:#8a9aa8}
+.hud-item .v{font-family:var(--font-display);font-size:1.35rem;color:#fff;line-height:1.2}
+.hud-item .v.gold{color:#C9862A}
+.hearts{font-size:1.15rem;letter-spacing:0.15em}
+.hearts .off{opacity:0.25;filter:grayscale(1)}
+.hud-btn{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);color:#b8c5d0;border-radius:8px;padding:8px 12px;font-size:0.95rem;cursor:pointer;transition:all .2s ease;line-height:1}
+.hud-btn:hover{background:rgba(255,255,255,0.12);color:#fff}
+
+/* Counter */
+.counter{position:relative;padding:26px 20px 22px;background:
+  radial-gradient(circle at 50% 120%,rgba(201,134,42,0.14) 0%,transparent 55%),
+  #0a1628;
+  border-bottom:1px solid rgba(201,134,42,0.18)}
+.counter::before{content:'';position:absolute;left:0;right:0;bottom:0;height:14px;background:linear-gradient(180deg,#3a2410 0%,#241505 100%)}
+.customer{display:flex;align-items:center;gap:18px;position:relative;z-index:1}
+.avatar{font-size:4.2rem;line-height:1;filter:drop-shadow(0 6px 18px rgba(0,0,0,0.5));transition:transform .18s ease;flex-shrink:0}
+.avatar.bounce{animation:avatarBounce .45s cubic-bezier(0.34,1.56,0.64,1)}
+@keyframes avatarBounce{0%{transform:scale(1)}40%{transform:scale(1.18) rotate(-4deg)}100%{transform:scale(1)}}
+.avatar.grrr{animation:grrr .4s ease}
+@keyframes grrr{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}50%{transform:translateX(6px)}75%{transform:translateX(-4px)}}
+.bubble{position:relative;background:#F5F0E8;color:#1a2f45;border-radius:16px;padding:16px 20px;max-width:420px;flex:1;box-shadow:0 8px 30px rgba(0,0,0,0.35)}
+.bubble::after{content:'';position:absolute;left:-9px;top:50%;transform:translateY(-50%);border:9px solid transparent;border-right-color:#F5F0E8;border-left:0}
+.bubble .who{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.14em;color:#8a6a2a;font-weight:700;margin-bottom:4px}
+.bubble .order-text{font-family:var(--font-display);font-size:1.35rem;color:#0D1B2A;line-height:1.3;letter-spacing:0.01em}
+.patience{margin-top:18px;position:relative;z-index:1}
+.patience-track{height:10px;background:rgba(255,255,255,0.08);border-radius:99px;overflow:hidden}
+.patience-fill{height:100%;width:100%;border-radius:99px;background:linear-gradient(90deg,#3fae6a,#e0a84c,#e05a3a);transition:width .12s linear;background-size:200% 100%;background-position:0 0}
+.patience-label{display:flex;justify-content:space-between;margin-top:6px;font-size:0.62rem;text-transform:uppercase;letter-spacing:0.12em;color:#8a9aa8}
+.patience-label b{color:#C9862A;font-weight:600}
+
+/* Stations */
+.stations{padding:20px 20px 6px}
+.station{margin-bottom:14px}
+.station .label{font-size:0.66rem;text-transform:uppercase;letter-spacing:0.16em;color:#8a9aa8;margin-bottom:8px;font-weight:600}
+.station .label span{color:#C9862A}
+.station-row{display:flex;flex-wrap:wrap;gap:8px}
+.opt{display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border-radius:99px;background:rgba(255,255,255,0.05);border:1.5px solid rgba(255,255,255,0.12);color:#d0dbe4;font-size:0.88rem;font-weight:600;cursor:pointer;transition:all .15s ease;font-family:'Inter',sans-serif;user-select:none}
+.opt:hover{border-color:rgba(201,134,42,0.6);color:#fff;transform:translateY(-1px)}
+.opt .e{font-size:1.05rem}
+.opt.sel{background:#C9862A;border-color:#C9862A;color:#0D1B2A;box-shadow:0 6px 20px rgba(201,134,42,0.35)}
+.opt.sel .e{filter:none}
+
+/* Serve row */
+.serve-row{display:flex;gap:12px;justify-content:center;padding:14px 20px 22px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:8px;font-weight:700;font-size:0.95rem;letter-spacing:0.03em;cursor:pointer;transition:all .25s ease;border:none;font-family:'Inter',sans-serif}
+.btn-serve{background:#C9862A;color:#0D1B2A;font-size:1.05rem}
+.btn-serve:hover:not(:disabled){background:#e0a84c;transform:translateY(-2px);box-shadow:0 10px 30px rgba(201,134,42,0.35)}
+.btn-serve:disabled{opacity:0.35;cursor:not-allowed}
+.btn-ghost{background:transparent;color:#8a9aa8;border:1.5px solid rgba(255,255,255,0.15)}
+.btn-ghost:hover{color:#fff;border-color:#fff}
+
+/* Message + floaters */
+.msg{text-align:center;min-height:24px;font-size:0.9rem;color:#C9862A;font-weight:600;padding:0 20px 6px;letter-spacing:0.02em}
+.msg.err{color:#e05a3a}
+.float{position:absolute;z-index:5;font-family:var(--font-display);font-weight:700;color:#f4d98c;pointer-events:none;text-shadow:0 2px 12px rgba(0,0,0,0.6);animation:floatUp 1s ease-out forwards}
+@keyframes floatUp{0%{opacity:0;transform:translateY(0) scale(0.8)}20%{opacity:1;transform:translateY(-10px) scale(1.05)}100%{opacity:0;transform:translateY(-60px) scale(1)}}
+.steam{position:absolute;font-size:1.3rem;pointer-events:none;animation:steamUp 1s ease-out forwards;z-index:4}
+@keyframes steamUp{0%{opacity:0;transform:translateY(0) scale(0.6)}30%{opacity:0.9}100%{opacity:0;transform:translateY(-46px) scale(1.3)}}
+
+/* Overlays */
+.overlay{position:absolute;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;background:rgba(10,22,40,0.92);backdrop-filter:blur(6px);transition:opacity .3s ease}
+.overlay.hidden{opacity:0;pointer-events:none}
+.overlay-inner{max-width:460px}
+.overlay-inner .big{font-size:3.4rem;margin-bottom:0.5rem;filter:drop-shadow(0 6px 20px rgba(201,134,42,0.4))}
+.overlay-inner h2{font-family:var(--font-display);font-size:1.8rem;color:#fff;margin-bottom:0.6rem}
+.overlay-inner p{color:#b8c5d0;font-size:0.98rem;line-height:1.7;margin-bottom:0.5rem}
+.overlay-inner .rules{text-align:left;margin:1.2rem 0;padding:1rem 1.2rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;font-size:0.86rem;color:#8a9aa8;line-height:1.8}
+.overlay-inner .rules b{color:#d0dbe4}
+.final-stats{display:flex;gap:1rem;justify-content:center;margin:1.2rem 0}
+.fstat{background:rgba(201,134,42,0.08);border:1px solid rgba(201,134,42,0.25);border-radius:12px;padding:12px 20px;min-width:96px}
+.fstat .n{font-family:var(--font-display);font-size:1.7rem;color:#C9862A}
+.fstat .l{font-size:0.62rem;text-transform:uppercase;letter-spacing:0.14em;color:#8a9aa8}
+.best-badge{display:inline-block;background:#C9862A;color:#0D1B2A;font-weight:700;font-size:0.72rem;padding:4px 12px;border-radius:99px;letter-spacing:0.08em;margin-bottom:0.6rem;animation:popIn .5s cubic-bezier(0.34,1.56,0.64,1)}
+@keyframes popIn{0%{transform:scale(0.5);opacity:0}100%{transform:scale(1);opacity:1}}
+
+/* Confetti */
+.confetti{position:fixed;top:-10px;width:8px;height:14px;z-index:300;pointer-events:none;border-radius:2px;opacity:0.9}
+@keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:0}}
+
+/* Story note */
+.story-note{max-width:620px;margin:2.5rem auto 0;padding:1.5rem 2rem;background:rgba(201,134,42,0.05);border:1px solid rgba(201,134,42,0.2);border-radius:10px;text-align:center}
+.story-note p{color:#b8c5d0;font-size:0.95rem;line-height:1.7;font-style:italic}
+.story-note b{color:#C9862A}
+
+/* Footer */
+.footer{background:#0a1628;padding:2rem 0;border-top:1px solid rgba(255,255,255,0.05);text-align:center;margin-top:auto}
+.footer p{color:#5a6a78;font-size:0.85rem}
+
+@media(max-width:768px){
+  .nav-links{display:none}
+  .avatar{font-size:3rem}
+  .bubble .order-text{font-size:1.1rem}
+  .hud-item{min-width:52px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Coffee <span>Rings</span></a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/reader.html">Read</a>
+      <a href="/quiz/">Quiz</a>
+      <a href="/meet-cute/">Meet-Cute</a>
+      <a href="/beans/">Bean Calculator</a>
+      <a href="/brew/">Brew Timer</a>
+      <a href="/rings/">Ring Studio</a>
+      <a href="/tarot/">Tarot</a>
+      <a href="/lottery/">Bean Lottery</a>
+      <a href="/barista-rush/" class="current">Barista Rush</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <h4>Bean &amp; Leaf · The Rush Is On</h4>
+    <h1>Barista Rush</h1>
+    <p>Maya can't run the counter alone. Take the orders, pour the right drink, and keep the line moving before everyone's patience runs dry. No pressure — just 500 pounds of beans to sell.</p>
+  </div>
+</header>
+
+<section class="game-section">
+  <div class="container">
+    <div class="game-card" id="gameCard">
+
+      <div class="hud">
+        <div class="hud-item"><span class="k">Score</span><span class="v gold" id="hudScore">0</span></div>
+        <div class="hud-item"><span class="k">Combo</span><span class="v" id="hudCombo">0</span></div>
+        <div class="hud-item"><span class="k">Served</span><span class="v" id="hudServed">0</span></div>
+        <div class="hud-item"><span class="k">Lives</span><span class="hearts" id="hudHearts">♥♥♥</span></div>
+        <button class="hud-btn" id="muteBtn" title="Toggle sound">🔊</button>
+      </div>
+
+      <div class="counter">
+        <div class="customer">
+          <div class="avatar" id="avatar">🧑🏽‍🦱</div>
+          <div class="bubble">
+            <div class="who" id="who">Customer</div>
+            <div class="order-text" id="orderText">Latte · Oat · Iced</div>
+          </div>
+        </div>
+        <div class="patience">
+          <div class="patience-track"><div class="patience-fill" id="patienceFill"></div></div>
+          <div class="patience-label"><span>Patience</span><b id="patiencePct">100%</b></div>
+        </div>
+      </div>
+
+      <div class="stations">
+        <div class="station">
+          <div class="label"><span>1.</span> Choose the drink</div>
+          <div class="station-row" id="drinkRow"></div>
+        </div>
+        <div class="station">
+          <div class="label"><span>2.</span> Choose the milk</div>
+          <div class="station-row" id="milkRow"></div>
+        </div>
+        <div class="station">
+          <div class="label"><span>3.</span> Hot or iced?</div>
+          <div class="station-row" id="tempRow"></div>
+        </div>
+      </div>
+
+      <div class="serve-row">
+        <button class="btn btn-serve" id="serveBtn" disabled>Serve ☕</button>
+        <button class="btn btn-ghost" id="clearBtn">Clear</button>
+      </div>
+      <div class="msg" id="msg"></div>
+
+      <div class="overlay" id="startOverlay">
+        <div class="overlay-inner">
+          <div class="big">☕</div>
+          <h2>Barista Rush</h2>
+          <p>You've got three lives and a line of very thirsty (and very impatient) regulars. Serve each drink exactly as ordered.</p>
+          <div class="rules">
+            <b>How to play:</b><br>
+            ① Read the order in the speech bubble.<br>
+            ② Pick the drink, the milk, and hot vs iced.<br>
+            ③ Hit <b>Serve</b> before their patience runs out.<br>
+            Get it wrong and they get grumpier. Stack combos for bonus points!
+          </div>
+          <button class="btn btn-serve" id="startBtn">▶ Start Shift</button>
+        </div>
+      </div>
+
+      <div class="overlay hidden" id="overOverlay">
+        <div class="overlay-inner">
+          <div class="big" id="overEmoji">😅</div>
+          <div id="bestBadgeWrap"></div>
+          <h2 id="overTitle">Shift's Over!</h2>
+          <p id="overSub">The beans won this round. Ready for the next rush?</p>
+          <div class="final-stats">
+            <div class="fstat"><div class="n" id="finalScore">0</div><div class="l">Score</div></div>
+            <div class="fstat"><div class="n" id="finalServed">0</div><div class="l">Served</div></div>
+            <div class="fstat"><div class="n" id="finalBest">0</div><div class="l">Best</div></div>
+          </div>
+          <div class="serve-row" style="padding:0">
+            <button class="btn btn-serve" id="againBtn">🔁 Play Again</button>
+            <button class="btn btn-ghost" id="shareBtn">📋 Share Score</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="story-note">
+      <p>"The line was out the door by nine, and Maya was already <b>three espressos and one bad decision</b> deep." — <em>Coffee Rings and Bad Decisions</em></p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Alex Rogers. Coffee Rings and Bad Decisions is a work of fiction. ☕</p>
+    <p style="margin-top:6px;font-size:0.75rem;">Barista Rush is a fan-made game. No actual lattes were harmed.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // ---------- Menu data ----------
+  var DRINKS = [
+    {id:'espresso',    name:'Espresso',    emoji:'☕'},
+    {id:'americano',   name:'Americano',   emoji:'🫖'},
+    {id:'latte',       name:'Latte',       emoji:'🥛'},
+    {id:'cappuccino',  name:'Cappuccino',  emoji:'☁️'},
+    {id:'mocha',       name:'Mocha',       emoji:'🍫'},
+    {id:'cortado',     name:'Cortado',     emoji:'🫗'},
+    {id:'coldbrew',    name:'Cold Brew',   emoji:'🧋'},
+    {id:'drip',        name:'Drip',        emoji:'🫙'}
+  ];
+  var MILKS = [
+    {id:'whole',   name:'Whole Milk',  emoji:'🥛'},
+    {id:'oat',     name:'Oat Milk',    emoji:'🌾'},
+    {id:'almond',  name:'Almond Milk', emoji:'🌰'},
+    {id:'none',    name:'No Milk',     emoji:'✖️'}
+  ];
+  var TEMPS = [
+    {id:'hot',  name:'Hot',  emoji:'🔥'},
+    {id:'iced', name:'Iced', emoji:'🧊'}
+  ];
+  var MILKY = {latte:1, cappuccino:1, mocha:1, cortado:1};
+  var CUSTOMERS = ['👩🏻','👨🏾','👩🏽‍🦱','🧔🏻','👱🏼‍♀️','👨🏽‍🦳','🧑🏿‍🦱','👩🏼‍🦰','👴🏻','👧🏾','🧑🏻‍🦰','👩🏿'];
+  var NAMES = ['Greta','Marcus','Priya','Theo','Willa','Diego','Sofia','Noah','June','Malik','Ruby','Eli','Nadia','Owen','Rosa','Caleb'];
+  var LIVES = 3;
+
+  // ---------- DOM ----------
+  var $ = function(id){ return document.getElementById(id); };
+  var drinkRow = $('drinkRow'), milkRow = $('milkRow'), tempRow = $('tempRow');
+  var avatar = $('avatar'), orderText = $('orderText'), who = $('who');
+  var patienceFill = $('patienceFill'), patiencePct = $('patiencePct');
+  var serveBtn = $('serveBtn'), clearBtn = $('clearBtn'), msg = $('msg');
+  var hudScore = $('hudScore'), hudCombo = $('hudCombo'), hudServed = $('hudServed'), hudHearts = $('hudHearts');
+  var startOverlay = $('startOverlay'), overOverlay = $('overOverlay');
+  var muteBtn = $('muteBtn'), gameCard = $('gameCard');
+
+  // ---------- State ----------
+  var state = {
+    running:false, transitioning:false, score:0, combo:0, served:0, lives:LIVES,
+    level:0, patience:100, order:null, sel:{drink:null,milk:null,temp:null},
+    best:(function(){ try { return parseInt(localStorage.getItem('baristaRushBest')||'0',10)||0; } catch(e){ return 0; } })(),
+    muted:(function(){ try { return localStorage.getItem('baristaRushMuted')==='1'; } catch(e){ return false; } })()
+  };
+  var tickTimer = null;
+
+  // ---------- Sound (WebAudio, guarded) ----------
+  var actx = null;
+  function ensureAudio(){
+    if (actx) return actx;
+    try { actx = new (window.AudioContext || window.webkitAudioContext)(); } catch(e){ actx = null; }
+    return actx;
+  }
+  function tone(freq, dur, type, when, vol){
+    if (state.muted) return;
+    var a = ensureAudio(); if (!a) return;
+    try {
+      var o = a.createOscillator(), g = a.createGain();
+      o.type = type || 'sine'; o.frequency.value = freq;
+      var t = a.currentTime + (when||0);
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(vol||0.12, t+0.01);
+      g.gain.exponentialRampToValueAtTime(0.0001, t+dur);
+      o.connect(g); g.connect(a.destination);
+      o.start(t); o.stop(t+dur+0.02);
+    } catch(e){}
+  }
+  function sfxGood(){ tone(660,0.12,'triangle',0,0.14); tone(880,0.16,'triangle',0.09,0.14); }
+  function sfxBad(){ tone(220,0.2,'sawtooth',0,0.1); tone(160,0.25,'sawtooth',0.12,0.1); }
+  function sfxMiss(){ tone(300,0.3,'square',0,0.08); tone(220,0.35,'square',0.14,0.08); }
+  function sfxOver(){ tone(520,0.18,'triangle',0,0.12); tone(392,0.18,'triangle',0.16,0.12); tone(260,0.4,'triangle',0.32,0.12); }
+
+  // ---------- Rendering ----------
+  function buildStations(){
+    drinkRow.innerHTML = ''; milkRow.innerHTML = ''; tempRow.innerHTML = '';
+    DRINKS.forEach(function(d){
+      var b = document.createElement('button');
+      b.className = 'opt'; b.dataset.type='drink'; b.dataset.id=d.id;
+      b.innerHTML = '<span class="e">'+d.emoji+'</span>'+d.name;
+      drinkRow.appendChild(b);
+    });
+    MILKS.forEach(function(m){
+      var b = document.createElement('button');
+      b.className = 'opt'; b.dataset.type='milk'; b.dataset.id=m.id;
+      b.innerHTML = '<span class="e">'+m.emoji+'</span>'+m.name;
+      milkRow.appendChild(b);
+    });
+    TEMPS.forEach(function(t){
+      var b = document.createElement('button');
+      b.className = 'opt'; b.dataset.type='temp'; b.dataset.id=t.id;
+      b.innerHTML = '<span class="e">'+t.emoji+'</span>'+t.name;
+      tempRow.appendChild(b);
+    });
+  }
+
+  function setOpts(){
+    var all = document.querySelectorAll('.opt');
+    for (var i=0;i<all.length;i++){
+      var b = all[i];
+      if (state.sel[b.dataset.type] === b.dataset.id) b.classList.add('sel');
+      else b.classList.remove('sel');
+    }
+  }
+
+  function randomOf(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+
+  function generateOrder(){
+    var drink = randomOf(DRINKS);
+    var milk = MILKY[drink.id] ? randomOf(MILKS.filter(function(m){return m.id!=='none';})) : {id:'none',name:'No Milk',emoji:'✖️'};
+    var temp;
+    if (drink.id === 'coldbrew') temp = {id:'iced',name:'Iced',emoji:'🧊'};
+    else if (drink.id === 'drip') temp = {id:'hot',name:'Hot',emoji:'🔥'};
+    else temp = randomOf(TEMPS);
+    return { drink:drink, milk:milk, temp:temp };
+  }
+
+  function orderTextFor(o){
+    return o.drink.name + ' · ' + o.milk.name + ' · ' + o.temp.name;
+  }
+
+  function newCustomer(){
+    state.order = generateOrder();
+    state.sel = {drink:null, milk:null, temp:null};
+    state.patience = 100;
+    avatar.textContent = randomOf(CUSTOMERS);
+    who.textContent = randomOf(NAMES);
+    orderText.textContent = orderTextFor(state.order);
+    updatePatience();
+    setOpts();
+    updateServe();
+    setMsg('');
+  }
+
+  function updatePatience(){
+    patienceFill.style.width = Math.max(0, state.patience) + '%';
+    patiencePct.textContent = Math.max(0, Math.round(state.patience)) + '%';
+    var p = state.patience;
+    var grad;
+    if (p > 55) grad = 'linear-gradient(90deg,#3fae6a,#e0a84c)';
+    else if (p > 25) grad = 'linear-gradient(90deg,#e0a84c,#e05a3a)';
+    else grad = 'linear-gradient(90deg,#e05a3a,#c0392b)';
+    patienceFill.style.background = grad;
+  }
+
+  function updateHud(){
+    hudScore.textContent = state.score;
+    hudCombo.textContent = state.combo;
+    hudServed.textContent = state.served;
+    var h = '';
+    for (var i=0;i<LIVES;i++){ h += i < state.lives ? '♥' : '<span class="off">♥</span>'; }
+    hudHearts.innerHTML = h;
+  }
+
+  function updateServe(){
+    var ok = state.sel.drink && state.sel.milk && state.sel.temp;
+    serveBtn.disabled = !ok;
+  }
+
+  function setMsg(t, isErr){
+    msg.textContent = t || '';
+    msg.className = 'msg' + (isErr ? ' err' : '');
+  }
+
+  function drainRate(){ return 1.35 + state.level * 0.24; }
+
+  function tick(){
+    if (!state.running) return;
+    state.patience -= drainRate();
+    if (state.patience <= 0){
+      state.patience = 0;
+      updatePatience();
+      loseLife();
+      return;
+    }
+    updatePatience();
+  }
+
+  function loseLife(){
+    if (state.transitioning) return;
+    state.transitioning = true;
+    state.lives -= 1;
+    state.combo = 0;
+    updateHud();
+    sfxMiss();
+    avatar.textContent = '😤';
+    avatar.classList.add('grrr');
+    setMsg('They walked out. "' + (state.order ? state.order.drink.name : '') + '" isn\'t getting any colder…', true);
+    setTimeout(function(){ avatar.classList.remove('grrr'); }, 450);
+    if (state.lives <= 0){ gameOver(); return; }
+    setTimeout(function(){ state.transitioning = false; newCustomer(); }, 700);
+  }
+
+  function serve(){
+    if (!state.running || state.transitioning) return;
+    var o = state.order;
+    if (!state.sel.drink || !state.sel.milk || !state.sel.temp) return;
+    var correct = (state.sel.drink===o.drink.id && state.sel.milk===o.milk.id && state.sel.temp===o.temp.id);
+
+    if (correct){
+      var pts = 100 + state.combo * 10;
+      state.score += pts;
+      state.combo += 1;
+      state.served += 1;
+      state.level = Math.floor(state.served / 5);
+      state.best = Math.max(state.best, state.score);
+      sfxGood();
+      avatar.classList.add('bounce');
+      setTimeout(function(){ avatar.classList.remove('bounce'); }, 500);
+      showFloat('+'+pts, pts >= 150);
+      puffSteam();
+      setMsg('Perfect! ' + o.drink.name + ' for ' + who.textContent + '.');
+      if (state.combo > 0 && state.combo % 5 === 0){
+        burstConfetti(28);
+        setMsg('🔥 ' + state.combo + ' in a row! The line is moving!');
+      }
+      updateHud();
+      setTimeout(newCustomer, 520);
+    } else {
+      state.combo = 0;
+      state.patience = Math.max(0, state.patience - 22);
+      updatePatience();
+      sfxBad();
+      avatar.textContent = '😣';
+      avatar.classList.add('grrr');
+      setTimeout(function(){ avatar.classList.remove('grrr'); }, 450);
+      setMsg('Not quite — they asked for ' + orderTextFor(o) + '. Try again.', true);
+      state.sel = {drink:null, milk:null, temp:null};
+      setOpts(); updateServe(); updateHud();
+      if (state.patience <= 0){ loseLife(); }
+    }
+  }
+
+  function showFloat(text, big){
+    var el = document.createElement('div');
+    el.className = 'float';
+    el.textContent = text;
+    el.style.fontSize = big ? '1.6rem' : '1.25rem';
+    var counter = gameCard.querySelector('.counter');
+    var av = avatar.getBoundingClientRect();
+    var ctr = counter.getBoundingClientRect();
+    el.style.left = (av.right - ctr.left - 20) + 'px';
+    el.style.top = (av.top - ctr.top - 10) + 'px';
+    counter.appendChild(el);
+    setTimeout(function(){ el.remove(); }, 1000);
+  }
+
+  function puffSteam(){
+    for (var i=0;i<3;i++){
+      var s = document.createElement('span');
+      s.className = 'steam'; s.textContent = '♨️';
+      var counter = gameCard.querySelector('.counter');
+      var av = avatar.getBoundingClientRect();
+      var ctr = counter.getBoundingClientRect();
+      s.style.left = (av.right - ctr.left - 34 + i*12) + 'px';
+      s.style.top = (av.top - ctr.top + 6) + 'px';
+      s.style.animationDelay = (i*0.12) + 's';
+      counter.appendChild(s);
+      setTimeout(function(){ s.remove(); }, 1200);
+    }
+  }
+
+  function burstConfetti(n){
+    var colors = ['#C9862A','#e0a84c','#f4d98c','#2D6A9F','#ffffff','#e05a3a'];
+    for (var i=0;i<n;i++){
+      var c = document.createElement('div');
+      c.className = 'confetti';
+      c.style.left = (Math.random()*100)+'vw';
+      c.style.background = colors[Math.floor(Math.random()*colors.length)];
+      c.style.animationDuration = (Math.random()*2+1.8)+'s';
+      c.style.animationDelay = (Math.random()*0.3)+'s';
+      c.style.transform = 'rotate('+(Math.random()*360)+'deg)';
+      c.style.width = (Math.random()*5+5)+'px';
+      c.style.height = (Math.random()*8+8)+'px';
+      document.body.appendChild(c);
+      setTimeout(function(){ c.remove(); }, 4000);
+    }
+  }
+
+  function gameOver(){
+    state.running = false;
+    if (tickTimer){ clearInterval(tickTimer); tickTimer = null; }
+    sfxOver();
+    var isBest = state.score > 0 && state.score >= (parseInt(localStorage.getItem('baristaRushBest')||'0',10)||0) && state.score > 0;
+    var prevBest = (parseInt(localStorage.getItem('baristaRushBest')||'0',10)||0);
+    if (state.score > prevBest){
+      try { localStorage.setItem('baristaRushBest', String(state.score)); } catch(e){}
+      isBest = true;
+    }
+    $('overEmoji').textContent = state.score >= 500 ? '🏆' : (state.score >= 250 ? '😅' : '☕');
+    $('overTitle').textContent = isBest ? 'New Best Shift!' : "Shift's Over!";
+    $('overSub').textContent = state.score >= 500
+      ? 'Maya would be proud. You\'re officially on the schedule.'
+      : 'The beans won this round. Ready for the next rush?';
+    $('finalScore').textContent = state.score;
+    $('finalServed').textContent = state.served;
+    $('finalBest').textContent = Math.max(state.score, prevBest);
+    $('bestBadgeWrap').innerHTML = isBest ? '<span class="best-badge">★ NEW HIGH SCORE</span>' : '';
+    overOverlay.classList.remove('hidden');
+    if (isBest && state.score > 0) burstConfetti(60);
+  }
+
+  function startGame(){
+    ensureAudio();
+    if (actx && actx.state === 'suspended'){ try{ actx.resume(); }catch(e){} }
+    state.running = true;
+    state.transitioning = false;
+    state.score = 0; state.combo = 0; state.served = 0; state.lives = LIVES; state.level = 0;
+    startOverlay.classList.add('hidden');
+    overOverlay.classList.add('hidden');
+    updateHud();
+    newCustomer();
+    if (tickTimer) clearInterval(tickTimer);
+    tickTimer = setInterval(tick, 100);
+  }
+
+  // ---------- Events ----------
+  function onOptClick(e){
+    var b = e.target.closest('.opt');
+    if (!b || !state.running || state.transitioning) return;
+    var type = b.dataset.type, id = b.dataset.id;
+    if (state.sel[type] === id){ state.sel[type] = null; }
+    else { state.sel[type] = id; }
+    setOpts(); updateServe();
+  }
+  drinkRow.addEventListener('click', onOptClick);
+  milkRow.addEventListener('click', onOptClick);
+  tempRow.addEventListener('click', onOptClick);
+
+  serveBtn.addEventListener('click', serve);
+  clearBtn.addEventListener('click', function(){
+    state.sel = {drink:null, milk:null, temp:null};
+    setOpts(); updateServe(); setMsg('');
+  });
+  $('startBtn').addEventListener('click', startGame);
+  $('againBtn').addEventListener('click', startGame);
+
+  $('shareBtn').addEventListener('click', function(){
+    var text = '☕ Barista Rush — I survived a shift at Maya\'s shop, served '+state.served+' drinks, and scored '+state.score+' pts. Think you can keep up? → coffee-rings-and-bad-decisions.vercel.app/barista-rush/';
+    if (navigator.share){ navigator.share({title:'Barista Rush', text:text}).catch(function(){}); }
+    else if (navigator.clipboard){ navigator.clipboard.writeText(text).then(function(){
+      var b = $('shareBtn'); var o = b.textContent; b.textContent = '✅ Copied!';
+      setTimeout(function(){ b.textContent = o; }, 2000);
+    }); }
+  });
+
+  muteBtn.addEventListener('click', function(){
+    state.muted = !state.muted;
+    muteBtn.textContent = state.muted ? '🔇' : '🔊';
+    try { localStorage.setItem('baristaRushMuted', state.muted ? '1' : '0'); } catch(e){}
+  });
+  muteBtn.textContent = state.muted ? '🔇' : '🔊';
+
+  // ---------- Init ----------
+  buildStations();
+  updateHud();
+  setMsg('');
+  // Show a demo order behind the start overlay so it feels alive
+  var demo = generateOrder();
+  orderText.textContent = orderTextFor(demo);
+  avatar.textContent = randomOf(CUSTOMERS);
+  who.textContent = randomOf(NAMES);
+  updatePatience();
+})();
+</script>
+
+</body>
+</html>
