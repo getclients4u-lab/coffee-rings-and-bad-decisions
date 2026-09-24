@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Who's Who — Character Map | Coffee Rings and Bad Decisions</title>
+<meta name="description" content="Explore the tangled web of Coffee Rings and Bad Decisions: an interactive relationship map of Maya, Leo, Sam, Mrs. Hsu, Jake, Rachel, and Bean & Leaf — who's dating, who's scheming, and who owns the building.">
+<link rel="canonical" href="https://coffee-rings-and-bad-decisions.vercel.app/characters/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:'Inter',-apple-system,sans-serif; color:#F5F0E8; background:#0D1B2A; line-height:1.6; overflow-x:hidden; min-height:100vh; }
+a { color:#C9862A; text-decoration:none; transition:all .25s ease; }
+a:hover { color:#e0a84c; }
+.container { width:100%; max-width:1100px; margin:0 auto; padding:0 2rem; }
+:root { --space-sm:1rem; --space-md:2rem; --space-lg:3rem; --space-xl:5rem; --space-2xl:8rem; --font-display:'Cinzel',Georgia,serif; }
+
+/* Navigation */
+.nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(13,27,42,0.85); backdrop-filter:blur(20px); border-bottom:1px solid rgba(255,255,255,0.05); }
+.nav-inner { max-width:1100px; margin:0 auto; padding:0 2rem; height:72px; display:flex; align-items:center; justify-content:space-between; }
+.nav-logo { font-family:var(--font-display); font-size:1.1rem; color:#fff; font-weight:600; letter-spacing:0.06em; }
+.nav-logo span { color:#C9862A; }
+.nav-links { display:flex; gap:2rem; flex-wrap:wrap; }
+.nav-links a { font-size:0.78rem; font-weight:500; color:#8a9aa8; letter-spacing:0.06em; text-transform:uppercase; }
+.nav-links a:hover { color:#fff; }
+.nav-links a.current { color:#C9862A; }
+
+/* Hero */
+.hero { padding:150px 0 40px; text-align:center; position:relative; overflow:hidden; }
+.hero::before { content:''; position:absolute; inset:0; z-index:0; background:radial-gradient(circle at 20% 30%,rgba(201,134,42,0.10) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(45,106,159,0.10) 0%,transparent 50%); }
+.hero-inner { position:relative; z-index:1; }
+.hero h4 { font-size:0.72rem; text-transform:uppercase; letter-spacing:0.2em; color:#C9862A; margin-bottom:1rem; font-weight:600; }
+.hero h1 { font-family:var(--font-display); font-size:clamp(1.9rem,4.5vw,3.1rem); color:#fff; margin-bottom:1rem; line-height:1.15; }
+.hero p { color:#8a9aa8; font-size:1.1rem; max-width:640px; margin:0 auto 1.5rem; line-height:1.7; }
+
+/* Spoiler toggle */
+.spoiler-toggle { display:inline-flex; align-items:center; gap:12px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:100px; padding:8px 16px 8px 20px; cursor:pointer; user-select:none; font-family:'Inter',sans-serif; }
+.spoiler-toggle .tag { font-size:0.78rem; letter-spacing:0.04em; color:#b8c5d0; font-weight:500; }
+.spoiler-toggle .track { width:44px; height:24px; border-radius:100px; background:rgba(255,255,255,0.12); position:relative; transition:background .3s ease; }
+.spoiler-toggle .knob { position:absolute; top:2px; left:2px; width:20px; height:20px; border-radius:50%; background:#8a9aa8; transition:all .3s ease; }
+body.spoilers-on .spoiler-toggle .track { background:#C9862A; }
+body.spoilers-on .spoiler-toggle .knob { left:22px; background:#0D1B2A; }
+
+/* Map area */
+.map-wrap { padding:0 0 2rem; }
+.map-card { background:rgba(10,22,40,0.55); border:1px solid rgba(255,255,255,0.06); border-radius:16px; padding:1.5rem; backdrop-filter:blur(10px); box-shadow:0 30px 80px rgba(0,0,0,0.3); position:relative; overflow:hidden; }
+.map-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg,transparent,#C9862A,#2D6A9F,transparent); }
+.map-hint { text-align:center; color:#5a6a78; font-size:0.85rem; margin-top:0.75rem; letter-spacing:0.02em; }
+svg#map { width:100%; height:auto; display:block; }
+
+.edge { fill:none; stroke-width:2; stroke-linecap:round; stroke-dasharray:900; stroke-dashoffset:900; animation:draw 1.3s ease forwards; }
+@keyframes draw { to { stroke-dashoffset:0; } }
+.edge.active { stroke-width:3; }
+.edge.faded { opacity:0.13; }
+.edge-label { font-size:12.5px; font-weight:500; fill:#d8e2ec; stroke:#0a1628; stroke-width:4; paint-order:stroke; stroke-linejoin:round; text-anchor:middle; opacity:0; transition:opacity .35s ease; pointer-events:none; }
+.edge-label.show { opacity:1; }
+
+.node { cursor:pointer; opacity:0; animation:pop .5s ease forwards; outline:none; }
+@keyframes pop { from { opacity:0; transform:scale(0.6); } to { opacity:1; transform:scale(1); } }
+.node .halo { fill:none; stroke:rgba(201,134,42,0.0); stroke-width:2.5; transition:all .3s ease; }
+.node:hover .halo, .node.selected .halo { stroke:rgba(201,134,42,0.7); }
+.node:hover .avatar, .node.selected .avatar { stroke:#e0a84c; stroke-width:2.5; }
+.node .avatar { transition:all .3s ease; stroke:rgba(255,255,255,0.15); stroke-width:1.5; }
+.node.dim { opacity:0.35; }
+.node.dim:hover { opacity:1; }
+.node .emoji { font-size:26px; pointer-events:none; }
+.node .name { fill:#fff; font-size:15px; font-weight:600; text-anchor:middle; pointer-events:none; }
+.node .role { fill:#C9862A; font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em; text-anchor:middle; pointer-events:none; font-weight:600; }
+.node.lead .name { font-family:var(--font-display); font-size:16px; }
+.avatar { filter:drop-shadow(0 8px 18px rgba(0,0,0,0.45)); }
+
+/* Legend */
+.legend { display:flex; flex-wrap:wrap; gap:1.25rem; justify-content:center; padding:1.25rem 0 0.5rem; }
+.legend span { display:inline-flex; align-items:center; gap:8px; font-size:0.78rem; color:#b8c5d0; letter-spacing:0.03em; }
+.legend .dot { width:12px; height:12px; border-radius:50%; display:inline-block; }
+
+/* Detail panel */
+.detail { max-width:820px; margin:0 auto; padding:0 0 2rem; }
+.detail-card { background:rgba(10,22,40,0.7); border:1px solid rgba(255,255,255,0.07); border-radius:14px; padding:2rem; display:none; animation:fadeIn .5s ease; }
+.detail-card.open { display:block; }
+@keyframes fadeIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+.d-head { display:flex; align-items:center; gap:1.25rem; margin-bottom:1.25rem; }
+.d-emoji { width:64px; height:64px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:30px; flex-shrink:0; box-shadow:0 10px 30px rgba(0,0,0,0.4); border:2px solid rgba(255,255,255,0.12); }
+.d-head h3 { font-family:var(--font-display); color:#fff; font-size:1.5rem; line-height:1.2; }
+.d-role { display:inline-block; margin-top:4px; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.16em; color:#C9862A; font-weight:600; }
+.d-blurb { color:#c4d0da; font-size:1.05rem; line-height:1.8; margin-bottom:1rem; }
+.detail-card .k { display:block; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.14em; color:#C9862A; font-weight:600; margin-bottom:2px; }
+.d-move, .d-arc { color:#b8c5d0; font-size:0.98rem; line-height:1.6; margin-bottom:0.9rem; }
+.d-spoiler { color:#e0a84c; font-size:0.98rem; line-height:1.6; margin-bottom:0.9rem; background:rgba(201,134,42,0.08); border:1px dashed rgba(201,134,42,0.35); border-radius:8px; padding:0.85rem 1rem; }
+.d-spoiler .k { color:#e0a84c; }
+.d-spoiler-hidden { color:#5a6a78; font-size:0.85rem; font-style:italic; margin-bottom:0.9rem; }
+.d-conns { margin-top:0.5rem; }
+.d-conns .k { margin-bottom:8px; }
+.conn { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:100px; padding:6px 14px; margin:0 8px 8px 0; font-size:0.82rem; color:#d8e2ec; }
+.conn .dot { width:9px; height:9px; border-radius:50%; display:inline-block; }
+
+/* Cast grid */
+.cast { padding:3rem 0 5rem; }
+.section-head { text-align:center; margin-bottom:2.5rem; }
+.section-head h2 { font-family:var(--font-display); font-size:clamp(1.6rem,3vw,2.2rem); color:#fff; margin-bottom:0.6rem; }
+.section-head p { color:#8a9aa8; font-size:1rem; }
+.cast-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1.25rem; }
+.cast-card { background:rgba(10,22,40,0.55); border:1px solid rgba(255,255,255,0.06); border-radius:14px; padding:1.75rem; cursor:pointer; transition:all .3s ease; }
+.cast-card:hover { transform:translateY(-4px); border-color:rgba(201,134,42,0.4); box-shadow:0 20px 50px rgba(0,0,0,0.35); }
+.cast-emoji { width:54px; height:54px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:26px; margin-bottom:1rem; box-shadow:0 8px 24px rgba(0,0,0,0.4); }
+.cast-card h3 { font-family:var(--font-display); color:#fff; font-size:1.25rem; margin-bottom:2px; }
+.cast-role { display:inline-block; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.14em; color:#C9862A; font-weight:600; margin-bottom:0.9rem; }
+.role-spoiler { display:none; }
+body.spoilers-on .role-base { display:none; }
+body.spoilers-on .role-spoiler { display:inline-block; }
+.cast-blurb { color:#b8c5d0; font-size:0.95rem; line-height:1.7; margin-bottom:0.9rem; }
+.cast-card strong { color:#C9862A; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.12em; font-weight:600; display:block; margin-bottom:2px; }
+.cast-move, .cast-arc { color:#8a9aa8; font-size:0.9rem; line-height:1.6; margin-bottom:0.8rem; }
+.cast-spoiler { color:#e0a84c; font-size:0.9rem; line-height:1.6; background:rgba(201,134,42,0.08); border:1px dashed rgba(201,134,42,0.35); border-radius:8px; padding:0.7rem 0.85rem; display:none; }
+body.spoilers-on .cast-spoiler { display:block; }
+
+/* Footer */
+.footer { background:#0a1628; padding:2.5rem 0; border-top:1px solid rgba(255,255,255,0.05); text-align:center; }
+.footer p { color:#5a6a78; font-size:0.85rem; }
+
+@media (max-width:768px) {
+  .nav-links { display:none; }
+  .cast-grid { grid-template-columns:1fr; }
+  .d-head { flex-direction:column; text-align:center; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Coffee <span>Rings</span></a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/reader.html">Read</a>
+      <a href="/quiz/">Quiz</a>
+      <a href="/characters/" class="current">Characters</a>
+      <a href="/meet-cute/">Meet-Cute</a>
+      <a href="/beans/">Bean Calculator</a>
+      <a href="/brew/">Brew Timer</a>
+      <a href="/rings/">Ring Studio</a>
+      <a href="/tarot/">Tarot</a>
+      <a href="/lottery/">Bean Lottery</a>
+      <a href="/barista-rush/">Barista Rush</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <h4>The Cast, Untangled</h4>
+    <h1>Who's Who in Coffee Rings</h1>
+    <p>One stubborn barista, one accidental 500-pound bean emergency, and everyone standing in the way of a happy ending. Tap any face to see who they are, what they want, and how they're tangled up with everyone else.</p>
+    <div class="spoiler-toggle" id="spoilerToggle" role="switch" aria-checked="false" tabindex="0">
+      <span class="tag" id="spoilerTag">🙈 No spoilers</span>
+      <span class="track"><span class="knob"></span></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="map-wrap">
+    <div class="container">
+      <div class="map-card">
+        <svg id="map" viewBox="0 0 1000 640" role="img" aria-label="Interactive relationship map of the characters in Coffee Rings and Bad Decisions"></svg>
+      </div>
+      <p class="map-hint">Click a character to light up their connections. 💛 romance · 💙 friendship · 💚 ally · ❤️ rivalry · ⬜ ex / tension</p>
+    </div>
+  </section>
+
+  <section class="detail">
+    <div class="container">
+      <div class="detail-card" id="detail"></div>
+    </div>
+  </section>
+
+  <section class="cast">
+    <div class="container">
+      <div class="section-head">
+        <h2>Meet the Cast</h2>
+        <p>The full line-up, in their own words (sort of).</p>
+      </div>
+      <div class="cast-grid">
+
+        <article class="cast-card" data-id="maya">
+          <span class="cast-emoji" style="background:linear-gradient(135deg,#C9862A,#8a5a1e)">☕</span>
+          <h3>Maya Chen</h3>
+          <span class="cast-role role-base">The Protagonist</span>
+          <p class="cast-blurb">29 · Owner of Coffee Rings, the struggling specialty shop on a rainy Portland corner. Sharp, stubborn, and secretly a hopeless romantic. Runs on cold brew and even worse decisions.</p>
+          <strong>Signature move</strong>
+          <p class="cast-move">Orders espresso with the lid off so she can inhale it faster between disasters.</p>
+          <strong>The arc</strong>
+          <p class="cast-arc">Closed-off → vulnerable. Her whole journey is learning to ask for help instead of fighting everything alone.</p>
+        </article>
+
+        <article class="cast-card" data-id="leo">
+          <span class="cast-emoji" style="background:linear-gradient(135deg,#5b8fc0,#2D6A9F)">🤵</span>
+          <h3>Leo Bianchi</h3>
+          <span class="cast-role role-base">The Suit</span>
+          <p class="cast-blurb">32 · Acquisitions director at Bean &amp; Leaf — the very chain trying to put Maya out of business. Charming, understated, and quietly allergic to being the bad guy.</p>
+          <strong>Signature move</strong>
+          <p class="cast-move">Grew up in a family restaurant, so he knows exactly what losing a business feels like.</p>
+          <strong>The arc</strong>
+          <p class="cast-arc">People-pleaser → assertive. Learns to stop playing it safe and fight for something — and someone — that matters.</p>
+          <p class="cast-spoiler">🔒 <strong style="color:#e0a84c">Spoiler</strong>After the viral festival disaster, he's fired — then shows up at Maya's shop, wet and unemployed, because it's the only place that feels like home.</p>
+        </article>
+
+        <article class="cast-card" data-id="sam">
+          <span class="cast-emoji" style="background:linear-gradient(135deg,#3b6ea5,#5b8fc0)">🪄</span>
+          <h3>Sam</h3>
+          <span class="cast-role role-base">The Best Friend</span>
+          <p class="cast-blurb">28 · Maya's best friend and head barista. Full-time chaos engine with wingman energy strong enough to power the espresso machine, plus a side hustle selling vintage mugs.</p>
+          <strong>Signature move</strong>
+          <p class="cast-move">Masterminds the "Mystery Bean Lottery" and every conspiracy theory about Bean &amp; Leaf.</p>
+        </article>
+
+        <article class="cast-card" data-id="hsu">
+          <span class="cast-emoji" style="background:linear-gradient(135deg,#6fbf73,#3d8f5f)">👵</span>
+          <h3>Mrs. Hsu</h3>
+          <span class="cast-role role-base">The Regular</span><span class="cast-role role-spoiler">The Landlord</span>
+          <p class="cast-blurb">72 · The quiet regular at the corner table. Orders the same thing every single day, tips in exact change, and notices absolutely everything.</p>
+          <strong>Signature move</strong>
+          <p class="cast-move">Leaves passive-aggressive notes about the noise, then slips you the rent money you're short.</p>
+          <p class="cast-spoiler">🔒 <strong style="color:#e0a84c">Spoiler</strong>She owns the building. Maya's silent guardian-angel landlord has been looking out for her the whole time.</p>
+        </article>
+
+        <article class="cast-card" data-id="jake">
+          <span class="cast-emoji" style="background:linear-gradient(135deg,#8a9aa8,#5a6a78)">📱</span>
+          <h3>Jake</h3>
+          <span class="cast-role role-base">The Ex</span>
+          <p class="cast-blurb">27 · Maya's ex. An influencer who tried to turn her shop into a content farm, and learned the hard way that "going viral" is not a business plan.</p>
+          <strong>Signature move</strong>
+          <p class="cast-move">Every crisis in his life comes with its own hashtag.</p>
+          <p class="cast-spoiler">🔒 <strong style="color:#e0a84c">Spoiler</strong>Returns begging for a second chance — but by then he's just a guy who needs to become a real customer.</p>
+        </article>
+
+        <article class="cast-card" data-id="rachel">
+          <span class="cast-emoji" style="background:linear-gradient(135deg,#e06c5b,#b5443c)">🦈</span>
+          <h3>Rachel</h3>
+          <span class="cast-role role-base">The Shark</span>
+          <p class="cast-blurb">31 · Leo's boss and a shark in a blazer. Wants to acquire Maya's shop at any cost, and doesn't much care who she steamrolls on the way.</p>
+          <strong>Signature move</strong>
+          <p class="cast-move">Pitches a hostile buyout the way other people offer condolences.</p>
+        </article>
+
+        <article class="cast-card" data-id="bandl">
+          <span class="cast-emoji" style="background:linear-gradient(135deg,#6b7f95,#46586b)">🏢</span>
+          <h3>Bean &amp; Leaf</h3>
+          <span class="cast-role role-base">The Chain</span>
+          <p class="cast-blurb">The corporate chain trying to put Coffee Rings out of business. Gleaming, efficient, and just a little too proud of its forty-seven seasonal syrups.</p>
+          <strong>Signature move</strong>
+          <p class="cast-move">Its "small-batch" menu has forty-seven items and none of them are small.</p>
+          <p class="cast-spoiler">🔒 <strong style="color:#e0a84c">Spoiler</strong>By the end, redrawn as a smaller, more ethical buyer who actually cares about coffee.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Alex Rogers. Inspired by <em>Coffee Rings and Bad Decisions</em> — a romantic comedy. ☕</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var TYPE = {
+    romance: { color:'#e0a84c' },
+    friend:  { color:'#5b8fc0' },
+    ally:    { color:'#6fbf73' },
+    rival:   { color:'#e06c5b' },
+    ex:      { color:'#8a9aa8' }
+  };
+
+  var NODES = [
+    { id:'maya', name:'Maya Chen', role:'The Protagonist', roleSpoiler:null, emoji:'☕', grad:['#C9862A','#8a5a1e'], x:420, y:360, r:46, lead:true,
+      blurb:'29 · Owner of Coffee Rings, the struggling specialty shop on a rainy Portland corner. Sharp, stubborn, and secretly a hopeless romantic. Runs on cold brew and even worse decisions.',
+      arc:'Closed-off → vulnerable. Her whole journey is learning to ask for help instead of fighting everything alone.',
+      move:"Orders espresso with the lid off so she can inhale it faster between disasters.", spoiler:null },
+    { id:'leo', name:'Leo Bianchi', role:'The Suit', roleSpoiler:null, emoji:'🤵', grad:['#5b8fc0','#2D6A9F'], x:750, y:350, r:46, lead:true,
+      blurb:'32 · Acquisitions director at Bean & Leaf — the very chain trying to put Maya out of business. Charming, understated, and quietly allergic to being the bad guy.',
+      arc:'People-pleaser → assertive. Learns to stop playing it safe and fight for something — and someone — that matters.',
+      move:'Grew up in a family restaurant, so he knows exactly what losing a business feels like.',
+      spoiler:"After the viral festival disaster, he's fired — then shows up at Maya's shop, wet and unemployed, because it's the only place that feels like home." },
+    { id:'sam', name:'Sam', role:'The Best Friend', roleSpoiler:null, emoji:'🪄', grad:['#3b6ea5','#5b8fc0'], x:200, y:180, r:40, lead:false,
+      blurb:"28 · Maya's best friend and head barista. Full-time chaos engine with wingman energy strong enough to power the espresso machine, plus a side hustle selling vintage mugs.",
+      arc:null, move:'Masterminds the "Mystery Bean Lottery" and every conspiracy theory about Bean & Leaf.', spoiler:null },
+    { id:'hsu', name:'Mrs. Hsu', role:'The Regular', roleSpoiler:'The Landlord', emoji:'👵', grad:['#6fbf73','#3d8f5f'], x:230, y:520, r:40, lead:false,
+      blurb:'72 · The quiet regular at the corner table. Orders the same thing every single day, tips in exact change, and notices absolutely everything.',
+      arc:null, move:"Leaves passive-aggressive notes about the noise, then slips you the rent money you're short.",
+      spoiler:"She owns the building. Maya's silent guardian-angel landlord has been looking out for her the whole time." },
+    { id:'jake', name:'Jake', role:'The Ex', roleSpoiler:null, emoji:'📱', grad:['#8a9aa8','#5a6a78'], x:470, y:575, r:40, lead:false,
+      blurb:"27 · Maya's ex. An influencer who tried to turn her shop into a content farm, and learned the hard way that \"going viral\" is not a business plan.",
+      arc:null, move:'Every crisis in his life comes with its own hashtag.',
+      spoiler:'Returns begging for a second chance — but by then he\'s just a guy who needs to become a real customer.' },
+    { id:'rachel', name:'Rachel', role:'The Shark', roleSpoiler:null, emoji:'🦈', grad:['#e06c5b','#b5443c'], x:810, y:160, r:40, lead:false,
+      blurb:"31 · Leo's boss and a shark in a blazer. Wants to acquire Maya's shop at any cost, and doesn't much care who she steamrolls on the way.",
+      arc:null, move:'Pitches a hostile buyout the way other people offer condolences.', spoiler:null },
+    { id:'bandl', name:'Bean & Leaf', role:'The Chain', roleSpoiler:null, emoji:'🏢', grad:['#6b7f95','#46586b'], x:520, y:80, r:40, lead:false,
+      blurb:'The corporate chain trying to put Coffee Rings out of business. Gleaming, efficient, and just a little too proud of its forty-seven seasonal syrups.',
+      arc:null, move:'Its "small-batch" menu has forty-seven items and none of them are small.',
+      spoiler:'By the end, redrawn as a smaller, more ethical buyer who actually cares about coffee.' }
+  ];
+
+  var EDGES = [
+    { a:'maya', b:'leo', type:'romance', label:'Enemies → partners → maybe more' },
+    { a:'maya', b:'sam', type:'friend', label:'Best friend since forever' },
+    { a:'maya', b:'hsu', type:'ally', label:'More than she seems' },
+    { a:'maya', b:'jake', type:'ex', label:'Ex-boyfriend' },
+    { a:'maya', b:'bandl', type:'rival', label:'Trying to take her shop' },
+    { a:'leo', b:'rachel', type:'rival', label:'Boss' },
+    { a:'leo', b:'bandl', type:'ex', label:'Former employer' },
+    { a:'sam', b:'hsu', type:'friend', label:'Co-conspirators' },
+    { a:'rachel', b:'bandl', type:'ally', label:'Works for' }
+  ];
+
+  var NS = 'http://www.w3.org/2000/svg';
+  var svg = document.getElementById('map');
+  var nodeEls = {}, roleTexts = {}, edgePaths = [], edgeLabels = [];
+  var selectedId = null, hoverId = null, spoilers = false;
+
+  function byId(id){ for (var i=0;i<NODES.length;i++) if (NODES[i].id===id) return NODES[i]; return null; }
+
+  function defs(){
+    var d = document.createElementNS(NS,'defs');
+    NODES.forEach(function(n){
+      var g = document.createElementNS(NS,'radialGradient');
+      g.setAttribute('id','grad-'+n.id); g.setAttribute('cx','35%'); g.setAttribute('cy','30%'); g.setAttribute('r','80%');
+      var s0 = document.createElementNS(NS,'stop'); s0.setAttribute('offset','0%'); s0.setAttribute('stop-color',n.grad[0]);
+      var s1 = document.createElementNS(NS,'stop'); s1.setAttribute('offset','100%'); s1.setAttribute('stop-color',n.grad[1]);
+      g.appendChild(s0); g.appendChild(s1); d.appendChild(g);
+    });
+    svg.appendChild(d);
+  }
+
+  function edgeGeom(e){
+    var A = byId(e.a), B = byId(e.b);
+    var mx=(A.x+B.x)/2, my=(A.y+B.y)/2;
+    var dx=B.x-A.x, dy=B.y-A.y;
+    var len=Math.hypot(dx,dy)||1;
+    var px=-dy/len, py=dx/len;
+    var bend = 16;
+    var cx=mx+px*bend, cy=my+py*bend;
+    var t=0.5;
+    var qx=(1-t)*(1-t)*A.x+2*(1-t)*t*cx+t*t*B.x;
+    var qy=(1-t)*(1-t)*A.y+2*(1-t)*t*cy+t*t*B.y;
+    var lx=qx+px*(bend+15), ly=qy+py*(bend+15);
+    return { d:'M '+A.x+' '+A.y+' Q '+cx+' '+cy+' '+B.x+' '+B.y, lx:lx, ly:ly };
+  }
+
+  function buildEdges(){
+    EDGES.forEach(function(e,i){
+      var g = edgeGeom(e);
+      var path = document.createElementNS(NS,'path');
+      path.setAttribute('d', g.d);
+      path.setAttribute('class','edge');
+      path.setAttribute('stroke', TYPE[e.type].color);
+      path.style.animationDelay = (0.1 + i*0.08) + 's';
+      path.setAttribute('data-a', e.a); path.setAttribute('data-b', e.b);
+      svg.appendChild(path);
+      edgePaths.push(path);
+
+      var txt = document.createElementNS(NS,'text');
+      txt.setAttribute('x', g.lx); txt.setAttribute('y', g.ly);
+      txt.setAttribute('class','edge-label');
+      txt.textContent = e.label;
+      txt.setAttribute('data-a', e.a); txt.setAttribute('data-b', e.b);
+      svg.appendChild(txt);
+      edgeLabels.push(txt);
+    });
+  }
+
+  function buildNodes(){
+    NODES.forEach(function(n,i){
+      var g = document.createElementNS(NS,'g');
+      g.setAttribute('class','node'+(n.lead?' lead':''));
+      g.setAttribute('data-id', n.id);
+      g.setAttribute('transform','translate('+n.x+','+n.y+')');
+      g.setAttribute('tabindex','0'); g.setAttribute('role','button');
+      g.setAttribute('aria-label', n.name + ' — ' + n.role);
+      g.style.animationDelay = (0.25 + i*0.09) + 's';
+
+      var halo = document.createElementNS(NS,'circle');
+      halo.setAttribute('class','halo'); halo.setAttribute('r', n.r+7); halo.setAttribute('cx',0); halo.setAttribute('cy',0);
+      g.appendChild(halo);
+
+      var av = document.createElementNS(NS,'circle');
+      av.setAttribute('class','avatar'); av.setAttribute('r', n.r); av.setAttribute('cx',0); av.setAttribute('cy',0);
+      av.setAttribute('fill','url(#grad-'+n.id+')');
+      g.appendChild(av);
+
+      var em = document.createElementNS(NS,'text');
+      em.setAttribute('class','emoji'); em.setAttribute('x',0); em.setAttribute('y', n.r*0.32); em.setAttribute('text-anchor','middle');
+      em.textContent = n.emoji;
+      g.appendChild(em);
+
+      var nm = document.createElementNS(NS,'text');
+      nm.setAttribute('class','name'); nm.setAttribute('x',0); nm.setAttribute('y', n.r+22);
+      nm.textContent = n.name;
+      g.appendChild(nm);
+
+      var rl = document.createElementNS(NS,'text');
+      rl.setAttribute('class','role'); rl.setAttribute('x',0); rl.setAttribute('y', n.r+38);
+      rl.textContent = n.role;
+      g.appendChild(rl);
+      roleTexts[n.id] = rl;
+
+      g.addEventListener('mouseenter', function(){ hoverId = n.id; paint(); });
+      g.addEventListener('mouseleave', function(){ hoverId = null; paint(); });
+      g.addEventListener('click', function(){ select(n.id); });
+      g.addEventListener('keydown', function(ev){ if (ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); select(n.id);} });
+
+      svg.appendChild(g);
+      nodeEls[n.id] = g;
+    });
+  }
+
+  function activeId(){ return hoverId || selectedId; }
+
+  function paint(){
+    var act = activeId();
+    EDGES.forEach(function(e,i){
+      var on = act && (e.a===act || e.b===act);
+      edgePaths[i].classList.toggle('active', on);
+      edgePaths[i].classList.toggle('faded', !!(selectedId && !on));
+      edgeLabels[i].classList.toggle('show', on);
+    });
+    NODES.forEach(function(n){
+      nodeEls[n.id].classList.toggle('selected', n.id===selectedId);
+      nodeEls[n.id].classList.toggle('dim', !!(selectedId && n.id!==selectedId));
+    });
+  }
+
+  function renderDetail(id){
+    var n = byId(id);
+    var panel = document.getElementById('detail');
+    var conns = EDGES.filter(function(e){ return e.a===id || e.b===id; });
+    var connHtml = conns.map(function(e){
+      var other = byId(e.a===id ? e.b : e.a);
+      var t = TYPE[e.type];
+      return '<span class="conn"><span class="dot" style="background:'+t.color+'"></span>'+other.name+' · '+e.label+'</span>';
+    }).join('');
+    var role = spoilers && n.roleSpoiler ? n.roleSpoiler : n.role;
+    var spoilerHtml = '';
+    if (n.spoiler) {
+      spoilerHtml = spoilers
+        ? '<p class="d-spoiler"><span class="k">Spoiler</span>'+n.spoiler+'</p>'
+        : '<p class="d-spoiler-hidden">🔒 This character has a spoiler. Flip the toggle above to reveal it.</p>';
+    }
+    var arcHtml = n.arc ? '<p class="d-arc"><span class="k">The arc</span>'+n.arc+'</p>' : '';
+    panel.innerHTML =
+      '<div class="d-head">' +
+        '<span class="d-emoji" style="background:linear-gradient(135deg,'+n.grad[0]+','+n.grad[1]+')">'+n.emoji+'</span>' +
+        '<div><h3>'+n.name+'</h3><span class="d-role">'+role+'</span></div>' +
+      '</div>' +
+      '<p class="d-blurb">'+n.blurb+'</p>' +
+      '<p class="d-move"><span class="k">Signature move</span>'+n.move+'</p>' +
+      arcHtml + spoilerHtml +
+      '<div class="d-conns"><span class="k">Connections</span>'+connHtml+'</div>';
+    panel.classList.add('open');
+  }
+
+  function select(id){
+    if (selectedId === id) { selectedId = null; document.getElementById('detail').classList.remove('open'); paint(); return; }
+    selectedId = id;
+    renderDetail(id);
+    paint();
+    var panel = document.getElementById('detail');
+    panel.scrollIntoView({ behavior:'smooth', block:'nearest' });
+  }
+
+  function setSpoilers(on){
+    spoilers = on;
+    document.body.classList.toggle('spoilers-on', on);
+    var tag = document.getElementById('spoilerTag');
+    tag.textContent = on ? '👀 Spoilers on' : '🙈 No spoilers';
+    var tg = document.getElementById('spoilerToggle');
+    tg.setAttribute('aria-checked', on ? 'true' : 'false');
+    NODES.forEach(function(n){ roleTexts[n.id].textContent = (spoilers && n.roleSpoiler) ? n.roleSpoiler : n.role; });
+    if (selectedId) renderDetail(selectedId);
+  }
+
+  document.getElementById('spoilerToggle').addEventListener('click', function(){ setSpoilers(!spoilers); });
+  document.getElementById('spoilerToggle').addEventListener('keydown', function(ev){ if (ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); setSpoilers(!spoilers);} });
+
+  // Clicking a cast card selects the same character on the map
+  document.querySelectorAll('.cast-card').forEach(function(card){
+    card.addEventListener('click', function(){
+      var id = card.getAttribute('data-id');
+      selectedId = id;
+      renderDetail(id);
+      paint();
+      document.getElementById('map').scrollIntoView({ behavior:'smooth', block:'center' });
+    });
+  });
+
+  // Build the map
+  defs();
+  buildEdges();
+  buildNodes();
+
+  // Auto-select the hero on load so the map feels alive immediately
+  setTimeout(function(){ select('maya'); }, 1600);
+})();
+</script>
+
+</body>
+</html>

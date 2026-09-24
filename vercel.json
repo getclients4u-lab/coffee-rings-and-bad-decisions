@@ -22,6 +22,7 @@
     { "source": "/tarot", "destination": "/tarot/" },
     { "source": "/lottery", "destination": "/lottery/" },
     { "source": "/meet-cute", "destination": "/meet-cute/" },
-    { "source": "/barista-rush", "destination": "/barista-rush/" }
+    { "source": "/barista-rush", "destination": "/barista-rush/" },
+    { "source": "/characters", "destination": "/characters/" }
   ]
 }
