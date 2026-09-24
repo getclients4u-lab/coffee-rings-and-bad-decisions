@@ -51,10 +51,10 @@ body.spoilers-on .spoiler-toggle .knob { left:22px; background:#0D1B2A; }
 .map-hint { text-align:center; color:#5a6a78; font-size:0.85rem; margin-top:0.75rem; letter-spacing:0.02em; }
 svg#map { width:100%; height:auto; display:block; }
 
-.edge { fill:none; stroke-width:2; stroke-linecap:round; stroke-dasharray:900; stroke-dashoffset:900; animation:draw 1.3s ease forwards; }
+.edge { fill:none; stroke-width:2.5; stroke-linecap:round; stroke-dasharray:900; stroke-dashoffset:900; animation:draw 1.3s ease forwards; }
 @keyframes draw { to { stroke-dashoffset:0; } }
-.edge.active { stroke-width:3; }
-.edge.faded { opacity:0.13; }
+.edge.active { stroke-width:3.5; filter:drop-shadow(0 0 5px rgba(224,168,76,0.35)); }
+.edge.faded { opacity:0.28; }
 .edge-label { font-size:12.5px; font-weight:500; fill:#d8e2ec; stroke:#0a1628; stroke-width:4; paint-order:stroke; stroke-linejoin:round; text-anchor:middle; opacity:0; transition:opacity .35s ease; pointer-events:none; }
 .edge-label.show { opacity:1; }
 
@@ -63,7 +63,7 @@ svg#map { width:100%; height:auto; display:block; }
 .node .halo { fill:none; stroke:rgba(201,134,42,0.0); stroke-width:2.5; transition:all .3s ease; }
 .node:hover .halo, .node.selected .halo { stroke:rgba(201,134,42,0.7); }
 .node:hover .avatar, .node.selected .avatar { stroke:#e0a84c; stroke-width:2.5; }
-.node .avatar { transition:all .3s ease; stroke:rgba(255,255,255,0.15); stroke-width:1.5; }
+.node .avatar { transition:all .3s ease; stroke:rgba(255,255,255,0.28); stroke-width:2; }
 .node.dim { opacity:0.35; }
 .node.dim:hover { opacity:1; }
 .node .emoji { font-size:26px; pointer-events:none; }
